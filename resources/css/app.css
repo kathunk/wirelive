@@ -1,0 +1,73 @@
+/* Font imports - these must come before @import "tailwindcss" */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap");
+
+/* Custom font declarations */
+@font-face {
+  font-family: 'SCHABO-XCondensed';
+  src: url('/fonts/Schabo-XCondensed.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'AlphaLyrae-Medium';
+    src: url('/fonts/AlphaLyrae-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import 'tailwindcss';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+
+    --text-headline: 12.5rem;
+
+    /* Custom font families with web-safe fallbacks */
+    --font-display: "SCHABO-XCondensed", "Inter", "Arial Black", "Helvetica Bold", sans-serif;
+    --font-body: "AlphaLyrae-Medium", "Inter", "Arial", "Helvetica", sans-serif;
+    --font-mono: "JetBrains Mono", "Fira Code", "Consolas", monospace;
+
+    --max-w-8xl: 90rem;
+
+    --color-fossil: #dad1c8;
+    --color-night-rider: #2d2d2d;
+    --color-plum: #58003F;
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Font utility classes */
+.font-display {
+  font-family: var(--font-display);
+  font-display: swap;
+}
+
+.font-body {
+  font-family: var(--font-body);
+  font-display: swap;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+  font-display: swap;
+}
