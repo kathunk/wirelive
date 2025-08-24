@@ -2,5 +2,6 @@
 
 A Chill & AWESOME Livewire community event
 
-Buffalo, NY
+Buffalo, NY 
+
 October 28-29 2025
