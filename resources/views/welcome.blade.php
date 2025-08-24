@@ -3,6 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
+        <title>Wire ⚡ Live</title>
         @vite(['resources/css/app.css'])
     </head>
     <body class="min-h-screen w-full font-body bg-night-rider/90" style="background-image: url('/img/dirty-surface-texture.png'); background-size: cover; background-position: center;">
