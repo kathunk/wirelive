@@ -1,52 +1,44 @@
 <!-- poster.blade.php -->
 <section class="w-full py-16">
-    <!-- WIRES + COLOR OVERLAY (cropped together) -->
-    <!-- Overlay box: right: 6%, top: 8%, width: 56% -->
-    <div class="relative isolate w-full aspect-[1296/532]">
-        <div class="absolute right-[10.5%] top-[12.5%] w-[52%] aspect-[726/378] overflow-hidden z-10">
+    <div class="relative w-full min-h-[532px]">
+        <!-- WIRES + COLOR OVERLAY (cropped together) -->
+        <div class="absolute right-[7.5%] top-[15%] w-[52%] aspect-[726/378] overflow-hidden z-10">
             <img src="/img/fun-wires.png"  alt="" class="absolute inset-0 size-full object-cover">
             <img src="/img/fun-colors.png" alt="" class="absolute inset-0 size-full object-cover mix-blend-exclusion pointer-events-none">
         </div>
 
-        <div class="absolute top-[20%] left-0 flex items-center gap-12 z-20">
-            <x-sub-headline text="Buffalo, NY" />
-            <x-sub-headline text="October 28-29, 2025" />
-        </div>
+        <div class="relative z-20">
+            <div class="flex items-center gap-12 pt-[10%]">
+                <x-sub-headline text="Buffalo, NY" />
+                <x-sub-headline text="October 28-29, 2025" />
+            </div>
 
-        <!-- BASE WHITE HEADLINE -->
-        <div class="absolute top-[30%] left-0 flex items-center z-20">
-            {{-- <h1 class="font-black leading-[0.85] tracking-tight text-white text-[clamp(40px,9vw,180px)]">
-                A CHILL & AWESOME<br>
-                LIVEWIRE COMMUNITY EVENT
-            </h1> --}}
-            <h1 class="text-headline leading-45 font-normal text-fossil tracking-normal font-display uppercase">
-                A CHILL & AWESOME<br>
-                LIVEWIRE COMMUNITY EVENT
-            </h1>
-        </div>
+            <div class="relative">
+                <!-- BASE WHITE HEADLINE -->
+                <x-headline
+                    first="A chill & AWESOME"
+                    second="Livewire community event"
+                />
 
-        <!-- RED HEADLINE, MASKED (hardcoded alignment) -->
-        <!-- Use the SAME overlay image as a mask, positioned/sized to the overlay box -->
-        <div
-            class="pointer-events-none absolute inset-0 z-30
-                [mask-image:url('/img/fun-colors.png')] [-webkit-mask-image:url('/img/fun-colors.png')]
-                [mask-repeat:no-repeat] [-webkit-mask-repeat:no-repeat]
+                <!-- RED HEADLINE, MASKED (positioned over the white one) -->
+                <div
+                    class="pointer-events-none absolute inset-0 z-30
+                        [mask-image:url('/img/fun-colors.png')] [-webkit-mask-image:url('/img/fun-colors.png')]
+                        [mask-repeat:no-repeat] [-webkit-mask-repeat:no-repeat]
 
-                [mask-size:calc(56%+0.4%)_auto] [-webkit-mask-size:calc(56%+0.4%)_auto]
-                [mask-position:right_14.5%_top_21%] [-webkit-mask-position:right_14.5%_top_21%]">
-            <div class="absolute top-[30%] left-0 flex items-center">
-                {{-- <h1 class="font-black leading-[0.85] tracking-tight text-red-600 text-[clamp(40px,9vw,180px)]">
-                    A CHILL & AWESOME<br>
-                    LIVEWIRE COMMUNITY EVENT
-                </h1> --}}
-                <h1 class="text-headline leading-45 font-normal text-plum tracking-normal font-display uppercase">
-                A CHILL & AWESOME<br>
-                    LIVEWIRE COMMUNITY EVENT
-                </h1>
+                        [mask-size:calc(56%+0.4%)_auto] [-webkit-mask-size:calc(56%+0.4%)_auto]
+                        [mask-position:right_7.5%_top_1%] [-webkit-mask-position:right_7.5%_top_1%]">
+                    <x-headline
+                        first="A chill & AWESOME"
+                        second="Livewire community event"
+                        plum
+                    />
+                </div>
             </div>
         </div>
     </div>
-    <div class="flex items-center gap-48">
+
+    <div class="flex items-center gap-48 mt-20">
         <x-sub-headline
             first="Let's hang out, and talk all things"
             second="Livewire, Flux, Alpine, and Filament"

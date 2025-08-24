@@ -2,13 +2,13 @@
     'text' => null,
     'first' => null,
     'second' => null,
-    'red' => false
+    'plum' => false
 ])
 @php
-    $textColor = $red ? 'text-[#58003F]' : 'text-fossil';
+    $textColor = $plum ? 'text-[#58003F]' : 'text-fossil';
 @endphp
 
-<h1 class="text-headline leading-none font-normal {{ $textColor }} tracking-normal font-display uppercase translate-y-[0.20em]">
+<h1 class="lg:text-headline text-9xl leading-none font-normal {{ $textColor }} tracking-normal font-display uppercase translate-y-[0.20em]">
     @if($second)
         {{ $first }}<br />
         {{ $second }}

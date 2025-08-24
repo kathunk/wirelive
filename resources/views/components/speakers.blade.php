@@ -1,4 +1,4 @@
-<section class="py-16" id="speakers">
+<section class="py-16 mt-16" id="speakers">
   <!-- Section header -->
     <div class="flex items-end justify-between mb-16 w-full">
         <div class="self-end">
@@ -77,7 +77,7 @@
   </div>
 
   <!-- Call to action -->
-  <div class="flex items-center gap-4 mt-16">
+  <div class="flex items-center gap-4 mt-36">
     <span class="text-base text-fossil font-body">Interested in speaking?</span>
     <a href="#" class="relative text-base text-fossil font-body hover:opacity-90 transition-opacity">
       Apply to speak

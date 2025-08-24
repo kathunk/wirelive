@@ -1,88 +1,115 @@
 <section class="py-16">
 
   <!-- Section Header -->
-  <div class="text-center mb-12">
+  <div class="text-left mb-12">
     <x-headline text="THE SCHEDULE" />
   </div>
 
   <!-- Two Parallel Sections -->
-  <div class="flex gap-12">
+  <div class="flex flex-col lg:flex-row justify-between">
 
     <!-- Day 01 - Schedule Section -->
-    <div class="flex-1">
-      <!-- Day Label -->
-      <div class="bg-fossil px-6 py-3 mb-6">
-        <h3 class="text-2xl font-bold text-[#2d2d2d] font-display uppercase tracking-wide">
-          DAY 01
-        </h3>
-      </div>
-
-      <!-- Schedule Content -->
-      <div class="relative bg-fossil/10 p-8 rounded-lg">
-        <div class="space-y-4">
-          <!-- Schedule items -->
-          <div class="flex items-center gap-4">
-            <div class="text-lg font-medium text-fossil font-mono min-w-[120px]">9:00 AM - 10:00 AM</div>
-            <div class="text-lg text-fossil font-body">COFFEE & CHILL</div>
-          </div>
-
-          <div class="flex items-center gap-4">
-            <div class="text-lg font-medium text-fossil font-mono min-w-[120px]">10:00 AM - 11:00 AM</div>
-            <div class="text-lg text-fossil font-body">OPENING REMARKS</div>
-          </div>
-
-          <div class="flex items-center gap-4">
-            <div class="text-lg font-medium text-fossil font-mono min-w-[120px]">11:00 AM - 12:00 PM</div>
-            <div class="text-lg text-fossil font-body">WELCOME CALEB PORZIO</div>
-          </div>
-
-          <div class="flex items-center gap-4">
-            <div class="text-lg font-medium text-fossil font-mono min-w-[120px]">12:00 PM - 1:00 PM</div>
-            <div class="text-lg text-fossil font-body">CROWD SOURCING COMPONENTS (DATA-X)</div>
-          </div>
-
-          <div class="flex items-center gap-4">
-            <div class="text-lg font-medium text-fossil font-mono min-w-[120px]">1:00 PM - 2:00 PM</div>
-            <div class="text-lg text-fossil font-body">SAYONARA AT THE WRAP OF 4 TRADES KEVIN MCGEE</div>
-          </div>
-
-          <div class="flex items-center gap-4">
-            <div class="text-lg font-medium text-fossil font-mono min-w-[120px]">2:00 PM - 3:00 PM</div>
-            <div class="text-lg text-fossil font-body">SQUEEZING EVERY DROP OF PERFORMANCE RYAN CHRISOLOR</div>
-          </div>
-
-          <div class="flex items-center gap-4">
-            <div class="text-lg font-medium text-fossil font-mono min-w-[120px]">3:00 PM - 4:00 PM</div>
-            <div class="text-lg text-fossil font-body">WHAT'S COMING TO FILAMENT DAN HARRIN</div>
-          </div>
-
-          <div class="flex items-center gap-4">
-            <div class="text-lg font-medium text-fossil font-mono min-w-[120px]">4:00 PM - 5:00 PM</div>
-            <div class="text-lg text-fossil font-body">BUILD A FUSION SEARCH WITH ALGORITHMS JOHN CAROLES</div>
-          </div>
+    <div class="w-[64.69%]">
+      <div class="flex flex-col w-full">
+        <!-- Ticket Tab -->
+        <div class="relative w-61.75 -mb-px">
+            <x-icons.svg.ticket-tab class="w-61.75 h-12" />
+            <div class="absolute left-6 top-3">
+                <span class="text-[44px] leading-none font-normal tracking-normal font-display uppercase">
+                    Day 01
+                </span>
+            </div>
+            <div class="absolute bottom-0 right-0 w-3/7">
+                <x-icons.svg.ticket-tab-tear class="mb-px w-full" />
+            </div>
         </div>
+        <!-- Card Content -->
+        <div class="w-full bg-fossil">
+            <div class="text-night-rider py-4">
+              <!-- Schedule items -->
+              <div class="flex items-center justify-between px-6 py-4">
+                <div class="text-lg font-body">COFFEE & CHILL</div>
+                <div class="text-lg font-medium font-mono">9:00 AM - 9:45 AM</div>
+              </div>
+
+              <x-icons.svg.dashed-lines class="w-full h-4" />
+
+              <div class="flex items-center justify-between px-6 py-4">
+                <div class="text-lg font-body">OPENING REMARKS</div>
+                <div class="text-lg font-medium font-mono">9:00 AM - 9:45 AM</div>
+              </div>
+
+              <x-icons.svg.dashed-lines class="w-full h-4" />
+
+              <div class="flex items-center justify-between px-6 py-4">
+                <div class="text-lg font-body">WELCOME CALEB PORZIO</div>
+                <div class="text-lg font-medium font-mono">9:00 AM - 9:45 AM</div>
+              </div>
+
+              <x-icons.svg.dashed-lines class="w-full h-4" />
+
+              <div class="flex items-center justify-between px-6 py-4">
+                <div class="text-lg font-body">CROWD SOURCING COMPONENTS PATRICIO</div>
+                <div class="text-lg font-medium font-mono">9:00 AM - 9:45 AM</div>
+              </div>
+
+              <x-icons.svg.dashed-lines class="w-full h-4" />
+
+              <div class="flex items-center justify-between px-6 py-4">
+                <div class="text-lg font-body">DATATABLES AT THE SNAP OF A FINGER KEVIN MCKEE</div>
+                <div class="text-lg font-medium font-mono">9:00 AM - 9:45 AM</div>
+              </div>
+
+              <x-icons.svg.dashed-lines class="w-full h-4" />
+
+              <div class="flex items-center justify-between px-6 py-4">
+                <div class="text-lg font-body">SQUEEZING EVERY DROP OF PERFORMANCE RYAN CHRISOLOR</div>
+                <div class="text-lg font-medium font-mono">2:00 PM - 3:00 PM</div>
+              </div>
+
+              <x-icons.svg.dashed-lines class="w-full h-4" />
+
+              <div class="flex items-center justify-between px-6 py-4">
+                <div class="text-lg font-body">WHAT'S COMING TO FILAMENT DAN HARRIN</div>
+                <div class="text-lg font-medium font-mono">3:00 PM - 4:00 PM</div>
+              </div>
+
+              <x-icons.svg.dashed-lines class="w-full h-4" />
+
+              <div class="flex items-center justify-between px-6 py-4">
+                <div class="text-lg font-body">BUILD A FUSION SEARCH WITH ALGORITHMS JOHN CAROLES</div>
+                <div class="text-lg font-medium font-mono">4:00 PM - 5:00 PM</div>
+              </div>
+            </div>
+        </div>
+
+        <img src="/img/rip.png" alt="rip.png" class="w-full h-10 -mt-1" />
       </div>
     </div>
 
+    <!--
+        @todo figure out how we can only apply the background image to the
+        card and tab but not the empty area beside the tab
+    -->
+
     <!-- Day 02 - Hackathon Section -->
-    <div class="flex-1">
-      <!-- Day Label -->
-      <div class="bg-fossil px-6 py-3 mb-6">
-        <h3 class="text-2xl font-bold text-[#2d2d2d] font-display uppercase tracking-wide">
-          DAY 02
-        </h3>
-      </div>
-
-      <!-- Hackathon Content -->
-      <div class="relative overflow-hidden rounded-lg">
-        <!-- Background using fun-colors.png -->
-        <div class="absolute inset-0">
-          <img src="/img/fun-colors.png" alt="" class="w-full h-full object-cover" />
+    <div class="w-[29.38%]">
+      <div class="flex flex-col w-full">
+        <!-- Ticket Tab -->
+        <div class="relative w-61.75 -mb-px">
+            <x-icons.svg.ticket-tab class="w-61.75 h-12" pink />
+            <div class="absolute left-6 top-3">
+                <span class="text-[44px] leading-none font-normal tracking-normal font-display uppercase text-plum">
+                    Day 02
+                </span>
+            </div>
+            <div class="absolute bottom-0 right-0 w-3/7">
+                <x-icons.svg.ticket-tab-tear class="mb-px w-full" />
+            </div>
         </div>
-
-        <!-- Content overlay -->
-        <div class="relative p-8 text-white">
-          <h2 class="text-8xl text-plum mb-6 uppercase tracking-wide leading-tight">
+        <!-- Card Content -->
+        <div class="p-6 w-full" style="background-image: url('/img/fun-colors.png'); background-size: cover; background-position: center;">
+          <h2 class="text-[92px] leading-26 font-body text-plum py-5">
             HACK-A-THON
           </h2>
 
@@ -95,5 +122,32 @@
     </div>
 
   </div>
+
+  <!-- Test Card - Minimum Viable Implementation -->
+  <div class="flex flex-col w-full">
+    <!-- Ticket Tab -->
+    <div class="relative w-61.75 -mb-px">
+        <x-icons.svg.ticket-tab class="w-61.75 h-12" />
+        <div class="absolute left-4 top-3">
+            <span class="text-[44px] leading-none font-normal tracking-normal font-display uppercase">
+                Day 01
+            </span>
+        </div>
+        <div class="absolute bottom-0 right-0 w-3/7">
+            <x-icons.svg.ticket-tab-tear class="mb-px w-full" />
+        </div>
+    </div>
+    <!-- Card Content -->
+    <div class="p-8 w-full bg-fossil">
+        <div class="text-lg text-fossil font-body">
+          test card
+        </div>
+    </div>
+
+    <img src="/img/rip.png" alt="rip.png" class="w-full h-10 -mt-1" />
+  </div>
+
+</div>
+
 
 </section>

@@ -1,0 +1,8 @@
+<svg {{ $attributes }} viewBox="0 0 107 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="4" y="2" width="4" height="2" transform="rotate(-180 4 2)" fill="#2D2D2D"/>
+<rect x="14" y="2" width="4" height="2" transform="rotate(-180 14 2)" fill="#2D2D2D"/>
+<rect x="24" y="2" width="4" height="2" transform="rotate(-180 24 2)" fill="#2D2D2D"/>
+<rect x="34" y="2" width="4" height="2" transform="rotate(-180 34 2)" fill="#2D2D2D"/>
+<rect x="44" y="2" width="4" height="2" transform="rotate(-180 44 2)" fill="#2D2D2D"/>
+<path d="M107 2L50 1.99999L50 2.36919e-08L105.142 7.60235e-08L107 2Z" fill="#2D2D2D"/>
+</svg>
