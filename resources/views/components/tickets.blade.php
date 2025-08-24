@@ -1,107 +1,89 @@
-<div class="relative w-full h-full">
-  <div
-    class="absolute top-[970] left-[22] [font-family:'GeistMono_NFM-Medium',Helvetica] font-medium text-fossil text-2xl text-center tracking-normal leading-8 whitespace-nowrap"
-  >
-    GET A TICKET...NOW
+<section class="py-16">
+
+  <!-- Section Header -->
+  <div class="mb-12">
+    <h2 class="text-2xl font-bold text-fossil font-body uppercase tracking-wide">
+      GET A TICKET... NOW
+    </h2>
   </div>
-  <div class="flex flex-col w-[337] items-start justify-center gap-3 p-2 absolute top-[978] left-20">
-    <div class="absolute w-[189] h-24 top-24 left-[132]">
-      <div class="flex w-[93] items-center gap-4 absolute top-0 left-0">
-        <img class="relative w-[18px] h-[18px]" src="img/union.svg" alt="img/union.svg" />
-        <p
-          class="relative w-fit mt-[-1.00px] [font-family:'Alpha_Lyrae-Medium',Helvetica] font-medium text-fossil text-2xl tracking-normal leading-[normal]"
-        >
-          ENTRY TO ALL THE EVENTS
-        </p>
+
+  <!-- Ticket Options -->
+  <div class="space-y-12">
+
+    <!-- In Person Ticket -->
+    <div class="relative bg-fossil/10 p-8 rounded-lg">
+      <!-- Background stripes -->
+      <div class="absolute inset-0 opacity-10">
+        <img src="/img/group-1-2.png" alt="" class="w-full h-full object-cover" />
       </div>
-      <div class="flex w-[93] items-center gap-4 absolute top-[16] left-0">
-        <img class="relative w-[18px] h-[18px]" src="img/union.svg" alt="img/union.svg" />
-        <div
-          class="relative w-fit mt-[-1.00px] [font-family:'Alpha_Lyrae-Medium',Helvetica] font-medium text-fossil text-2xl tracking-normal leading-[normal]"
-        >
-          FOOD AND STUFF
-        </div>
-      </div>
-      <div class="flex w-[93] items-center gap-4 absolute top-0 left-96">
-        <img class="relative w-[18px] h-[18px]" src="img/union.svg" alt="img/union.svg" />
-        <div
-          class="relative w-fit mt-[-1.00px] [font-family:'Alpha_Lyrae-Medium',Helvetica] font-medium text-fossil text-2xl tracking-normal leading-[normal]"
-        >
-          THE SWAGGEST OF BAGS
-        </div>
-      </div>
-      <div class="flex w-[93] items-center gap-4 absolute top-[16] left-96">
-        <img class="relative w-[18px] h-[18px]" src="img/union.svg" alt="img/union.svg" />
-        <div
-          class="relative w-fit mt-[-1.00px] [font-family:'Alpha_Lyrae-Medium',Helvetica] font-medium text-fossil text-2xl tracking-normal leading-[normal]"
-        >
-          AFTER PARTY...DON'T MISS IT
-        </div>
-      </div>
-    </div>
-    <div class="relative w-[334] h-[89] mr-[-2.00px]">
-      <div class="absolute w-[333] h-[68] top-0 left-0">
-        <div class="absolute w-[333] h-[68] top-0 left-0 bg-fossil opacity-10"></div>
-        <div
-          class="absolute h-[45] top-[17] left-[15] [font-family:'SCHABO-XCondensed',Helvetica] font-normal text-fossil text-[200px] text-center tracking-[.25em] leading-[180px] whitespace-nowrap"
-        >
-          IN PERSON
-        </div>
-      </div>
-      <div class="absolute w-[333] h-20 top-[68] left-0">
-        <div class="absolute w-[333] h-20 top-0 left-0 bg-fossil">
-          <div
-            class="h-20 bg-[url(legacy:image:md5:2ce6ef50aed59a138f591620f80d6d385309bb16)] bg-cover bg-[50%_50%]"
-          >
-            <div class="flex w-[333] h-20 items-center justify-center gap-6 px-[113] py-[13px] relative">
-              <div
-                class="w-fit text-[#58003f] relative [font-family:'Alpha_Lyrae-Medium',Helvetica] font-medium text-2xl text-center tracking-tight leading-[normal]"
-              >
-                BUY TICKETS NOW
-              </div>
-              <img class="relative w-[70.57px] h-[38px]" src="img/subtract-2.svg" alt="img/subtract-2.svg" />
+
+      <div class="relative">
+        <!-- Title and Benefits Row -->
+        <div class="flex items-center gap-12">
+          <!-- IN PERSON Title -->
+          <div class="flex-shrink-0">
+            <x-headline text="IN PERSON" />
+          </div>
+
+          <!-- Benefits Grid -->
+          <div class="grid grid-cols-2 gap-6 flex-1">
+            <div class="flex items-center gap-3">
+              <img src="/img/union.svg" alt="" class="w-5 h-5" />
+              <span class="text-xl text-fossil font-body">ENTRY TO ALL THE EVENTS</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img src="/img/union.svg" alt="" class="w-5 h-5" />
+              <span class="text-xl text-fossil font-body">THE SWAGGEST OF BAGS</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img src="/img/union.svg" alt="" class="w-5 h-5" />
+              <span class="text-xl text-fossil font-body">FOOD AND STUFF</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img src="/img/union.svg" alt="" class="w-5 h-5" />
+              <span class="text-xl text-fossil font-body">AFTER PARTY... DON'T MISS IT</span>
             </div>
           </div>
         </div>
-        <div class="absolute w-[93] h-20 top-0 left-0 rotate-180 opacity-70">
-          <img class="absolute w-[93] h-20 top-0 left-0 -rotate-180" src="img/group-1-3.png" alt="img/group-1-3.png" />
-        </div>
-        <div class="absolute w-[93] h-20 top-0 left-[240] rotate-180 opacity-70">
-          <img class="absolute w-[93] h-20 top-0 left-0 -rotate-180" src="img/group-1.png" alt="img/group-1.png" />
+      </div>
+    </div>
+
+    <!-- Buy Button - Outside the card -->
+    <div class="relative">
+      <div class="relative overflow-hidden rounded-lg h-16">
+        <img src="/img/fun-colors.png" alt="" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 flex items-center justify-center">
+          <button class="bg-transparent py-4 px-8 hover:opacity-90 transition-opacity">
+            <div class="flex items-center justify-center gap-4">
+              <span class="text-2xl font-bold text-white font-body">BUY TICKETS NOW $299</span>
+              <img src="/img/subtract-2.svg" alt="" class="w-8 h-6" />
+            </div>
+          </button>
         </div>
       </div>
     </div>
-    <div class="gap-10 w-full flex-[0_0_auto] bg-fossil flex items-center relative self-stretch">
-      <img class="relative w-[153.39px] h-[92px]" src="img/ONLINE.png" alt="img/ONLINE.png" />
-      <p
-        class="relative w-fit [font-family:'Alpha_Lyrae-Medium',Helvetica] font-medium text-[#2d2d2d] text-2xl tracking-normal leading-[normal]"
-      >
-        GET ACCESS TO THE LIVE STREAM AND THE COMMUNITY DISCORD
-      </p>
-      <div
-        class="justify-center gap-2.5 flex-1 grow border-l-2 [border-left-style:dashed] border-[#2d2d2d] flex items-center relative self-stretch"
-      >
-        <div
-          class="relative w-fit [font-family:'Alpha_Lyrae-Medium',Helvetica] font-medium text-[#2d2d2d] text-2xl tracking-normal leading-[normal]"
-        >
-          BUY ONLINE TICKET
+
+    <!-- Online Ticket -->
+    <div class="bg-fossil p-8 rounded-lg">
+      <div class="flex items-center justify-between">
+        <div class="flex-1">
+          <h3 class="text-4xl font-bold text-[#2d2d2d] mb-4 font-display uppercase tracking-wide">
+            ONLINE
+          </h3>
+          <p class="text-xl text-[#2d2d2d] font-body">
+            GET ACCESS TO THE LIVE STREAM AND THE COMMUNITY DISCORD
+          </p>
+        </div>
+
+        <div class="flex items-center gap-4 ml-8">
+          <div class="border-l-2 border-dashed border-[#2d2d2d] h-16"></div>
+          <button class="bg-fossil/20 text-[#2d2d2d] py-3 px-6 rounded-md hover:opacity-90 transition-opacity font-bold border border-[#2d2d2d]/20">
+            BUY ONLINE TICKET
+          </button>
         </div>
       </div>
     </div>
-    <img class="absolute w-px h-9 -top-6 left-0" src="img/subtract-4.svg" alt="img/subtract-4.svg" />
-    <img class="absolute w-3 h-3 top-0 left-[334]" src="img/subtract-5.svg" alt="img/subtract-5.svg" />
-    <img class="absolute w-3 h-3 top-[462px] left-0" src="img/subtract-3.svg" alt="img/subtract-3.svg" />
-    <img class="absolute w-3 h-3 top-[462px] left-[334]" src="img/subtract-6.svg" alt="img/subtract-6.svg" />
+
   </div>
-  <div class="flex flex-col w-[78] items-center gap-0.5 absolute top-[1152] left-[381]">
-    <img class="relative self-stretch w-full flex-[0_0_auto]" src="img/frame-278.svg" alt="img/frame-278.svg" />
-    <div class="flex w-[75] h-16 items-start justify-center gap-0.5 px-0 py-2 relative bg-fossil">
-      <div
-        class="flex-1 self-stretch mt-[-1.00px] text-[#2d2d2d] relative [font-family:'Alpha_Lyrae-Medium',Helvetica] font-medium text-2xl text-center tracking-tight leading-[normal]"
-      >
-        BUY TICKETS NOW
-      </div>
-    </div>
-    <img class="relative self-stretch w-full flex-[0_0_auto]" src="img/frame-279.svg" alt="img/frame-279.svg" />
-  </div>
-</div>
+
+</section>
