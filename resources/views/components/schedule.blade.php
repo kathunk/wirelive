@@ -94,28 +94,43 @@
     <!-- Day 02 - Hackathon Section -->
     <div class="w-[29.38%]">
       <div class="flex flex-col w-full">
-        <!-- Ticket Tab -->
-        <div class="relative w-61.75 -mb-px">
-            <x-icons.svg.ticket-tab class="w-61.75 h-12" pink />
-            <div class="absolute left-6 top-3">
-                <span class="text-[44px] leading-none font-normal tracking-normal font-display uppercase text-plum">
-                    Day 02
-                </span>
-            </div>
-            <div class="absolute bottom-0 right-0 w-3/7">
-                <x-icons.svg.ticket-tab-tear class="mb-px w-full" />
-            </div>
-        </div>
-        <!-- Card Content -->
-        <div class="p-6 w-full" style="background-image: url('/img/fun-colors.png'); background-size: cover; background-position: center;">
-          <h2 class="text-[92px] leading-26 text-plum py-5">
-            HACK-A-THON
-          </h2>
+        <!-- Combined Tab and Card with Background -->
+        <div class="relative" style="
+            background-image: url('/img/fun-colors.png');
+            background-size: cover;
+            background-position: center;
+            clip-path: polygon(
+                 0px 0px,
+                 202px 0px,
+                 247px 48px,
+                 100% 48px,
+                 100% 100%,
+                 0px 100%
+             );
+            ">
+          <!-- Ticket Tab -->
+          <div class="relative w-61.75 -mb-px">
+              <x-icons.svg.ticket-tab class="w-61.75 h-12" pink/>
+              <div class="absolute left-6 top-3">
+                  <span class="text-[44px] leading-none font-normal tracking-normal font-display uppercase text-plum">
+                      Day 02
+                  </span>
+              </div>
+              <div class="absolute bottom-0 right-0 w-3/7">
+                  <x-icons.svg.ticket-tab-tear class="mb-px w-full" />
+              </div>
+          </div>
+          <!-- Card Content -->
+          <div class="p-6 w-full">
+            <h2 class="text-[92px] leading-26 text-plum py-5">
+              HACK-A-THON
+            </h2>
 
-          <p class="text-xl leading-relaxed">
-            We rented a space out to chill, eat buffalo wings and play our collaboratively.
-            We'll make a game or something and have prizes or whatever.
-          </p>
+            <p class="text-xl leading-relaxed">
+              We rented a space out to chill, eat buffalo wings and play our collaboratively.
+              We'll make a game or something and have prizes or whatever.
+            </p>
+          </div>
         </div>
       </div>
     </div>
