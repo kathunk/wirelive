@@ -1,11 +1,10 @@
-<section class="py-16">
+<section class="py-16" id="schedule">
 
   <!-- Section Header -->
   <div class="text-left mb-16">
     <x-headline text="THE SCHEDULE" />
   </div>
 
-  <!-- Two Parallel Sections -->
   <div class="flex flex-col lg:flex-row justify-between">
 
     <!-- Day 01 - Schedule Section -->
@@ -28,56 +27,56 @@
             <div class="text-night-rider py-4">
               <!-- Schedule items -->
               <div class="flex items-center justify-between px-6 py-4">
-                <div class="text-lg font-body">COFFEE & CHILL</div>
+                <div class="text-lg">COFFEE & CHILL</div>
                 <div class="text-lg font-medium font-mono">9:00 AM - 9:45 AM</div>
               </div>
 
               <x-icons.svg.dashed-lines class="w-full h-4" />
 
               <div class="flex items-center justify-between px-6 py-4">
-                <div class="text-lg font-body">OPENING REMARKS</div>
+                <div class="text-lg">OPENING REMARKS</div>
                 <div class="text-lg font-medium font-mono">9:00 AM - 9:45 AM</div>
               </div>
 
               <x-icons.svg.dashed-lines class="w-full h-4" />
 
               <div class="flex items-center justify-between px-6 py-4">
-                <div class="text-lg font-body">WELCOME CALEB PORZIO</div>
+                <div class="text-lg">WELCOME CALEB PORZIO</div>
                 <div class="text-lg font-medium font-mono">9:00 AM - 9:45 AM</div>
               </div>
 
               <x-icons.svg.dashed-lines class="w-full h-4" />
 
               <div class="flex items-center justify-between px-6 py-4">
-                <div class="text-lg font-body">CROWD SOURCING COMPONENTS PATRICIO</div>
+                <div class="text-lg">CROWD SOURCING COMPONENTS PATRICIO</div>
                 <div class="text-lg font-medium font-mono">9:00 AM - 9:45 AM</div>
               </div>
 
               <x-icons.svg.dashed-lines class="w-full h-4" />
 
               <div class="flex items-center justify-between px-6 py-4">
-                <div class="text-lg font-body">DATATABLES AT THE SNAP OF A FINGER KEVIN MCKEE</div>
+                <div class="text-lg">DATATABLES AT THE SNAP OF A FINGER KEVIN MCKEE</div>
                 <div class="text-lg font-medium font-mono">9:00 AM - 9:45 AM</div>
               </div>
 
               <x-icons.svg.dashed-lines class="w-full h-4" />
 
               <div class="flex items-center justify-between px-6 py-4">
-                <div class="text-lg font-body">SQUEEZING EVERY DROP OF PERFORMANCE RYAN CHRISOLOR</div>
+                <div class="text-lg">SQUEEZING EVERY DROP OF PERFORMANCE RYAN CHRISOLOR</div>
                 <div class="text-lg font-medium font-mono">2:00 PM - 3:00 PM</div>
               </div>
 
               <x-icons.svg.dashed-lines class="w-full h-4" />
 
               <div class="flex items-center justify-between px-6 py-4">
-                <div class="text-lg font-body">WHAT'S COMING TO FILAMENT DAN HARRIN</div>
+                <div class="text-lg">WHAT'S COMING TO FILAMENT DAN HARRIN</div>
                 <div class="text-lg font-medium font-mono">3:00 PM - 4:00 PM</div>
               </div>
 
               <x-icons.svg.dashed-lines class="w-full h-4" />
 
               <div class="flex items-center justify-between px-6 py-4">
-                <div class="text-lg font-body">BUILD A FUSION SEARCH WITH ALGORITHMS JOHN CAROLES</div>
+                <div class="text-lg">BUILD A FUSION SEARCH WITH ALGORITHMS JOHN CAROLES</div>
                 <div class="text-lg font-medium font-mono">4:00 PM - 5:00 PM</div>
               </div>
             </div>
@@ -109,11 +108,11 @@
         </div>
         <!-- Card Content -->
         <div class="p-6 w-full" style="background-image: url('/img/fun-colors.png'); background-size: cover; background-position: center;">
-          <h2 class="text-[92px] leading-26 font-body text-plum py-5">
+          <h2 class="text-[92px] leading-26 text-plum py-5">
             HACK-A-THON
           </h2>
 
-          <p class="text-xl leading-relaxed font-body">
+          <p class="text-xl leading-relaxed">
             We rented a space out to chill, eat buffalo wings and play our collaboratively.
             We'll make a game or something and have prizes or whatever.
           </p>

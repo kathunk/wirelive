@@ -21,19 +21,19 @@
           <div class="grid grid-cols-2 gap-y-8 gap-x-3">
             <div class="flex items-center gap-3">
               <x-icons.svg.pink-plus-sign class="w-4.5 h-4.75" />
-              <span class="text-2xl text-fossil font-body">ENTRY TO ALL THE EVENTS</span>
+              <span class="text-2xl text-fossil">ENTRY TO ALL THE EVENTS</span>
             </div>
             <div class="flex items-center gap-3">
               <x-icons.svg.pink-plus-sign class="w-4.5 h-4.75" />
-              <span class="text-2xl text-fossil font-body">THE SWAGGEST OF BAGS</span>
+              <span class="text-2xl text-fossil">THE SWAGGEST OF BAGS</span>
             </div>
             <div class="flex items-center gap-3">
               <x-icons.svg.pink-plus-sign class="w-4.5 h-4.75" />
-              <span class="text-2xl text-fossil font-body">FOOD AND STUFF</span>
+              <span class="text-2xl text-fossil">FOOD AND STUFF</span>
             </div>
             <div class="flex items-center gap-3">
               <x-icons.svg.pink-plus-sign class="w-4.5 h-4.75" />
-              <span class="text-2xl text-fossil font-body">AFTER PARTY... DON'T MISS IT</span>
+              <span class="text-2xl text-fossil">AFTER PARTY... DON'T MISS IT</span>
             </div>
           </div>
         </div>
@@ -58,9 +58,9 @@
         <div class="absolute inset-0 flex items-center justify-center">
           <button class="bg-transparent py-4 px-8 hover:opacity-90 transition-opacity">
             <div class="flex items-center justify-center gap-4">
-              <span class="text-2xl font-bold text-plum font-body">BUY TICKETS NOW</span>
+              <span class="text-2xl font-bold text-plum">BUY TICKETS NOW</span>
               <div class="bg-plum px-3 py-1">
-                <span class="text-2xl font-bold font-body" style="background-image: url('/img/fun-colors.png'); background-size: 2500% 2500%; background-position: center; background-clip: text; -webkit-background-clip: text; color: transparent;">$299</span>
+                <span class="text-2xl font-bold" style="background-image: url('/img/fun-colors.png'); background-size: 2500% 2500%; background-position: center; background-clip: text; -webkit-background-clip: text; color: transparent;">$299</span>
               </div>
             </div>
           </button>
@@ -81,7 +81,7 @@
         </div>
 
         <!-- Main Text -->
-          <p class="text-2xl text-[#2d2d2d] font-body h-full text-right flex items-center justify-end pl-40 pr-12">
+          <p class="text-2xl text-[#2d2d2d] h-full text-right flex items-center justify-end pl-40 pr-12">
             GET ACCESS TO THE LIVE STREAM AND THE COMMUNITY DISCORD
           </p>
       </div>
@@ -89,7 +89,7 @@
       <!-- Right Section (1/4 width) -->
       <div class="relative w-1/4 border-l-2 border-dashed border-night-rider flex items-center justify-center p-8">
         <!-- Button Text -->
-        <div class="text-2xl text-[#2d2d2d] font-body">
+        <div class="text-2xl text-[#2d2d2d]">
           BUY ONLINE TICKET
         </div>
       </div>

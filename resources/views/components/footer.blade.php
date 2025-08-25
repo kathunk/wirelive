@@ -12,13 +12,13 @@
         <!-- FAQ Item 1 -->
         <details class="group">
           <summary class="flex items-center justify-between cursor-pointer hover:opacity-80 transition-opacity list-none p-4">
-            <span class="text-lg text-fossil font-body">
+            <span class="text-lg text-fossil">
               WILL TALKS BE RECORDED?
             </span>
             <x-icons.svg.plus-sign class="w-3.5 h-3.5 transition-transform group-open:rotate-45" />
           </summary>
           <div class="px-4 pb-4">
-            <p class="text-fossil font-body leading-relaxed">
+            <p class="text-fossil leading-relaxed">
               Yes! All talks will be recorded and made available to attendees after the event.
               You'll receive access to the recordings within a week of the conference.
             </p>
@@ -30,13 +30,13 @@
         <!-- FAQ Item 2 -->
         <details class="group">
           <summary class="flex items-center justify-between cursor-pointer hover:opacity-80 transition-opacity list-none p-4">
-            <span class="text-lg text-fossil font-body">
+            <span class="text-lg text-fossil">
               WHY BUFFALO?
             </span>
             <x-icons.svg.plus-sign class="w-3.5 h-3.5 transition-transform group-open:rotate-45" />
           </summary>
           <div class="px-4 pb-4">
-            <p class="text-fossil font-body">
+            <p class="text-fossil">
               Buffalo is a vibrant, affordable city with a growing tech scene.
               It's easily accessible with an international airport, has great food and culture,
               and provides the perfect backdrop for an intimate, focused conference experience.
@@ -63,9 +63,14 @@
   <div class="flex flex-col lg:flex-row items-center justify-between gap-8 pt-8">
 
     <!-- Copyright -->
-    <div class="text-sm text-fossil font-body">
+    <div class="text-sm text-fossil">
       All rights reserved © 2025
     </div>
+
+    <!--
+        @todo figure out how to make it look like a speech bubble
+        AND have the background image only apply to the speech bubble
+    -->
 
     <!-- Collaboration Credit with Speech Bubble -->
     <div class="relative">
@@ -73,20 +78,20 @@
       <div class="absolute bottom-full mb-2 right-0 bg-[url('/img/fun-colors.png')] bg-cover bg-center px-12 py-4 flex items-center gap-8 flex-row justify-center">
         <div class="flex items-center gap-3">
           <x-icons.svg.dope.will class="mix-blend-exclusion" />
-          <span class="text-sm text-[#58003f] font-body text-nowrap">by Will King</span>
+          <span class="text-sm text-[#58003f] text-nowrap">by Will King</span>
         </div>
         <div class="flex items-center gap-3">
           <x-icons.svg.dope.caleb class="mix-blend-exclusion" />
-          <span class="text-sm text-[#58003f] font-body text-nowrap">by Caleb Porzio</span>
+          <span class="text-sm text-[#58003f] text-nowrap">by Caleb Porzio</span>
         </div>
         <div class="flex items-center gap-3">
           <x-icons.svg.dope.thunk class="mix-blend-exclusion" />
-          <span class="text-sm text-[#58003f] font-body text-nowrap">by Thunk</span>
+          <span class="text-sm text-[#58003f] text-nowrap">by Thunk</span>
         </div>
       </div>
 
       <!-- Collaboration Credit -->
-      <div class="text-sm text-fossil font-body">
+      <div class="text-sm text-fossil">
         A <span class="underline">Dope Boys</span> Collaboration
       </div>
     </div>

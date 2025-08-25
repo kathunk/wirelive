@@ -31,7 +31,7 @@
 
     <!-- Platinum Sponsors -->
     <div class="text-center">
-      <h3 class="text-2xl text-left text-fossil mb-3 font-body uppercase">
+      <h3 class="text-2xl text-left text-fossil mb-3 uppercase">
         PLATINUM
       </h3>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-3.75">
@@ -43,7 +43,7 @@
 
     <!-- Gold Sponsors -->
     <div class="text-center">
-      <h3 class="text-2xl text-left text-fossil mb-3 font-body uppercase">
+      <h3 class="text-2xl text-left text-fossil mb-3 uppercase">
         GOLD
       </h3>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-3.75">
@@ -55,7 +55,7 @@
 
     <!-- Community Sponsors -->
     <div class="text-center">
-      <h3 class="text-2xl text-left text-fossil mb-3 font-body uppercase">
+      <h3 class="text-2xl text-left text-fossil mb-3 uppercase">
         COMMUNITY
       </h3>
       <div class="grid grid-cols-1 md:grid-cols-4 gap-3.75">
@@ -69,8 +69,8 @@
 
   <!-- Call to Action -->
   <div class="flex items-center gap-4 mt-24">
-    <span class="text-base text-fossil font-body">Interested in supporting?</span>
-    <a href="#" class="relative text-base text-fossil font-body hover:opacity-90 transition-opacity">
+    <span class="text-base text-fossil">Interested in supporting?</span>
+    <a href="#" class="relative text-base text-fossil hover:opacity-90 transition-opacity">
       Become a sponsor
       <img class="absolute bottom-0 left-0 w-full h-1 object-cover" src="/img/fun-colors.png" alt="" />
     </a>

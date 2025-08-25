@@ -8,7 +8,7 @@
   <!-- Venue Content -->
   <div class="flex gap-x-6 h-full">
 
-    <!-- Buffalo Downtown - ~61.3% width (817/1332) -->
+    <!-- Buffalo Downtown  -->
     <div class="w-[61.3%] relative h-full">
       <img
         src="/img/locations/buffalo-downtown.png"
@@ -16,13 +16,12 @@
         class="w-full h-full object-cover rounded-lg"
       />
       <div class="absolute -bottom-5 -left-5 bg-fossil px-4 py-2 rounded-md">
-        <p class="text-sm font-medium text-[#2d2d2d] font-body">
+        <p class="text-sm font-medium text-[#2d2d2d]">
           CALEB'S HOMETOWN AND HOME OF THE BUFFALO WINGS
         </p>
       </div>
     </div>
 
-    <!-- Right side - Remaining width as flex column -->
     <div class="flex flex-col justify-between gap-y-6">
       <!-- Art Gallery -->
       <div class="relative">
@@ -32,7 +31,7 @@
           class="w-full h-full object-cover rounded-lg"
         />
         <div class="absolute -top-4 -left-1/5 bg-fossil px-4 py-2 rounded-md">
-          <p class="text-sm font-medium text-[#2d2d2d] font-body">
+          <p class="text-sm font-medium text-[#2d2d2d]">
             I MEAN... LOOK AT THIS BUILDING
           </p>
         </div>
@@ -46,7 +45,7 @@
           class="w-full h-full object-cover rounded-lg"
         />
         <div class="absolute -bottom-5 -right-5 bg-fossil px-4 py-2 rounded-md">
-          <p class="text-sm font-medium text-[#2d2d2d] font-body">
+          <p class="text-sm font-medium text-[#2d2d2d]">
             ONLY 20 MIN AWAY
           </p>
         </div>
