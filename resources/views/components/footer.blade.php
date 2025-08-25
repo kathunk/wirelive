@@ -1,15 +1,15 @@
-<footer class="py-16">
+<footer class="pt-16 pb-8" id="footer">
 
-  <!-- Main Footer Content -->
+  <!-- Main -->
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-12">
 
-    <!-- FAQs Section -->
+    <!-- FAQs -->
     <div>
       <x-headline text="FAQS" />
 
       <div class="mt-8">
         <x-icons.svg.dashed-lines class="w-full h-4 text-fossil" />
-        <!-- FAQ Item 1 -->
+
         <details class="group">
           <summary class="flex items-center justify-between cursor-pointer hover:opacity-80 transition-opacity list-none p-4">
             <span class="text-lg text-fossil">
@@ -27,7 +27,6 @@
 
         <x-icons.svg.dashed-lines class="w-full h-4 text-fossil" />
 
-        <!-- FAQ Item 2 -->
         <details class="group">
           <summary class="flex items-center justify-between cursor-pointer hover:opacity-80 transition-opacity list-none p-4">
             <span class="text-lg text-fossil">
@@ -43,6 +42,7 @@
             </p>
           </div>
         </details>
+
         <x-icons.svg.dashed-lines class="w-full h-4 text-fossil" />
       </div>
     </div>
@@ -59,43 +59,53 @@
 
   </div>
 
-  <!-- Credits Section -->
-  <div class="flex flex-col lg:flex-row items-center justify-between gap-8 pt-8">
+  <!-- Credits -->
+  <div class="relative flex items-end justify-between gap-8 pt-8">
 
     <!-- Copyright -->
     <div class="text-sm text-fossil">
       All rights reserved © 2025
     </div>
 
-    <!--
-        @todo figure out how to make it look like a speech bubble
-        AND have the background image only apply to the speech bubble
-    -->
-
-    <!-- Collaboration Credit with Speech Bubble -->
-    <div class="relative">
-      <!-- Speech Bubble -->
-      <div class="absolute bottom-full mb-2 right-0 bg-[url('/img/fun-colors.png')] bg-cover bg-center px-12 py-4 flex items-center gap-8 flex-row justify-center">
-        <div class="flex items-center gap-3">
-          <x-icons.svg.dope.will class="mix-blend-exclusion" />
-          <span class="text-sm text-[#58003f] text-nowrap">by Will King</span>
-        </div>
-        <div class="flex items-center gap-3">
-          <x-icons.svg.dope.caleb class="mix-blend-exclusion" />
-          <span class="text-sm text-[#58003f] text-nowrap">by Caleb Porzio</span>
-        </div>
-        <div class="flex items-center gap-3">
-          <x-icons.svg.dope.thunk class="mix-blend-exclusion" />
-          <span class="text-sm text-[#58003f] text-nowrap">by Thunk</span>
-        </div>
-      </div>
-
-      <!-- Collaboration Credit -->
-      <div class="text-sm text-fossil">
+    <!-- Collaboration Credit -->
+    <div class="text-sm text-fossil font-mono">
         A <span class="underline">Dope Boys</span> Collaboration
-      </div>
     </div>
 
+    <!-- Speech Bubble -->
+    <div class="absolute bottom-6 right-0">
+      <div class="relative" style="
+          background-image: url('/img/fun-colors.png');
+          background-size: cover;
+          background-position: center;
+          clip-path: polygon(
+              0% 0%,
+              100% 0%,
+              100% 36px,
+              64.5% 36px,
+              61.5% 44px,
+              58.5% 36px,
+              0% 36px
+          );
+          ">
+        <div class="relative h-11">
+            <div class="px-4 py-2 flex items-center gap-8 flex-row justify-center">
+            <div class="flex items-center gap-3">
+                <x-icons.svg.dope.will class="mix-blend-exclusion" />
+                <span class="text-sm text-nowrap">by Will King</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <x-icons.svg.dope.caleb class="mix-blend-exclusion" />
+                <span class="text-sm text-[#58003f] text-nowrap">by Caleb Porzio</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <x-icons.svg.dope.thunk class="mix-blend-exclusion" />
+                <span class="text-sm text-[#58003f] text-nowrap">by Thunk</span>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 </footer>
