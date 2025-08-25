@@ -1,6 +1,6 @@
 <!-- poster.blade.php -->
 <section class="w-full py-16">
-    <div class="relative w-full xl:min-h-[532px] lg:min-h-[480px] md:min-h-[420px] min-h-[360px]">
+    <div class="relative w-full xl:min-h-[532px] lg:min-h-[480px] md:min-h-[420px] min-h-[300px]">
         <!-- WIRES + COLOR OVERLAY (cropped together) -->
         <div class="absolute right-[7.5%] top-[15%] w-[52%] aspect-[726/378] overflow-hidden z-10">
             <img src="/img/fun-wires.png"  alt="" class="absolute inset-0 size-full object-cover">
@@ -38,7 +38,7 @@
         </div>
     </div>
 
-    <div class="flex items-center xl:gap-48 lg:gap-32 md:gap-24 gap-16 xl:mt-20 lg:mt-12 mt-8">
+<div class="flex items-center xl:gap-x-88 lg:gap-40 md:gap-24 gap-16 xl:mt-20 lg:mt-12 md:mt-8 sm:mt-8 mt-2">
         <x-sub-headline
             first="Let's hang out, and talk all things"
             second="Livewire, Flux, Alpine, and Filament"
