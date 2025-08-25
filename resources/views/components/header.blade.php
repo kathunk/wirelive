@@ -1,5 +1,5 @@
 <header class="flex items-center justify-between py-8 w-full">
-  <img class="flex-shrink-0" src="img/wire-live.svg" alt="wire-live.svg" />
+  <x-icons.svg.wire-live class="w-32 h-8" />
   <nav class="flex items-center gap-8">
     <a href="#speakers" class="text-white text-sm font-medium hover:text-fossil transition-colors">
       Speakers

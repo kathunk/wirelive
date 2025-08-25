@@ -1,55 +1,56 @@
-<section class="py-16" id="location">
+<section class="py-16 mt-16" id="location">
 
   <!-- Section Header -->
-  <div class="text-center mb-12">
+  <div class="text-left mb-12">
     <x-headline text="THE VENUE" />
   </div>
 
   <!-- Venue Content -->
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+  <div class="flex gap-x-6 h-full">
 
-    <!-- Buffalo Downtown -->
-    <div class="relative">
+    <!-- Buffalo Downtown - ~61.3% width (817/1332) -->
+    <div class="w-[61.3%] relative h-full">
       <img
-        src="/img/buffalo-downtown-1.png"
+        src="/img/locations/buffalo-downtown.png"
         alt="Buffalo Downtown"
-        class="w-full h-64 object-cover rounded-lg mb-4"
+        class="w-full h-full object-cover rounded-lg"
       />
-      <div class="bg-fossil px-4 py-2 rounded-md inline-block">
+      <div class="absolute -bottom-5 -left-5 bg-fossil px-4 py-2 rounded-md">
         <p class="text-sm font-medium text-[#2d2d2d] font-body">
           CALEB'S HOMETOWN AND HOME OF THE BUFFALO WINGS
         </p>
       </div>
     </div>
 
-    <!-- Art Gallery -->
-    <div class="relative">
-      <img
-        src="/img/buffalo-art-gallery-1.png"
-        alt="Buffalo Art Gallery"
-        class="w-full h-64 object-cover rounded-lg mb-4"
-      />
-      <div class="bg-fossil px-4 py-2 rounded-md inline-block">
-        <p class="text-sm font-medium text-[#2d2d2d] font-body">
-          I MEAN... LOOK AT THIS BUILDING
-        </p>
+    <!-- Right side - Remaining width as flex column -->
+    <div class="flex flex-col justify-between gap-y-6">
+      <!-- Art Gallery -->
+      <div class="relative">
+        <img
+          src="/img/locations/buffalo-art-gallery.png"
+          alt="Buffalo Art Gallery"
+          class="w-full h-full object-cover rounded-lg"
+        />
+        <div class="absolute -top-4 -left-1/5 bg-fossil px-4 py-2 rounded-md">
+          <p class="text-sm font-medium text-[#2d2d2d] font-body">
+            I MEAN... LOOK AT THIS BUILDING
+          </p>
+        </div>
+      </div>
+
+      <!-- Niagara Falls -->
+      <div class="relative">
+        <img
+          src="/img/locations/niagra.png"
+          alt="Niagara Falls"
+          class="w-full h-full object-cover rounded-lg"
+        />
+        <div class="absolute -bottom-5 -right-5 bg-fossil px-4 py-2 rounded-md">
+          <p class="text-sm font-medium text-[#2d2d2d] font-body">
+            ONLY 20 MIN AWAY
+          </p>
+        </div>
       </div>
     </div>
-
-    <!-- Niagara Falls -->
-    <div class="relative">
-      <img
-        src="/img/niagra-1.png"
-        alt="Niagara Falls"
-        class="w-full h-64 object-cover rounded-lg mb-4"
-      />
-      <div class="bg-fossil px-4 py-2 rounded-md inline-block">
-        <p class="text-sm font-medium text-[#2d2d2d] font-body">
-          ONLY 20 MIN AWAY
-        </p>
-      </div>
-    </div>
-
   </div>
-
 </section>

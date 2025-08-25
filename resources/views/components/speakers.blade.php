@@ -8,7 +8,7 @@
             <span class="text-2xl text-fossil">MEMBERS OF THE COMMUNITY YOU KNOW AND LOVE</span>
             <div class="flex items-center w-full gap-4">
                 <img class="flex-1 h-14" src="/img/group-1-2.png" alt="line" />
-                <img class="w-14 h-14 flex-shrink-0" src="/img/subtract.svg" alt="checkmark" />
+                <img class="w-14 h-14 flex-shrink-0" src="/svg/arrow-down-left.svg" alt="checkmark" />
             </div>
         </div>
     </div>

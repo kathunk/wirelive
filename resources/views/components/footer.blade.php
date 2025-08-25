@@ -7,26 +7,43 @@
     <div>
       <x-headline text="FAQS" />
 
-      <div class="space-y-4 mt-8">
+      <div class="mt-8">
+        <x-icons.svg.dashed-lines class="w-full h-4 text-fossil" />
         <!-- FAQ Item 1 -->
-        <div class="border-b border-fossil/20 pb-4">
-          <div class="flex items-center justify-between cursor-pointer hover:opacity-80 transition-opacity">
+        <details class="group">
+          <summary class="flex items-center justify-between cursor-pointer hover:opacity-80 transition-opacity list-none p-4">
             <span class="text-lg text-fossil font-body">
               WILL TALKS BE RECORDED?
             </span>
-            <img src="/img/union-2.svg" alt="" class="w-4 h-4" />
+            <x-icons.svg.plus-sign class="w-3.5 h-3.5 transition-transform group-open:rotate-45" />
+          </summary>
+          <div class="px-4 pb-4">
+            <p class="text-fossil font-body leading-relaxed">
+              Yes! All talks will be recorded and made available to attendees after the event.
+              You'll receive access to the recordings within a week of the conference.
+            </p>
           </div>
-        </div>
+        </details>
+
+        <x-icons.svg.dashed-lines class="w-full h-4 text-fossil" />
 
         <!-- FAQ Item 2 -->
-        <div class="border-b border-fossil/20 pb-4">
-          <div class="flex items-center justify-between cursor-pointer hover:opacity-80 transition-opacity">
+        <details class="group">
+          <summary class="flex items-center justify-between cursor-pointer hover:opacity-80 transition-opacity list-none p-4">
             <span class="text-lg text-fossil font-body">
               WHY BUFFALO?
             </span>
-            <img src="/img/union-2.svg" alt="" class="w-4 h-4" />
+            <x-icons.svg.plus-sign class="w-3.5 h-3.5 transition-transform group-open:rotate-45" />
+          </summary>
+          <div class="px-4 pb-4">
+            <p class="text-fossil font-body">
+              Buffalo is a vibrant, affordable city with a growing tech scene.
+              It's easily accessible with an international airport, has great food and culture,
+              and provides the perfect backdrop for an intimate, focused conference experience.
+            </p>
           </div>
-        </div>
+        </details>
+        <x-icons.svg.dashed-lines class="w-full h-4 text-fossil" />
       </div>
     </div>
 
@@ -34,7 +51,7 @@
     <div>
       <x-headline text="TRAVEL + HOTEL" />
 
-      <p class="text-xl text-fossil font-body leading-relaxed mt-8">
+      <p class="text-xl text-fossil font-mono leading-relaxed mt-8">
         Buffalo has an international Airport to fly into. It's 15 minutes from downtown.
         We will have a room block at the walkable Statler hotel. There are plenty of other hotels in the area.
       </p>
@@ -43,32 +60,35 @@
   </div>
 
   <!-- Credits Section -->
-  <div class="flex flex-col lg:flex-row items-center justify-between gap-8 pt-8 border-t border-fossil/20">
+  <div class="flex flex-col lg:flex-row items-center justify-between gap-8 pt-8">
 
     <!-- Copyright -->
     <div class="text-sm text-fossil font-body">
       All rights reserved © 2025
     </div>
 
-    <!-- Credits -->
-    <div class="flex items-center gap-6">
-      <div class="flex items-center gap-3">
-        <img src="/img/frame-3.svg" alt="" class="w-4 h-4" />
-        <span class="text-sm text-[#58003f] font-body">by Will King</span>
+    <!-- Collaboration Credit with Speech Bubble -->
+    <div class="relative">
+      <!-- Speech Bubble -->
+      <div class="absolute bottom-full mb-2 right-0 bg-[url('/img/fun-colors.png')] bg-cover bg-center px-12 py-4 flex items-center gap-8 flex-row justify-center">
+        <div class="flex items-center gap-3">
+          <x-icons.svg.dope.will class="mix-blend-exclusion" />
+          <span class="text-sm text-[#58003f] font-body text-nowrap">by Will King</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <x-icons.svg.dope.caleb class="mix-blend-exclusion" />
+          <span class="text-sm text-[#58003f] font-body text-nowrap">by Caleb Porzio</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <x-icons.svg.dope.thunk class="mix-blend-exclusion" />
+          <span class="text-sm text-[#58003f] font-body text-nowrap">by Thunk</span>
+        </div>
       </div>
-      <div class="flex items-center gap-3">
-        <img src="/img/frame-2.svg" alt="" class="w-4 h-4" />
-        <span class="text-sm text-[#58003f] font-body">by Caleb Porzio</span>
-      </div>
-      <div class="flex items-center gap-3">
-        <img src="/img/frame.svg" alt="" class="w-4 h-4" />
-        <span class="text-sm text-[#58003f] font-body">by Thunk</span>
-      </div>
-    </div>
 
-    <!-- Collaboration Credit -->
-    <div class="text-sm text-fossil font-body">
-      A <span class="underline">Dope Boys</span> Collaboration
+      <!-- Collaboration Credit -->
+      <div class="text-sm text-fossil font-body">
+        A <span class="underline">Dope Boys</span> Collaboration
+      </div>
     </div>
 
   </div>

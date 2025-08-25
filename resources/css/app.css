@@ -1,6 +1,7 @@
 /* Font imports - these must come before @import "tailwindcss" */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&display=swap");
 
 /* Custom font declarations */
 @font-face {
@@ -30,7 +31,7 @@
     /* Custom font families with web-safe fallbacks */
     --font-display: "SCHABO-XCondensed", "Inter", "Arial Black", "Helvetica Bold", sans-serif;
     --font-body: "AlphaLyrae-Medium", "Inter", "Arial", "Helvetica", sans-serif;
-    --font-mono: "JetBrains Mono", "Fira Code", "Consolas", monospace;
+    --font-mono: "Geist Mono", "JetBrains Mono", "Fira Code", "Consolas", monospace;
 
     --max-w-8xl: 90rem;
 
