@@ -13,28 +13,24 @@
     <div class="relative bg-fossil/10 p-15">
       <div class="relative">
         <!-- Title and Benefits Row -->
-        <div class="flex items-center justify-between">
+        <div class="flex items-center justify-between gap-x-10">
             <!-- IN PERSON Title -->
-            <x-headline-alt text="IN PERSON" />
+            <x-headline text="IN PERSON" compact />
 
           <!-- Benefits Grid -->
           <div class="grid grid-cols-2 gap-y-8 gap-x-3">
-            <div class="flex items-center gap-3">
-              <x-icons.svg.pink-plus-sign class="w-4.5 h-4.75" />
-              <span class="text-2xl text-fossil">ENTRY TO ALL THE EVENTS</span>
-            </div>
-            <div class="flex items-center gap-3">
-              <x-icons.svg.pink-plus-sign class="w-4.5 h-4.75" />
-              <span class="text-2xl text-fossil">THE SWAGGEST OF BAGS</span>
-            </div>
-            <div class="flex items-center gap-3">
-              <x-icons.svg.pink-plus-sign class="w-4.5 h-4.75" />
-              <span class="text-2xl text-fossil">FOOD AND STUFF</span>
-            </div>
-            <div class="flex items-center gap-3">
-              <x-icons.svg.pink-plus-sign class="w-4.5 h-4.75" />
-              <span class="text-2xl text-fossil">AFTER PARTY... DON'T MISS IT</span>
-            </div>
+            <x-ticket-benefit>
+                ENTRY TO ALL THE EVENTS
+            </x-ticket-benefit>
+            <x-ticket-benefit>
+                THE SWAGGEST OF BAGS
+            </x-ticket-benefit>
+            <x-ticket-benefit>
+                FOOD AND STUFF
+            </x-ticket-benefit>
+            <x-ticket-benefit>
+                AFTER PARTY... DON'T MISS IT
+            </x-ticket-benefit>
           </div>
         </div>
       </div>
@@ -74,8 +70,8 @@
       <div class="relative w-3/4">
 
         <!-- ONLINE Text - Absolutely positioned to take full height -->
-        <div class="absolute -left-0.5 top-2 h-full flex items-center">
-          <h3 class="text-[7.5rem] text-[#2d2d2d] font-display uppercase tracking-wide translate-y-[0.10rem]">
+        <div class="absolute -left-1 top-2.5 h-full flex items-center">
+          <h3 class="text-[7.65rem] text-[#2d2d2d] font-display uppercase tracking-wide translate-y-[0.10rem]">
             ONLINE
           </h3>
         </div>

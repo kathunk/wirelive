@@ -1,12 +1,12 @@
 <section class="py-16 mt-16" id="speakers">
   <!-- Section header -->
-    <div class="flex items-end justify-between mb-16 w-full">
-        <div class="self-end">
+    <div class="text-left flex flex-col xl:flex-row xl:items-end justify-between mb-16 w-full gap-y-8">
+        <div class="xl:self-end">
             <x-headline text="The Speakers" />
         </div>
-        <div class="flex flex-col justify-between gap-4 w-fit self-end">
+        <div class="flex flex-col justify-between gap-4 w-fit xl:self-end">
             <span class="text-2xl text-fossil">MEMBERS OF THE COMMUNITY YOU KNOW AND LOVE</span>
-            <div class="flex items-center w-full gap-4">
+            <div class="flex items-center gap-4">
                 <img class="flex-1 h-14" src="/img/group-1-2.png" alt="line" />
                 <img class="w-14 h-14 flex-shrink-0" src="/svg/arrow-down-left.svg" alt="checkmark" />
             </div>

@@ -5,10 +5,10 @@
     <x-headline text="THE SCHEDULE" />
   </div>
 
-  <div class="flex flex-col lg:flex-row justify-between">
+  <div class="flex flex-col lg:flex-row justify-between gap-y-16">
 
     <!-- Day 01 - Schedule Section -->
-    <div class="w-[64.69%]">
+    <div class="lg:w-[64.69%] w-4/5">
       <div class="flex flex-col w-full">
         <!-- Ticket Tab -->
         <div class="relative w-61.75 -mb-px">
@@ -92,7 +92,7 @@
     -->
 
     <!-- Day 02 - Hackathon Section -->
-    <div class="w-[29.38%]">
+    <div class="lg:w-[29.38%] w-3/5">
       <div class="flex flex-col w-full">
         <!-- Combined Tab and Card with Background -->
         <div class="relative" style="
@@ -122,7 +122,7 @@
           </div>
           <!-- Card Content -->
           <div class="p-6 w-full">
-            <h2 class="text-[92px] leading-26 text-plum py-5">
+            <h2 class="lg:text-[92px] md:text-7xl text-5xl lg:leading-26 md:leading-20 leading-16 text-plum py-5">
               HACK-A-THON
             </h2>
 
