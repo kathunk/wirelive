@@ -6,7 +6,7 @@
         <title>Wire ⚡ Live</title>
         @vite(['resources/css/app.css'])
     </head>
-    <body class="min-h-screen w-full font-body bg-night-rider/90" style="background-image: url('/img/dirty-surface-texture.png'); background-size: cover; background-position: center;">
+    <body class="min-h-screen w-full font-body bg-fixed bg-night-rider/90" style="background-image: url('/img/dirty-surface-texture.png'); background-size: cover; background-position: center;">
         <div class="max-w-[94.5rem] h-full mx-auto px-4 md:px-6 lg:px-20
         {{-- @breakpoints --}}
         border

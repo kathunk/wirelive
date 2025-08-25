@@ -8,11 +8,11 @@
   <div class="flex flex-col xl:flex-row justify-between gap-y-16">
 
     <!-- Day 01 - Schedule Section -->
-    <div class="xl:w-[64.69%] sm:w-4/5 w-full">
+    <div class="xl:w-[64.69%] md:w-4/5 w-full">
       <div class="flex flex-col w-full">
         <!-- Ticket Tab -->
         <div class="relative w-61.75 -mb-px">
-            <x-icons.svg.ticket-tab class="w-61.75 h-12" />
+            <x-icons.svg.ticket-tab class="w-61.75 h-12 text-fossil" />
             <div class="absolute left-6 top-3">
                 <span class="text-[44px] leading-none font-normal tracking-normal font-display uppercase">
                     Day 01
@@ -24,7 +24,7 @@
         </div>
         <!-- Card Content -->
         <div class="w-full bg-fossil">
-            <div class="text-night-rider py-4">
+            <div class="text-night-rider pt-4">
               <!-- Schedule items -->
               <x-schedule-item title="COFFEE & CHILL" time="9:00 AM - 9:45 AM" />
               <x-schedule-item title="OPENING REMARKS" time="9:00 AM - 9:45 AM" />
@@ -48,9 +48,9 @@
 
     <!-- Day 02 - Hackathon Section -->
     <div class="xl:w-[29.38%] w-3/5">
-      <div class="flex flex-col w-full">
+      <div class="flex flex-col w-full h-full">
         <!-- Combined Tab and Card with Background -->
-        <div class="relative" style="
+        <div class="relative h-[calc(100%-80px)]" style="
             background-image: url('/img/fun-colors.png');
             background-size: cover;
             background-position: center;

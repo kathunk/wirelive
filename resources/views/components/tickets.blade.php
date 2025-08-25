@@ -13,12 +13,12 @@
     <div class="relative bg-fossil/10 p-15">
       <div class="relative">
         <!-- Title and Benefits Row -->
-        <div class="flex items-center justify-between gap-x-10">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-x-10 gap-y-10">
             <!-- IN PERSON Title -->
             <x-headline text="IN PERSON" compact />
 
           <!-- Benefits Grid -->
-          <div class="grid grid-cols-2 gap-y-8 gap-x-3">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-3">
             <x-ticket-benefit>
                 ENTRY TO ALL THE EVENTS
             </x-ticket-benefit>
@@ -38,17 +38,17 @@
 
     <!-- Buy Tickets Now -->
     <div class="relative">
-      <div class="relative overflow-hidden h-24">
+      <a href="#" class="block relative overflow-hidden h-24 group">
         <img src="/img/fun-colors.png" alt="" class="w-full h-full object-cover" />
 
         <!-- Left Side Stripes -->
-        <div class="absolute left-0 top-0 w-[28%] h-full opacity-40">
-          <div class="w-full h-full" style="background-image: url('/img/group-1-2.png'); background-size: cover; background-repeat: repeat; filter: brightness(0) saturate(100%) invert(0);"></div>
+        <div class="absolute left-0 top-0 w-16 md:w-[22%] h-full opacity-40">
+          <div class="w-full h-full bg-position-[0_0] group-hover:bg-position-[0_-30px] transition-all duration-300" style="background-image: url('/img/group-1-2.png'); background-size: cover; background-repeat: repeat; filter: brightness(0) saturate(100%) invert(0);"></div>
         </div>
 
         <!-- Right Side Stripes -->
-        <div class="absolute right-0 top-0 w-[28%] h-full opacity-40">
-          <div class="w-full h-full" style="background-image: url('/img/group-1-2.png'); background-size: cover; background-repeat: repeat; filter: brightness(0) saturate(100%) invert(0);"></div>
+        <div class="absolute right-0 top-0 w-16 md:w-[22%] h-full opacity-40 ">
+          <div class="w-full h-full bg-position-[0_0] group-hover:bg-position-[0_-30px] transition-all duration-300" style="background-image: url('/img/group-1-2.png'); background-size: cover; background-repeat: repeat; filter: brightness(0) saturate(100%) invert(0);"></div>
         </div>
 
         <div class="absolute inset-0 flex items-center justify-center">
@@ -61,10 +61,11 @@
             </div>
           </button>
         </div>
-      </div>
+      </a>
     </div>
 
     <!-- Online Ticket -->
+    {{--
     <div class="flex h-23 overflow-hidden mt-4 bg-fossil">
       <!-- Left Section (3/4 width) -->
       <div class="relative w-3/4">
@@ -90,5 +91,6 @@
         </div>
       </div>
     </div>
+    --}}
   </div>
 </section>
