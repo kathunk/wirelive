@@ -5,10 +5,10 @@
     <x-headline text="THE SCHEDULE" />
   </div>
 
-  <div class="flex flex-col lg:flex-row justify-between gap-y-16">
+  <div class="flex flex-col xl:flex-row justify-between gap-y-16">
 
     <!-- Day 01 - Schedule Section -->
-    <div class="lg:w-[64.69%] w-4/5">
+    <div class="xl:w-[64.69%] sm:w-4/5 w-full">
       <div class="flex flex-col w-full">
         <!-- Ticket Tab -->
         <div class="relative w-61.75 -mb-px">
@@ -26,59 +26,14 @@
         <div class="w-full bg-fossil">
             <div class="text-night-rider py-4">
               <!-- Schedule items -->
-              <div class="flex items-center justify-between px-6 py-4">
-                <div class="text-lg">COFFEE & CHILL</div>
-                <div class="text-lg font-medium font-mono">9:00 AM - 9:45 AM</div>
-              </div>
-
-              <x-icons.svg.dashed-lines class="w-full h-4" />
-
-              <div class="flex items-center justify-between px-6 py-4">
-                <div class="text-lg">OPENING REMARKS</div>
-                <div class="text-lg font-medium font-mono">9:00 AM - 9:45 AM</div>
-              </div>
-
-              <x-icons.svg.dashed-lines class="w-full h-4" />
-
-              <div class="flex items-center justify-between px-6 py-4">
-                <div class="text-lg">WELCOME CALEB PORZIO</div>
-                <div class="text-lg font-medium font-mono">9:00 AM - 9:45 AM</div>
-              </div>
-
-              <x-icons.svg.dashed-lines class="w-full h-4" />
-
-              <div class="flex items-center justify-between px-6 py-4">
-                <div class="text-lg">CROWD SOURCING COMPONENTS PATRICIO</div>
-                <div class="text-lg font-medium font-mono">9:00 AM - 9:45 AM</div>
-              </div>
-
-              <x-icons.svg.dashed-lines class="w-full h-4" />
-
-              <div class="flex items-center justify-between px-6 py-4">
-                <div class="text-lg">DATATABLES AT THE SNAP OF A FINGER KEVIN MCKEE</div>
-                <div class="text-lg font-medium font-mono">9:00 AM - 9:45 AM</div>
-              </div>
-
-              <x-icons.svg.dashed-lines class="w-full h-4" />
-
-              <div class="flex items-center justify-between px-6 py-4">
-                <div class="text-lg">SQUEEZING EVERY DROP OF PERFORMANCE RYAN CHRISOLOR</div>
-                <div class="text-lg font-medium font-mono">2:00 PM - 3:00 PM</div>
-              </div>
-
-              <x-icons.svg.dashed-lines class="w-full h-4" />
-
-              <div class="flex items-center justify-between px-6 py-4">
-                <div class="text-lg">WHAT'S COMING TO FILAMENT DAN HARRIN</div>
-                <div class="text-lg font-medium font-mono">3:00 PM - 4:00 PM</div>
-              </div>
-
-              <x-icons.svg.dashed-lines class="w-full h-4" />
-
-              <div class="flex items-center justify-between px-6 py-4">
-                <div class="text-lg">BUILD A FUSION SEARCH WITH ALGORITHMS JOHN CAROLES</div>
-                <div class="text-lg font-medium font-mono">4:00 PM - 5:00 PM</div>
-              </div>
+              <x-schedule-item title="COFFEE & CHILL" time="9:00 AM - 9:45 AM" />
+              <x-schedule-item title="OPENING REMARKS" time="9:00 AM - 9:45 AM" />
+              <x-schedule-item title="WELCOME CALEB PORZIO" time="9:00 AM - 9:45 AM" />
+              <x-schedule-item title="CROWD SOURCING COMPONENTS PATRICIO" time="9:00 AM - 9:45 AM" />
+              <x-schedule-item title="DATATABLES AT THE SNAP OF A FINGER KEVIN MCKEE" time="9:00 AM - 9:45 AM" />
+              <x-schedule-item title="SQUEEZING EVERY DROP OF PERFORMANCE RYAN CHRISOLOR" time="2:00 PM - 3:00 PM" />
+              <x-schedule-item title="WHAT'S COMING TO FILAMENT DAN HARRIN" time="3:00 PM - 4:00 PM" />
+              <x-schedule-item title="BUILD A FUSION SEARCH WITH ALGORITHMS JOHN CAROLES" time="4:00 PM - 5:00 PM" />
             </div>
         </div>
 
@@ -92,7 +47,7 @@
     -->
 
     <!-- Day 02 - Hackathon Section -->
-    <div class="lg:w-[29.38%] w-3/5">
+    <div class="xl:w-[29.38%] w-3/5">
       <div class="flex flex-col w-full">
         <!-- Combined Tab and Card with Background -->
         <div class="relative" style="
@@ -122,7 +77,7 @@
           </div>
           <!-- Card Content -->
           <div class="p-6 w-full">
-            <h2 class="lg:text-[92px] md:text-7xl text-5xl lg:leading-26 md:leading-20 leading-16 text-plum py-5">
+            <h2 class="xl:text-[92px] lg:text-7xl text-5xl lg:leading-26 md:leading-20 leading-16 text-plum py-5">
               HACK-A-THON
             </h2>
 

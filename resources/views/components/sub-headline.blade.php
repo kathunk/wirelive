@@ -14,7 +14,7 @@
     }
 @endphp
 
-<span class="{{ $textColor }} text-2xl font-medium uppercase">
+<span class="{{ $textColor }} text-2xl md:text-xl sm:text-lg text-base font-medium uppercase">
     @if($second)
         {{ $first }}<br />
         {{ $second }}

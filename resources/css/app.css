@@ -26,6 +26,8 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 
+    --breakpoint-xs: 30rem;
+
     --text-headline: 12.5rem;
     --text-10xl: 10rem;
 

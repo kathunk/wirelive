@@ -1,20 +1,20 @@
 <section class="py-16 mt-16" id="speakers">
   <!-- Section header -->
-    <div class="text-left flex flex-col xl:flex-row xl:items-end justify-between mb-16 w-full gap-y-8">
+    <div class="text-left flex flex-col xl:flex-row xl:items-end justify-between mb-16 w-full gap-y-8 gap-x-4">
         <div class="xl:self-end">
             <x-headline text="The Speakers" />
         </div>
-        <div class="flex flex-col justify-between gap-4 w-fit xl:self-end">
+        <div class="flex flex-col justify-between gap-4 w-full xl:self-end">
             <span class="text-2xl text-fossil">MEMBERS OF THE COMMUNITY YOU KNOW AND LOVE</span>
-            <div class="flex items-center gap-4">
-                <img class="flex-1 h-14" src="/img/group-1-2.png" alt="line" />
+            <div class="flex items-center gap-4 w-full">
+                <img class="min-w-0 flex-1 h-14 object-cover" src="/img/group-1-2.png" alt="line" />
                 <img class="w-14 h-14 flex-shrink-0" src="/svg/arrow-down-left.svg" alt="checkmark" />
             </div>
         </div>
     </div>
 
   <!-- Speakers grid -->
-  <div class="grid grid-cols-3 gap-8">
+  <div class="grid md:grid-cols-3 grid-cols-1 gap-8">
     <!-- Caleb Porzio -->
     <div class="flex flex-col gap-3">
       <div class="relative overflow-hidden">
