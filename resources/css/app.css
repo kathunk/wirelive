@@ -32,11 +32,13 @@
     --color-cobalt: #0431d2;
 
     --font-body: "AlphaLyrae-Medium", "Inter", "Arial", "Helvetica", sans-serif;
-    --font-display: "SCHABO-XCondensed", "Inter", "Arial Black",
-        "Helvetica Bold", sans-serif;
-    --font-mono: "Geist Mono", "JetBrains Mono", "Fira Code", "Consolas",
-        monospace;
-    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+    --font-display:
+        "SCHABO-XCondensed", "Inter", "Arial Black", "Helvetica Bold",
+        sans-serif;
+    --font-mono:
+        "Geist Mono", "JetBrains Mono", "Fira Code", "Consolas", monospace;
+    --font-sans:
+        "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
         "Noto Color Emoji";
 
@@ -203,4 +205,9 @@ body .fun:before {
     right: -7px;
     cursor: se-resize;
     transform: rotate(180deg);
+}
+
+/* Image inversion utility for fun mode */
+.invert {
+    filter: invert(1);
 }

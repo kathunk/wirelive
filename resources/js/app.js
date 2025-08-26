@@ -1,5 +1,7 @@
 import "./bootstrap";
 
+import.meta.glob(["../images/**", "../fonts/**"]);
+
 document.addEventListener("DOMContentLoaded", function () {
     const hamburgerBtn = document.getElementById("hamburger-btn");
     const closeMenuBtn = document.getElementById("close-menu-btn");

@@ -9,6 +9,7 @@
 </head>
 
 <body class="min-h-screen w-full font-body bg-night-rider
+    @if(app()->environment('local'))
         {{-- @breakpoints for UI testing --}}
             after:absolute
             after:top-4
@@ -23,8 +24,9 @@
             xl:after:bg-indigo-400
             2xl:after:bg-violet-400
         {{-- @endBreakpoints --}}
+    @endif
 ">
-    <x-portal-mask />
+    {{--<x-portal-mask />--}}
     <x-header />
     <x-hero />
     <x-speakers />
@@ -34,6 +36,7 @@
     <x-sponsors />
     <x-footer />
 
+    {{--
     <div class="fun absolute inset-0 z-[100] bg-fossil">
         <x-header fun />
         <x-hero fun />
@@ -44,6 +47,7 @@
         <x-sponsors fun />
         <x-footer fun />
     </div>
+    --}}
 
 </body>
 @vite(['resources/js/app.js'])

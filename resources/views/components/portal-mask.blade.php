@@ -1,3 +1,7 @@
+@props([
+    'fun' => false
+])
+
 <svg width="0" height="0" class="absolute">
     <defs>
         <mask id="portalMask">

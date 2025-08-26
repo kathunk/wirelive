@@ -1,34 +1,46 @@
+@props([
+    'fun' => false
+])
+
+@php
+    $textColor = $fun ? 'text-plum' : 'text-fossil';
+    $buttonTextColor = $fun ? 'text-fossil' : 'text-plum';
+    $benefitTextColor = $fun ? 'text-fossil' : 'text-fossil';
+    $bgOpacity = $fun ? 'bg-cobalt/10' : 'bg-fossil/10';
+    $imageFilter = $fun ? 'invert' : '';
+@endphp
+
 <section class="py-16 mt-16" id="tickets">
+    <x-container>
+        <!-- Section Header -->
+        <div class="mb-2">
+            <h2 class="text-2xl font-mono {{ $textColor }} uppercase">
+                GET A TICKET...NOW
+            </h2>
+        </div>
 
-  <!-- Section Header -->
-  <div class="mb-2">
-    <h2 class="text-2xl font-mono text-fossil uppercase">
-      GET A TICKET...NOW
-    </h2>
-  </div>
-
-  <!-- Ticket Options -->
-  <div>
+        <!-- Ticket Options -->
+        <div>
     <!-- In Person Ticket -->
-    <div class="relative bg-fossil/10 p-15">
+    <div class="relative {{ $bgOpacity }} p-15">
       <div class="relative">
         <!-- Title and Benefits Row -->
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-x-10 gap-y-10">
             <!-- IN PERSON Title -->
-            <x-headline text="IN PERSON" compact />
+            <x-headline text="IN PERSON" compact fun="{{ $fun }}" />
 
           <!-- Benefits Grid -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-3">
-            <x-ticket-benefit>
+            <x-ticket-benefit fun="{{ $fun }}">
                 ENTRY TO ALL THE EVENTS
             </x-ticket-benefit>
-            <x-ticket-benefit>
+            <x-ticket-benefit fun="{{ $fun }}">
                 THE SWAGGEST OF BAGS
             </x-ticket-benefit>
-            <x-ticket-benefit>
+            <x-ticket-benefit fun="{{ $fun }}">
                 FOOD AND STUFF
             </x-ticket-benefit>
-            <x-ticket-benefit>
+            <x-ticket-benefit fun="{{ $fun }}">
                 AFTER PARTY... DON'T MISS IT
             </x-ticket-benefit>
           </div>
@@ -39,7 +51,7 @@
     <!-- Buy Tickets Now -->
     <div class="relative">
       <a href="#" class="block relative overflow-hidden h-24 group">
-        <img src="/img/fun-colors.png" alt="" class="w-full h-full object-cover" />
+        <img src="/img/fun-colors.png" alt="" class="w-full h-full object-cover {{ $imageFilter }}" />
 
         <!-- Left Side Stripes -->
         <div class="absolute left-0 top-0 w-16 md:w-[22%] h-full opacity-40">
@@ -54,7 +66,7 @@
         <div class="absolute inset-0 flex items-center justify-center">
           <button class="bg-transparent py-4 px-8 hover:opacity-90 transition-opacity">
             <div class="flex items-center justify-center gap-4">
-              <span class="text-2xl font-bold text-plum">BUY TICKETS NOW</span>
+              <span class="text-2xl font-bold {{ $buttonTextColor }}">BUY TICKETS NOW</span>
               <div class="bg-plum px-3 py-1">
                 <span class="text-2xl font-bold" style="background-image: url('/img/fun-colors.png'); background-size: 2500% 2500%; background-position: center; background-clip: text; -webkit-background-clip: text; color: transparent;">$299</span>
               </div>
@@ -92,5 +104,6 @@
       </div>
     </div>
     --}}
-  </div>
+        </div>
+    </x-container>
 </section>
