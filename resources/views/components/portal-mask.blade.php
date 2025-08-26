@@ -1,8 +1,4 @@
-@props([
-    'fun' => false
-])
-
-<svg width="0" height="0" class="absolute">
+<svg width="0" height="0" class="absolute pointer-events-none">
     <defs>
         <mask id="portalMask">
             <rect width="100%" height="100%" fill="black" />
@@ -11,8 +7,8 @@
     </defs>
 </svg>
 
-<div class="portal-controls" id="portalControls">
-    <div class="portal-frame" id="portalFrame">
+<div class="portal-controls pointer-events-none" id="portalControls">
+    <div class="portal-frame pointer-events-none" id="portalFrame">
         <div class="resize-handle-wrapper nw" data-handle="nw">
             <div class="resize-handle"></div>
         </div>
@@ -111,8 +107,8 @@
         if (diff > 0) {
             r.x += diff / 2;
         }
-        console.log(r);
         return {
+            target: null,
             rect: r,                 // {x,y,w,h}
             mode: "idle",            // "idle" | "drag" | "resize"
             handle: null,            // "nw" | "ne" | "sw" | "se" | null
@@ -173,6 +169,16 @@
 
     // --- Pointer Logic ----------------------------------------------------------
     function onPointerDown(e) {
+        state.target = e.target;
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+        const { x, y, w, h } = state.rect;
+
+        const withinX = mouseX > x && mouseX < x + w;
+        const withinY = mouseY > y && mouseY < y + h;
+        const isInside = withinX && withinY;
+        if (!isInside) return;
+
         // If a resize handle, start resize; otherwise drag
         const handleEl = e.target.closest(".resize-handle-wrapper");
         const handle = handleEl ? handleEl.dataset.handle : null;
@@ -188,10 +194,11 @@
         DOM.portalControls.setPointerCapture?.(e.pointerId);
         document.body.style.userSelect = "none";
         DOM.portalFrame.style.cursor = handle ? "nwse-resize" : "grabbing";
-        e.preventDefault();
+        // e.preventDefault();
     }
 
     function onPointerMove(e) {
+        state.target = null;
         if (state.mode === "idle") return;
 
         const dx = e.clientX - state.startPointer.x;
@@ -229,17 +236,18 @@
             update({ rect: { x, y, w, h } });
         }
 
-        e.preventDefault();
+        // e.preventDefault();
     }
 
-    function endInteraction() {
+    function endInteraction(e) {
+        state.target?.click();
         if (state.mode === "idle") return;
         update({ mode: "idle", handle: null });
         DOM.portalFrame.style.cursor = "move";
         document.body.style.userSelect = "";
     }
 
-    DOM.portalControls.addEventListener("pointerdown", onPointerDown);
+    window.addEventListener("pointerdown", onPointerDown);
     window.addEventListener("pointermove", onPointerMove, { passive: false });
     window.addEventListener("pointerup", endInteraction);
     window.addEventListener("pointercancel", endInteraction);
