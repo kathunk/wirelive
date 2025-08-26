@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&display=swap");
-
 @import "tailwindcss";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
 /* Custom font declarations */
 @font-face {
@@ -26,22 +26,25 @@
     --breakpoint-xs: 30rem;
 
     --color-fossil: #dad1c8;
-    --color-gangsters-gold: #FFD623;
+    --color-gangsters-gold: #ffd623;
     --color-night-rider: #2d2d2d;
     --color-plum: #58003f;
+    --color-cobalt: #0431d2;
 
     --font-body: "AlphaLyrae-Medium", "Inter", "Arial", "Helvetica", sans-serif;
-    --font-display: "SCHABO-XCondensed", "Inter", "Arial Black", "Helvetica Bold", sans-serif;
-    --font-mono: "Geist Mono", "JetBrains Mono", "Fira Code", "Consolas", monospace;
-    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-display: "SCHABO-XCondensed", "Inter", "Arial Black",
+        "Helvetica Bold", sans-serif;
+    --font-mono: "Geist Mono", "JetBrains Mono", "Fira Code", "Consolas",
+        monospace;
+    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
 
     --max-w-8xl: 90rem;
 
     --text-10xl: 10rem;
     --text-headline: 12.5rem;
 }
-
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
 * {
     -webkit-font-smoothing: antialiased;
@@ -72,4 +75,30 @@ a {
 .font-mono {
     font-family: var(--font-mono);
     font-display: swap;
+}
+
+body {
+    position: relative;
+}
+
+body:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../images/bg.png");
+    background-size: cover;
+    mix-blend-mode: soft-light;
+    background-repeat: repeat;
+    opacity: 0.3;
+}
+
+body .fun:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../images/bg-fun.png");
+    background-size: cover;
+    mix-blend-mode: hard-light;
+    background-repeat: repeat;
+    opacity: 0.3;
 }
