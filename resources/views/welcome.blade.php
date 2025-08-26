@@ -24,30 +24,28 @@
             2xl:after:bg-violet-400
         {{-- @endBreakpoints --}}
 ">
-    <div class="max-w-[94.5rem] h-full mx-auto px-4 md:px-6 lg:px-20">
-        <x-header />
-        <x-hero />
-        <x-speakers />
-        <x-schedule />
-        <x-tickets />
-        <x-location />
-        <x-sponsors />
-        <x-footer />
-    </div>
+    <x-portal-mask />
+    <x-header />
+    <x-hero />
+    <x-speakers />
+    <x-schedule />
+    <x-tickets />
+    <x-location />
+    <x-sponsors />
+    <x-footer />
 
     <div class="fun absolute inset-0 z-[100] bg-fossil">
-        <div class="max-w-[94.5rem] h-full mx-auto px-4 md:px-6 lg:px-20">
-            <x-header fun />
-            <x-hero />
-            <x-speakers />
-            <x-schedule />
-            <x-tickets />
-            <x-location />
-            <x-sponsors />
-            <x-footer />
-        </div>
+        <x-header fun />
+        <x-hero fun />
+        <x-speakers fun />
+        <x-schedule fun />
+        <x-tickets fun />
+        <x-location fun />
+        <x-sponsors fun />
+        <x-footer fun />
     </div>
 
 </body>
+@vite(['resources/js/app.js'])
 
 </html>

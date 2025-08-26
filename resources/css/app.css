@@ -82,6 +82,7 @@ body {
 }
 
 body:before {
+    z-index: -1;
     content: "";
     position: absolute;
     inset: 0;
@@ -92,7 +93,14 @@ body:before {
     opacity: 0.3;
 }
 
+body .fun {
+    mask: url(#portalMask);
+    -webkit-mask: url(#portalMask);
+    contain: layout paint style;
+}
+
 body .fun:before {
+    z-index: -1;
     content: "";
     position: absolute;
     inset: 0;
@@ -101,4 +109,98 @@ body .fun:before {
     mix-blend-mode: hard-light;
     background-repeat: repeat;
     opacity: 0.3;
+}
+
+.portal-controls {
+    position: absolute;
+    pointer-events: auto;
+    z-index: 1001;
+    cursor: move;
+    user-select: none;
+    touch-action: none;
+}
+
+.portal-frame {
+    position: absolute;
+    border: 1px solid #dad1c8;
+    border-radius: 0px;
+    box-sizing: content-box;
+}
+
+.resize-handle-wrapper {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.resize-handle-wrapper:before {
+    content: "";
+    width: 4px;
+    height: 1px;
+    background: #2d2d2d;
+    position: absolute;
+    top: 6px;
+    left: 12px;
+}
+
+.resize-handle {
+    pointer-events: none;
+}
+
+.resize-handle:before {
+    content: "";
+    width: 1px;
+    height: 4px;
+    background: #2d2d2d;
+    position: absolute;
+    top: 12px;
+    left: 6px;
+}
+
+.resize-handle-wrapper:after {
+    content: "";
+    width: 4px;
+    height: 1px;
+    background: #dad1c8;
+    position: absolute;
+    top: 6px;
+    left: 2px;
+}
+
+.resize-handle:after {
+    content: "";
+    width: 1px;
+    height: 4px;
+    background: #dad1c8;
+    position: absolute;
+    top: 2px;
+    left: 6px;
+}
+
+.resize-handle-wrapper.nw {
+    top: -7px;
+    left: -7px;
+    cursor: nw-resize;
+}
+
+.resize-handle-wrapper.ne {
+    top: -7px;
+    right: -7px;
+    cursor: ne-resize;
+    transform: rotate(90deg);
+}
+
+.resize-handle-wrapper.sw {
+    bottom: -7px;
+    left: -7px;
+    cursor: sw-resize;
+    transform: rotate(-90deg);
+}
+
+.resize-handle-wrapper.se {
+    bottom: -7px;
+    right: -7px;
+    cursor: se-resize;
+    transform: rotate(180deg);
 }

@@ -13,7 +13,8 @@
     $mobileMenuId = 'mobile-menu' . ($fun ? '--fun' : '');
 @endphp
 
-<header class="flex items-center justify-between py-4 md:py-8 w-full z-50 relative">
+<header class="absolute top-0 inset-x-0 w-full z-50">
+    <x-container class="flex items-center justify-between py-4 md:py-8">
     <x-icons.svg.wire-live
         class="w-24 md:w-32 h-auto relative z-10 {{ $logoColor }}" />
     <nav>
@@ -43,38 +44,7 @@
                     <x-nav-links fun="{{ $fun }}" />
                 </div>
             </div>
-        </div>
-    </nav>
+            </div>
+        </nav>
+    </x-container>
 </header>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const hamburgerBtn = document.getElementById('{{ $hamburgerId }}');
-        const closeMenuBtn = document.getElementById('{{ $closeMenuId }}');
-        const mobileMenu = document.getElementById('{{ $mobileMenuId }}');
-
-        function openMenu() {
-            mobileMenu.setAttribute('aria-expanded', 'true');
-        }
-
-        function closeMenu() {
-            mobileMenu.setAttribute('aria-expanded', 'false');
-        }
-
-        hamburgerBtn.addEventListener('click', openMenu);
-        closeMenuBtn.addEventListener('click', closeMenu);
-
-        // Close menu when navigation links are clicked
-        const navLinks = mobileMenu.querySelectorAll('a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', closeMenu);
-        });
-
-        // Close menu on escape key
-        document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
-                closeMenu();
-            }
-        });
-    });
-</script>
