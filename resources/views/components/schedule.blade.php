@@ -1,20 +1,31 @@
+@props([
+    'fun' => false
+])
+
+@php
+    $textColor = $fun ? 'text-plum' : 'text-fossil';
+    $bgColor = $fun ? 'bg-cobalt' : 'bg-fossil';
+    $contentTextColor = $fun ? 'text-fossil' : 'text-night-rider';
+    $imageFilter = $fun ? 'invert' : '';
+@endphp
+
 <section class="py-16" id="schedule">
+    <x-container>
+        <!-- Section Header -->
+        <div class="text-left mb-16">
+            <x-headline text="THE SCHEDULE" fun="{{ $fun }}" />
+        </div>
 
-  <!-- Section Header -->
-  <div class="text-left mb-16">
-    <x-headline text="THE SCHEDULE" />
-  </div>
-
-  <div class="flex flex-col xl:flex-row justify-between gap-y-16">
+        <div class="flex flex-col xl:flex-row justify-between gap-y-16">
 
     <!-- Day 01 - Schedule Section -->
     <div class="xl:w-[64.69%] md:w-4/5 w-full">
       <div class="flex flex-col w-full">
         <!-- Ticket Tab -->
         <div class="relative w-61.75 -mb-px">
-            <x-icons.svg.ticket-tab class="w-61.75 h-12 text-fossil" />
+            <x-icons.svg.ticket-tab class="w-61.75 h-12 {{ $textColor }}" />
             <div class="absolute left-6 top-3">
-                <span class="text-[44px] leading-none font-normal tracking-normal font-display uppercase">
+                <span class="text-[44px] leading-none font-normal tracking-normal font-display uppercase {{ $fun ? 'text-fossil' : 'text-night-rider' }}">
                     Day 01
                 </span>
             </div>
@@ -23,21 +34,21 @@
             </div>
         </div>
         <!-- Card Content -->
-        <div class="w-full bg-fossil">
-            <div class="text-night-rider pt-4">
+        <div class="w-full {{ $bgColor }}">
+            <div class="{{ $contentTextColor }} pt-4">
               <!-- Schedule items -->
-              <x-schedule-item title="COFFEE & CHILL" time="9:00 AM - 9:45 AM" />
-              <x-schedule-item title="OPENING REMARKS" time="9:00 AM - 9:45 AM" />
-              <x-schedule-item title="WELCOME CALEB PORZIO" time="9:00 AM - 9:45 AM" />
-              <x-schedule-item title="CROWD SOURCING COMPONENTS PATRICIO" time="9:00 AM - 9:45 AM" />
-              <x-schedule-item title="DATATABLES AT THE SNAP OF A FINGER KEVIN MCKEE" time="9:00 AM - 9:45 AM" />
-              <x-schedule-item title="SQUEEZING EVERY DROP OF PERFORMANCE RYAN CHRISOLOR" time="2:00 PM - 3:00 PM" />
-              <x-schedule-item title="WHAT'S COMING TO FILAMENT DAN HARRIN" time="3:00 PM - 4:00 PM" />
-              <x-schedule-item title="BUILD A FUSION SEARCH WITH ALGORITHMS JOHN CAROLES" time="4:00 PM - 5:00 PM" />
+              <x-schedule-item title="COFFEE & CHILL" time="9:00 AM - 9:45 AM" fun="{{ $fun }}" />
+              <x-schedule-item title="OPENING REMARKS" time="9:00 AM - 9:45 AM" fun="{{ $fun }}" />
+              <x-schedule-item title="WELCOME CALEB PORZIO" time="9:00 AM - 9:45 AM" fun="{{ $fun }}" />
+              <x-schedule-item title="CROWD SOURCING COMPONENTS PATRICIO" time="9:00 AM - 9:45 AM" fun="{{ $fun }}" />
+              <x-schedule-item title="DATATABLES AT THE SNAP OF A FINGER KEVIN MCKEE" time="9:00 AM - 9:45 AM" fun="{{ $fun }}" />
+              <x-schedule-item title="SQUEEZING EVERY DROP OF PERFORMANCE RYAN CHRISOLOR" time="2:00 PM - 3:00 PM" fun="{{ $fun }}" />
+              <x-schedule-item title="WHAT'S COMING TO FILAMENT DAN HARRIN" time="3:00 PM - 4:00 PM" fun="{{ $fun }}" />
+              <x-schedule-item title="BUILD A FUSION SEARCH WITH ALGORITHMS JOHN CAROLES" time="4:00 PM - 5:00 PM" fun="{{ $fun }}" />
             </div>
         </div>
 
-        <img src="/img/rip.png" alt="rip.png" class="w-full h-20 -mt-1" />
+        <img src="/img/rip.png" alt="rip.png" class="w-full h-20 -mt-1 {{ $imageFilter }}" />
       </div>
     </div>
 
@@ -76,7 +87,7 @@
               HACK-A-THON
             </h2>
 
-            <p class="text-xl leading-relaxed">
+            <p class="text-xl leading-relaxed {{ $fun ? 'text-fossil' : 'text-night-rider' }}">
               We rented a space out to chill, eat buffalo wings and play our collaboratively.
               We'll make a game or something and have prizes or whatever.
             </p>
@@ -85,5 +96,6 @@
       </div>
     </div>
 
-  </div>
+        </div>
+    </x-container>
 </section>

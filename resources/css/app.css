@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&display=swap");
-
 @import "tailwindcss";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
 /* Custom font declarations */
 @font-face {
@@ -26,22 +26,27 @@
     --breakpoint-xs: 30rem;
 
     --color-fossil: #dad1c8;
-    --color-gangsters-gold: #FFD623;
+    --color-gangsters-gold: #ffd623;
     --color-night-rider: #2d2d2d;
     --color-plum: #58003f;
+    --color-cobalt: #0431d2;
 
     --font-body: "AlphaLyrae-Medium", "Inter", "Arial", "Helvetica", sans-serif;
-    --font-display: "SCHABO-XCondensed", "Inter", "Arial Black", "Helvetica Bold", sans-serif;
-    --font-mono: "Geist Mono", "JetBrains Mono", "Fira Code", "Consolas", monospace;
-    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-display:
+        "SCHABO-XCondensed", "Inter", "Arial Black", "Helvetica Bold",
+        sans-serif;
+    --font-mono:
+        "Geist Mono", "JetBrains Mono", "Fira Code", "Consolas", monospace;
+    --font-sans:
+        "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
 
     --max-w-8xl: 90rem;
 
     --text-10xl: 10rem;
     --text-headline: 12.5rem;
 }
-
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
 * {
     -webkit-font-smoothing: antialiased;
@@ -72,4 +77,137 @@ a {
 .font-mono {
     font-family: var(--font-mono);
     font-display: swap;
+}
+
+body {
+    position: relative;
+}
+
+body:before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../images/bg.png");
+    background-size: cover;
+    mix-blend-mode: soft-light;
+    background-repeat: repeat;
+    opacity: 0.3;
+}
+
+body .fun {
+    mask: url(#portalMask);
+    -webkit-mask: url(#portalMask);
+    contain: layout paint style;
+}
+
+body .fun:before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../images/bg-fun.png");
+    background-size: cover;
+    mix-blend-mode: hard-light;
+    background-repeat: repeat;
+    opacity: 0.3;
+}
+
+.portal-controls {
+    position: absolute;
+    pointer-events: auto;
+    z-index: 1001;
+    cursor: move;
+    user-select: none;
+    touch-action: none;
+}
+
+.portal-frame {
+    position: absolute;
+    border: 1px solid #dad1c8;
+    border-radius: 0px;
+    box-sizing: content-box;
+}
+
+.resize-handle-wrapper {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.resize-handle-wrapper:before {
+    content: "";
+    width: 4px;
+    height: 1px;
+    background: #2d2d2d;
+    position: absolute;
+    top: 6px;
+    left: 12px;
+}
+
+.resize-handle {
+    pointer-events: none;
+}
+
+.resize-handle:before {
+    content: "";
+    width: 1px;
+    height: 4px;
+    background: #2d2d2d;
+    position: absolute;
+    top: 12px;
+    left: 6px;
+}
+
+.resize-handle-wrapper:after {
+    content: "";
+    width: 4px;
+    height: 1px;
+    background: #dad1c8;
+    position: absolute;
+    top: 6px;
+    left: 2px;
+}
+
+.resize-handle:after {
+    content: "";
+    width: 1px;
+    height: 4px;
+    background: #dad1c8;
+    position: absolute;
+    top: 2px;
+    left: 6px;
+}
+
+.resize-handle-wrapper.nw {
+    top: -7px;
+    left: -7px;
+    cursor: nw-resize;
+}
+
+.resize-handle-wrapper.ne {
+    top: -7px;
+    right: -7px;
+    cursor: ne-resize;
+    transform: rotate(90deg);
+}
+
+.resize-handle-wrapper.sw {
+    bottom: -7px;
+    left: -7px;
+    cursor: sw-resize;
+    transform: rotate(-90deg);
+}
+
+.resize-handle-wrapper.se {
+    bottom: -7px;
+    right: -7px;
+    cursor: se-resize;
+    transform: rotate(180deg);
+}
+
+/* Image inversion utility for fun mode */
+.invert {
+    filter: invert(1);
 }

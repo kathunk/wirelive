@@ -2,15 +2,16 @@
     'text' => null,
     'first' => null,
     'second' => null,
+    'fun' => false,
     'onDark' => false,
     'onLight' => false,
 ])
 
 @php
     $textColor = match (true) {
-        $onLight => 'text-night-rider',
-        $onDark => 'text-fossil',
-        default => 'text-fossil',
+        $onLight => $fun ? 'text-fossil' : 'text-night-rider',
+        $onDark => $fun ? 'text-plum' : 'text-fossil',
+        default => $fun ? 'text-night-rider' : 'text-fossil',
     }
 @endphp
 
