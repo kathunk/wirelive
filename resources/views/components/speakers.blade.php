@@ -1,6 +1,6 @@
 <section class="py-16 mt-16" id="speakers">
   <!-- Section header -->
-    <div class="text-left flex flex-col xl:flex-row xl:items-end justify-between mb-16 w-full gap-y-8 gap-x-4">
+    <div class="text-left flex flex-col xl:flex-row xl:items-end justify-between mb-16 w-full gap-y-8 gap-x-16">
         <div class="xl:self-end">
             <x-headline text="The Speakers" />
         </div>

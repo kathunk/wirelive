@@ -11,11 +11,12 @@
         {{-- @breakpoints for UI testing --}}
             border-2
             border-red-500
-            sm:border-orange-400
-            md:border-yellow-400
-            lg:border-green-400
-            xl:border-blue-400
-            2xl:border-indigo-400
+            xs:border-orange-400
+            sm:border-yellow-400
+            md:border-green-400
+            lg:border-blue-400
+            xl:border-indigo-400
+            2xl:border-violet-400
         {{-- @endBreakpoints --}}
         ">
             <x-header />
