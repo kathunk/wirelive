@@ -9,7 +9,7 @@
 
     $heightClasses = match($tier) {
         'platinum' => 'h-40',
-        'gold' => 'h-32',
+        'gold' => 'h-32 xs:h-37.25 md:h-32',
         'community' => 'h-24',
         default => 'h-24'
     };

@@ -68,12 +68,17 @@
     </div>
 
     <!-- Collaboration Credit -->
-    <div class="text-sm text-fossil font-mono">
-        A <span class="underline">Dope Boys</span> Collaboration
+    <div class="text-sm text-fossil font-mono peer" tabindex="0">
+        A <span class="underline decoration-dotted decoration-gangsters-gold">Dope Boys</span> Collaboration
     </div>
 
     <!-- Speech Bubble -->
-    <div class="absolute bottom-6 right-0">
+    <div @class([
+        'absolute invisible opacity-0 bottom-6 right-0 duration-300 ease-in-out transition-all',
+        'peer-active:opacity-100 peer-active:visible',
+        'peer-focus:opacity-100 peer-focus:visible',
+        'peer-hover:opacity-100 peer-hover:visible',
+    ])>
       <div class="relative" style="
           background-image: url('/img/fun-colors.png');
           background-size: cover;

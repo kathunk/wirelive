@@ -72,13 +72,13 @@
 
         <!-- ONLINE Text - Absolutely positioned to take full height -->
         <div class="absolute -left-1 top-2.5 h-full flex items-center">
-          <h3 class="text-[7.65rem] text-[#2d2d2d] font-display uppercase tracking-wide translate-y-[0.10rem]">
+          <h3 class="text-[7.65rem] text-night-rider font-display uppercase tracking-wide translate-y-[0.10rem]">
             ONLINE
           </h3>
         </div>
 
         <!-- Main Text -->
-          <p class="text-2xl text-[#2d2d2d] h-full text-right flex items-center justify-end pl-40 pr-12">
+          <p class="text-2xl text-night-rider h-full text-right flex items-center justify-end pl-40 pr-12">
             GET ACCESS TO THE LIVE STREAM AND THE COMMUNITY DISCORD
           </p>
       </div>
@@ -86,7 +86,7 @@
       <!-- Right Section (1/4 width) -->
       <div class="relative w-1/4 border-l-2 border-dashed border-night-rider flex items-center justify-center p-8">
         <!-- Button Text -->
-        <div class="text-2xl text-[#2d2d2d]">
+        <div class="text-2xl text-night-rider">
           BUY ONLINE TICKET
         </div>
       </div>

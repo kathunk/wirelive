@@ -41,13 +41,8 @@
       </div>
     </div>
 
-    <!--
-        @todo figure out how we can only apply the background image to the
-        card and tab but not the empty area beside the tab
-    -->
-
     <!-- Day 02 - Hackathon Section -->
-    <div class="xl:w-[29.38%] w-3/5">
+    <div class="xl:w-[29.38%] md:w-3/5 xs:w-4/5 w-full">
       <div class="flex flex-col w-full h-full">
         <!-- Combined Tab and Card with Background -->
         <div class="relative h-[calc(100%-80px)]" style="

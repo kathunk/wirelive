@@ -20,10 +20,10 @@
         <!-- Mobile Menu Overlay -->
         <div
             id="mobile-menu"
-            class="fixed inset-0 bg-[#2d2d2d] z-50 hidden"
+            class="fixed inset-0 bg-night-rider z-50 hidden"
         >
             <!-- Header with Logo and Close Button -->
-            <div class="flex items-center justify-between p-6">
+            <div class="flex items-center justify-between py-8 px-4">
                 <x-icons.svg.wire-live class="w-32 h-8" />
                 <button
                     id="close-menu-btn"

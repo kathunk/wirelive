@@ -26,9 +26,6 @@
     <x-headline text="WOULDN'T BE POSSIBLE WITHOUT" />
   </div>
 
-  <!-- Sponsors Tiers -->
-  <div class="space-y-12">
-
     <!-- Platinum Sponsors -->
     <div class="text-center">
       <h3 class="text-2xl text-left text-fossil mb-3 uppercase">
@@ -42,30 +39,30 @@
     </div>
 
     <!-- Gold Sponsors -->
-    <div class="text-center">
-      <h3 class="text-2xl text-left text-fossil mb-3 uppercase">
-        GOLD
-      </h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-3.75">
-        @foreach($gold as $name => $url)
-          <x-sponsor :name="$name" :url="$url" tier="gold" />
-        @endforeach
-      </div>
-    </div>
+    <div class="flex flex-col xs:flex-row md:flex-col gap-y-12 pt-12 w-full gap-x-4">
+        <div class="text-center w-full">
+        <h3 class="text-2xl text-left text-fossil mb-3 uppercase">
+            GOLD
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3.75">
+            @foreach($gold as $name => $url)
+            <x-sponsor :name="$name" :url="$url" tier="gold" />
+            @endforeach
+        </div>
+        </div>
 
-    <!-- Community Sponsors -->
-    <div class="text-center">
-      <h3 class="text-2xl text-left text-fossil mb-3 uppercase">
-        COMMUNITY
-      </h3>
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-3.75">
-        @foreach($community as $name => $url)
-          <x-sponsor :name="$name" :url="$url" tier="community" />
-        @endforeach
-      </div>
+        <!-- Community Sponsors -->
+        <div class="text-center w-full">
+        <h3 class="text-2xl text-left text-fossil mb-3 uppercase">
+            COMMUNITY
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-3.75">
+            @foreach($community as $name => $url)
+            <x-sponsor :name="$name" :url="$url" tier="community" />
+            @endforeach
+        </div>
+        </div>
     </div>
-
-  </div>
 
   <!-- Call to Action -->
   <div class="flex items-center gap-4 mt-24">
