@@ -26,7 +26,7 @@
 @endphp
 
 <div class="{{ $bgColor }} p-6 flex items-center justify-center">
-    <a href="#" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-center w-full h-full">
+    <a href="mailto:events@wireable.dev" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-center w-full h-full">
         <div class="flex flex-col gap-3 items-center justify-center {{ $heightClasses }} transition-transform group-hover:scale-105">
             <span class="font-mono text-fossil text-center {{ $textSize }}">
                 Interested in supporting?

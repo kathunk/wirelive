@@ -15,35 +15,51 @@
 
 <header class="absolute top-0 inset-x-0 w-full z-50">
     <x-container class="flex items-center justify-between py-4 md:py-8">
-    <x-icons.svg.wire-live
-        class="w-24 md:w-32 h-auto relative z-10 {{ $logoColor }}" />
-    <nav>
-        <!-- Desktop Navigation -->
-        <div class="hidden lg:flex items-center gap-8">
-            <x-nav-links fun="{{ $fun }}" />
+        <!-- Logo Container with relative positioning -->
+        <div class="relative">
+            <x-icons.svg.wire-live class="w-24 md:w-32 h-auto relative z-10 {{ $logoColor }}" />
+
+            <!-- Hosts - positioned absolutely relative to logo container -->
+            <div class="font-mono absolute left-0 top-full z-10 mt-1 {{ $logoColor }} text-xs text-nowrap md:text-base">
+                <span>hosted by</span>
+                <a href="https://livewire.laravel.com" target="_blank">
+                    Livewire
+                </a>
+                <span>+<span>
+                <a href="https://thunk.dev" target="_blank" class="relative transition-colors">
+                    Thunk
+                    <img class="absolute bottom-0 left-0 w-full h-1 object-cover" src="/img/fun-colors.png" alt="" />
+                </a>
+            </div>
         </div>
 
-        <!-- Mobile Hamburger Menu -->
-        <div class="lg:hidden isolate group" id="{{ $mobileMenuId }}" aria-expanded="false">
-            <!-- Hamburger Button -->
-            <button id="{{ $hamburgerId }}"
-                class="{{ $openClasses }} p-2 hover:opacity-70 transition-opacity duration-200 group-aria-expanded:hidden z-10 relative"
-                aria-label="Toggle menu">
-                <x-icons.svg.hamburger class="w-6 h-6" />
-            </button>
-            <button id="{{ $closeMenuId }}"
-                class="{{ $closeClasses }} p-2 hover:opacity-70 transition-opacity duration-200 group-aria-expanded:block hidden z-10 relative"
-                aria-label="Close menu">
-                <x-icons.svg.close class="w-6 h-6" />
-            </button>
-
-            <!-- Mobile Menu Overlay -->
-            <div class="fixed inset-0 {{ $mobileMenuClasses }} hidden group-aria-expanded:block pt-20">
-                <!-- Mobile Navigation Links -->
-                <div class="flex flex-col items-center gap-6 p-6">
-                    <x-nav-links fun="{{ $fun }}" />
-                </div>
+        <nav>
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex items-center gap-8">
+                <x-nav-links fun="{{ $fun }}" />
             </div>
+
+            <!-- Mobile Hamburger Menu -->
+            <div class="lg:hidden isolate group" id="{{ $mobileMenuId }}" aria-expanded="false">
+                <!-- Hamburger Button -->
+                <button id="{{ $hamburgerId }}"
+                    class="{{ $openClasses }} p-2 hover:opacity-70 transition-opacity duration-200 group-aria-expanded:hidden z-10 relative"
+                    aria-label="Toggle menu">
+                    <x-icons.svg.hamburger class="w-6 h-6" />
+                </button>
+                <button id="{{ $closeMenuId }}"
+                    class="{{ $closeClasses }} p-2 hover:opacity-70 transition-opacity duration-200 group-aria-expanded:block hidden z-10 relative"
+                    aria-label="Close menu">
+                    <x-icons.svg.close class="w-6 h-6" />
+                </button>
+
+                <!-- Mobile Menu Overlay -->
+                <div class="fixed inset-0 {{ $mobileMenuClasses }} hidden group-aria-expanded:block pt-20">
+                    <!-- Mobile Navigation Links -->
+                    <div class="flex flex-col items-center gap-6 p-6">
+                        <x-nav-links fun="{{ $fun }}" />
+                    </div>
+                </div>
             </div>
         </nav>
     </x-container>

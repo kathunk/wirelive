@@ -32,16 +32,16 @@
           <!-- Benefits Grid -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-3">
             <x-ticket-benefit fun="{{ $fun }}">
-                ENTRY TO ALL THE EVENTS
+                Entry to Event
             </x-ticket-benefit>
             <x-ticket-benefit fun="{{ $fun }}">
-                THE SWAGGEST OF BAGS
+                Lunch + Snack & Coffee
             </x-ticket-benefit>
             <x-ticket-benefit fun="{{ $fun }}">
-                FOOD AND STUFF
+                Swag
             </x-ticket-benefit>
             <x-ticket-benefit fun="{{ $fun }}">
-                AFTER PARTY... DON'T MISS IT
+                Bowling after party
             </x-ticket-benefit>
           </div>
         </div>

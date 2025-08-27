@@ -4,7 +4,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <title>Wire ⚡ Live</title>
+    <title>Wire Live</title>
+    <link rel="icon" href="{{ asset('svg/favicon.svg') }}" type="image/svg+xml">
     @vite(['resources/css/app.css'])
 </head>
 
