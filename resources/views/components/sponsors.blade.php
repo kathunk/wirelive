@@ -5,8 +5,8 @@
 @php
     $platinum = [
         'tighten' => 'https://tighten.com',
+        'laravel' => 'https://laravel.com',
         'tba',
-        'blank',
     ];
 
     $community = [

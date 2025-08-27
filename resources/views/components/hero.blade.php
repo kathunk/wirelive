@@ -21,18 +21,6 @@
             </div>
         </div>
 
-        <div class="relative w-full font-mono mt-2 mb-4 xs:mb-0 xs:mt-4 md:-mt-8 lg:mt-0 xl:mt-8">
-            <span class="text-base">hosted by</span>
-            <a href="https://livewire.laravel.com" target="_blank">
-                Livewire
-            </a>
-            <span>+<span>
-            <a href="https://thunk.dev" target="_blank" class="relative text-base transition-colors">
-                Thunk
-                <img class="absolute bottom-0 left-0 w-full h-1 object-cover" src="/img/fun-colors.png" alt="" />
-            </a>
-        </div>
-
         <div class="flex flex-col md:justify-between lg:justify-start md:flex-row md:items-center xl:gap-x-60 lg:gap-11 md:gap-2 gap-8 xl:mt-20 lg:mt-12 md:mt-8 xs:mt-8 mt-2">
             <x-sub-headline onDark fun="{{ $fun }}" first="Let's hang out, and talk all things" second="Livewire, Flux, Alpine, and Filament" />
 
