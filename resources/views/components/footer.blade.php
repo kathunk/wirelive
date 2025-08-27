@@ -70,7 +70,7 @@
                     We will have a room block at the walkable Statler hotel. There are plenty of other hotels in the
                     area.
                 </p>
-                <a href="#" class="flex">
+                <a href="https://gist.github.com/calebporzio/7a7e75a2209d16f1694bc4a49faf8e45" target="_blank" class="flex">
                     <div class="px-6 py-2 bg-fossil text-2xl uppercase text-center sm:text-start">
                         View Conference Guide
                     </div>
