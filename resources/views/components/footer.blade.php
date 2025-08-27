@@ -70,8 +70,10 @@
                     We will have a room block at the walkable Statler hotel. There are plenty of other hotels in the
                     area.
                 </p>
-                <a href="#" class="px-6 py-2 bg-fossil text-2xl uppercase">
-                    View Conference Guide
+                <a href="#" class="flex">
+                    <div class="px-6 py-2 bg-fossil text-2xl uppercase text-center sm:text-start">
+                        View Conference Guide
+                    </div>
                 </a>
             </div>
         </div>
