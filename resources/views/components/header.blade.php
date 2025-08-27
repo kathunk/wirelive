@@ -15,8 +15,22 @@
 
 <header class="absolute top-0 inset-x-0 w-full z-50">
     <x-container class="flex items-center justify-between py-4 md:py-8">
-    <x-icons.svg.wire-live
-        class="w-24 md:w-32 h-auto relative z-10 {{ $logoColor }}" />
+    <div class="flex flex-col">
+        <x-icons.svg.wire-live
+            class="w-24 md:w-32 h-auto relative z-10 {{ $logoColor }}" />
+            
+        <div class="relative w-full font-mono xs:mb-0 text-fossil">
+            <span class="text-base">hosted by</span>
+            <a href="https://livewire.laravel.com" target="_blank">
+                Livewire
+            </a>
+            <span>+<span>
+            <a href="https://thunk.dev" target="_blank" class="inline-block relative text-base transition-colors">
+                 Thunk
+                 <img class="absolute bottom-0 left-0 w-full h-1" src="/img/fun-colors.png" alt="" />
+            </a>
+        </div>
+    </div>
     <nav>
         <!-- Desktop Navigation -->
         <div class="hidden lg:flex items-center gap-8">

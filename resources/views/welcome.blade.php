@@ -1,10 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <title>Wire ⚡ Live</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Wire ⚡ Live - A Chill & AWESOME Livewire Community Event</title>
+    <meta name="title" content="Wire ⚡ Live - A Chill & AWESOME Livewire Community Event" />
+    <meta name="description" content="Join us in Buffalo, NY on October 28-29, 2025 for Wire Live. Let's hang out and talk all things Livewire, Flux, Alpine, and Filament. A chill & AWESOME Livewire community event." />
+    <meta name="keywords" content="Livewire, Laravel, Flux, Alpine, Filament, conference, Buffalo NY, community event, web development, PHP" />
+    <meta name="author" content="Wire Live" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="event" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:title" content="Wire ⚡ Live - A Chill & AWESOME Livewire Community Event" />
+    <meta property="og:description" content="Join us in Buffalo, NY on October 28-29, 2025 for Wire Live. Let's hang out and talk all things Livewire, Flux, Alpine, and Filament." />
+    <meta property="og:image" content="{{ asset('images/og-image.png') }}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Wire Live" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:event:start_time" content="2025-10-28T09:00:00-04:00" />
+    <meta property="og:event:end_time" content="2025-10-29T17:00:00-04:00" />
+    <meta property="og:event:location" content="Buffalo, NY" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="{{ url()->current() }}" />
+    <meta property="twitter:title" content="Wire ⚡ Live - A Chill & AWESOME Livewire Community Event" />
+    <meta property="twitter:description" content="Join us in Buffalo, NY on October 28-29, 2025 for Wire Live. Let's hang out and talk all things Livewire, Flux, Alpine, and Filament." />
+    <meta property="twitter:image" content="{{ asset('images/og-image.png') }}" />
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#1a1a1a" />
+    <meta name="msapplication-TileColor" content="#1a1a1a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ url()->current() }}" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
     @vite(['resources/css/app.css'])
 </head>
 
