@@ -66,7 +66,7 @@
             <div class="xl:w-[29.38%] md:w-3/5 xs:w-4/5 w-full">
             <div class="flex flex-col w-full h-full">
                 <!-- Combined Tab and Card with Background -->
-                <div class="relative h-[calc(100%-78px)]" style="
+                <div class="relative h-[calc(100%-76px)]" style="
                     background-image: url('/img/fun-colors.png');
                     background-size: cover;
                     background-position: center;
