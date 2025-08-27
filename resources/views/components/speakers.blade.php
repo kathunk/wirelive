@@ -37,7 +37,34 @@
                     {{-- <div class="absolute inset-0 bg-gradient-to-br from-red-500/20 to-orange-500/20 mix-blend-overlay"></div> --}}
                 </div>
                 <h3 class="text-2xl font-medium {{ $textColor }}">CALEB PORZIO</h3>
-                <p class="text-base {{ $textColor }}">Creator of Livewire</p>
+                <p class="text-base {{ $textColor }}">Creator of <a href="https://livewire.laravel.com" target="_blank">Livewire</a></p>
+            </div>
+
+            <!-- John Drexler -->
+            <div class="flex flex-col gap-3">
+                <div class="relative overflow-hidden">
+                    <img class="w-full h-[368px] object-cover {{ $imageFilter }}" src="/img/speakers/john.jpg" alt="John Drexler" />
+                </div>
+                <h3 class="text-2xl font-medium {{ $textColor }}">JOHN DREXLER</h3>
+                <p class="text-base {{ $textColor }}">Partner / Product Manager at <a href="https://thunk.dev" target="_blank">Thunk</a></p>
+            </div>
+
+            <!-- Dan Harrin -->
+            <div class="flex flex-col gap-3">
+                <div class="relative overflow-hidden">
+                    <img class="w-full h-[368px] object-cover {{ $imageFilter }}" src="/img/speakers/dan.jpg" alt="Dan Harrin" />
+                </div>
+                <h3 class="text-2xl font-medium {{ $textColor }}">DAN HARRIN</h3>
+                <p class="text-base {{ $textColor }}">Software Engineer at <a href="https://canyongbs.com" target="_blank">Canyon GBS,</a><br class="hidden lg:inline-block"> Co-creator of <a href="https://filamentphp.com" target="_blank">Filament</a></p>
+            </div>
+
+            <!-- Josh Cirre -->
+            <div class="flex flex-col gap-3">
+                <div class="relative overflow-hidden">
+                    <img class="w-full h-[368px] object-cover {{ $imageFilter }}" src="/img/speakers/josh.jpg" alt="Josh Cirre" />
+                </div>
+                <h3 class="text-2xl font-medium {{ $textColor }}">JOSH CIRRE</h3>
+                <p class="text-base {{ $textColor }}">Developer Relations Engineer at <a href="laravel.com">Laravel</a></p>
             </div>
 
             <!-- TBA Speaker -->
@@ -69,17 +96,17 @@
             </div> --}}
         </div>
 
-        <div class="text-7xl uppercase {{ $textColor }} text-center mt-18">
+        <div class="lg:text-7xl md:text-5xl sm:text-5xl text-2xl uppercase {{ $textColor }} text-center mt-18 mb-16">
             More speakers dropping soon
         </div>
 
         <!-- Call to action -->
-        <div class="flex items-center gap-4 mt-14 justify-center">
+        {{-- <div class="flex items-center gap-4 mt-14 justify-center">
             <span class="text-base {{ $textColor }}">Interested in speaking?</span>
             <a href="#" class="relative text-base {{ $linkColor }} transition-colors">
                 Apply to speak
                 <img class="absolute bottom-0 left-0 w-full h-1 object-cover {{ $imageFilter }}" src="/img/fun-colors.png" alt="" />
             </a>
-        </div>
+        </div> --}}
     </x-container>
 </section>
