@@ -36,47 +36,25 @@
                 <!-- Card Content -->
                 <div class="w-full {{ $bgColor }}">
                     <div class="{{ $contentTextColor }} pt-4">
-                    <!-- Schedule items -->
-                        <x-schedule-item
+                        <!-- TBA Content -->
+                        <div class="lg:min-h-144 min-h-50">
+                            <div class="py-26 sm:px-11 px-4">
+                                <img src="/img/confidential.png" alt="confidential.png" class="{{ $imageFilter }}" />
+                                <div class="mt-6 font-mono text-lg text-center {{ $fun ? 'text-fossil' : 'text-night-rider' }}">
+                                    <span>
+                                        We are still nailing down details.<br>
+                                        Schedule will be released soon.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Schedule Content -->
+                        {{-- <x-schedule-item
                             title="TBA"
                             time="9:00 AM - 10:00 AM"
                             fun="{{ $fun }}"
-                        />
-                        <x-schedule-item
-                            title="TBA"
-                            time="10:00 AM - 11:00 AM"
-                            fun="{{ $fun }}"
-                        />
-                        <x-schedule-item
-                            title="TBA"
-                            time="11:00 AM - 12:00 PM"
-                            fun="{{ $fun }}"
-                        />
-                        <x-schedule-item
-                            title="TBA"
-                            time="12:00 PM - 1:00 PM"
-                            fun="{{ $fun }}"
-                        />
-                        <x-schedule-item
-                            title="TBA"
-                            time="1:00 PM - 2:00 PM"
-                            fun="{{ $fun }}"
-                        />
-                        <x-schedule-item
-                            title="TBA"
-                            time="2:00 PM - 3:00 PM"
-                            fun="{{ $fun }}"
-                        />
-                        <x-schedule-item
-                            title="TBA"
-                            time="3:00 PM - 4:00 PM"
-                            fun="{{ $fun }}"
-                        />
-                        <x-schedule-item
-                            title="TBA"
-                            time="4:00 PM - 5:00 PM"
-                            fun="{{ $fun }}"
-                        />
+                        /> --}}
                     </div>
                 </div>
 
@@ -88,7 +66,7 @@
             <div class="xl:w-[29.38%] md:w-3/5 xs:w-4/5 w-full">
             <div class="flex flex-col w-full h-full">
                 <!-- Combined Tab and Card with Background -->
-                <div class="relative h-[calc(100%-80px)]" style="
+                <div class="relative h-[calc(100%-78px)]" style="
                     background-image: url('/img/fun-colors.png');
                     background-size: cover;
                     background-position: center;
