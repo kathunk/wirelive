@@ -5,11 +5,22 @@
 @php
     $platinum = [
         'tighten' => 'https://tighten.com',
+        'tba',
+        'blank',
     ];
 
-    $community = [];
+    $community = [
+        'tba',
+        'blank',
+        'blank',
+    ];
 
-    $friend = [];
+    $friend = [
+        'tba',
+        'blank',
+        'blank',
+        'blank',
+    ];
 
     $textColor = $fun ? 'text-plum' : 'text-fossil';
     $linkColor = $fun ? 'text-cobalt hover:text-plum' : 'text-fossil hover:opacity-90';
@@ -36,7 +47,13 @@
                 </h3>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-3.75">
                     @foreach($platinum as $name => $url)
-                        <x-sponsor :name="$name" :url="$url" tier="platinum" fun="{{ $fun }}" />
+                        @if($url !== 'tba' && $url !== 'blank')
+                            <x-sponsor :name="$name" :url="$url" tier="platinum" fun="{{ $fun }}" />
+                        @elseif($url === 'tba')
+                            <x-tba-sponsor :name="$name" tier="community" fun="{{ $fun }}" />
+                        @elseif($url === 'blank')
+                            <x-blank-sponsor :name="$name" tier="community" fun="{{ $fun }}" />
+                        @endif
                     @endforeach
                 </div>
             </div>
@@ -52,7 +69,13 @@
                         </h3>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-3.75">
                             @foreach($community as $name => $url)
-                                <x-sponsor :name="$name" :url="$url" tier="community" fun="{{ $fun }}" />
+                                @if($url !== 'tba' && $url !== 'blank')
+                                    <x-sponsor :name="$name" :url="$url" tier="community" fun="{{ $fun }}" />
+                                @elseif($url === 'tba')
+                                    <x-tba-sponsor :name="$name" tier="community" fun="{{ $fun }}" />
+                                @elseif($url === 'blank')
+                                    <x-blank-sponsor :name="$name" tier="community" fun="{{ $fun }}" />
+                                @endif
                             @endforeach
                         </div>
                     </div>
@@ -65,7 +88,13 @@
                         </h3>
                         <div class="grid grid-cols-1 md:grid-cols-4 gap-3.75">
                             @foreach($friend as $name => $url)
-                                <x-sponsor :name="$name" :url="$url" tier="friend" fun="{{ $fun }}" />
+                                @if($url !== 'tba' && $url !== 'blank')
+                                    <x-sponsor :name="$name" :url="$url" tier="friend" fun="{{ $fun }}" />
+                                @elseif($url === 'tba')
+                                    <x-tba-sponsor :name="$name" tier="friend" fun="{{ $fun }}" />
+                                @elseif($url === 'blank')
+                                    <x-blank-sponsor :name="$name" tier="friend" fun="{{ $fun }}" />
+                                @endif
                             @endforeach
                         </div>
                     </div>
@@ -74,12 +103,12 @@
         @endif
 
         <!-- Call to Action -->
-        <div class="flex items-center gap-4 mt-24">
+        {{-- <div class="flex items-center gap-4 mt-24">
             <span class="text-base {{ $textColor }}">Interested in supporting?</span>
             <a href="#" class="relative text-base {{ $linkColor }} transition-colors">
                 Become a sponsor
                 <img class="absolute bottom-0 left-0 w-full h-1 object-cover {{ $imageFilter }}" src="/img/fun-colors.png" alt="" />
             </a>
-        </div>
+        </div> --}}
     </x-container>
 </section>
