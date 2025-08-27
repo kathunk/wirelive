@@ -4,23 +4,12 @@
 
 @php
     $platinum = [
-        'laravel' => 'https://laravel.com',
-        'vehikl' => 'https://vehikl.com',
-        'tighten' => 'https://tighten.com'
+        'tighten' => 'https://tighten.com',
     ];
 
-    $gold = [
-        'jetbrains' => 'https://jetbrains.com',
-        'canyon' => 'https://canyon.com',
-        'in' => 'https://in.com'
-    ];
+    $community = [];
 
-    $community = [
-        'laravel' => 'https://laravel.com',
-        'vehikl' => 'https://vehikl.com',
-        'jetbrains' => 'https://jetbrains.com',
-        'canyon' => 'https://canyon.com'
-    ];
+    $friend = [];
 
     $textColor = $fun ? 'text-plum' : 'text-fossil';
     $linkColor = $fun ? 'text-cobalt hover:text-plum' : 'text-fossil hover:opacity-90';
@@ -31,46 +20,58 @@
     <x-container>
         <!-- Section Header -->
         <div class="text-left mb-16">
-            <x-headline text="WOULDN'T BE POSSIBLE WITHOUT" fun="{{ $fun }}" />
+            <span class="hidden md:block">
+                <x-headline text="WOULDN'T BE POSSIBLE WITHOUT" fun="{{ $fun }}" />
+            </span>
+            <span class="block md:hidden">
+                <x-headline first="WOULDN'T BE POSSIBLE" second="WITHOUT" fun="{{ $fun }}" />
+            </span>
         </div>
 
-        <!-- Platinum Sponsors -->
-        <div class="text-center">
-            <h3 class="text-2xl text-left {{ $textColor }} mb-3 uppercase">
-                PLATINUM
-            </h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3.75">
-                @foreach($platinum as $name => $url)
-                    <x-sponsor :name="$name" :url="$url" tier="platinum" fun="{{ $fun }}" />
-                @endforeach
-            </div>
-        </div>
-
-        <!-- Gold Sponsors -->
-        <div class="flex flex-col xs:flex-row md:flex-col gap-y-12 pt-12 w-full gap-x-4">
-            <div class="text-center w-full">
+        @if($platinum)
+            <!-- Platinum Sponsors -->
+            <div class="text-center">
                 <h3 class="text-2xl text-left {{ $textColor }} mb-3 uppercase">
-                    GOLD
+                    Platinum
                 </h3>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-3.75">
-                    @foreach($gold as $name => $url)
-                        <x-sponsor :name="$name" :url="$url" tier="gold" fun="{{ $fun }}" />
+                    @foreach($platinum as $name => $url)
+                        <x-sponsor :name="$name" :url="$url" tier="platinum" fun="{{ $fun }}" />
                     @endforeach
                 </div>
             </div>
+        @endif
 
-            <!-- Community Sponsors -->
-            <div class="text-center w-full">
-                <h3 class="text-2xl text-left {{ $textColor }} mb-3 uppercase">
-                    COMMUNITY
-                </h3>
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-3.75">
-                    @foreach($community as $name => $url)
-                        <x-sponsor :name="$name" :url="$url" tier="community" fun="{{ $fun }}" />
-                    @endforeach
-                </div>
+        @if($community || $friend)
+            <div class="flex flex-col xs:flex-row md:flex-col gap-y-12 pt-12 w-full gap-x-4">
+                @if($community)
+                    <!-- Community Sponsors -->
+                    <div class="text-center w-full">
+                        <h3 class="text-2xl text-left {{ $textColor }} mb-3 uppercase xs:max-w-[13ch] md:max-w-none">
+                            Community Champion
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3.75">
+                            @foreach($community as $name => $url)
+                                <x-sponsor :name="$name" :url="$url" tier="community" fun="{{ $fun }}" />
+                            @endforeach
+                        </div>
+                    </div>
+                @endif
+                @if($friend)
+                    <!-- Friend Sponsors -->
+                    <div class="w-full">
+                        <h3 class="text-2xl text-left {{ $textColor }} mb-3 uppercase xs:max-w-[13ch] md:max-w-none">
+                            Friend of the Conference
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-3.75">
+                            @foreach($friend as $name => $url)
+                                <x-sponsor :name="$name" :url="$url" tier="friend" fun="{{ $fun }}" />
+                            @endforeach
+                        </div>
+                    </div>
+                @endif
             </div>
-        </div>
+        @endif
 
         <!-- Call to Action -->
         <div class="flex items-center gap-4 mt-24">

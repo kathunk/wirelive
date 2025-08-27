@@ -3,39 +3,31 @@ import "./bootstrap";
 import.meta.glob(["../images/**", "../fonts/**"]);
 
 document.addEventListener("DOMContentLoaded", function () {
-    const hamburgerBtn = document.getElementById("hamburger-btn");
-    const closeMenuBtn = document.getElementById("close-menu-btn");
-    const mobileMenu = document.getElementById("mobile-menu");
-    const mobileFunMenu = document.getElementById("mobile-menu--fun");
-    const funHamburgerBtn = document.getElementById("hamburger-btn--fun");
-    const funCloseMenuBtn = document.getElementById("close-menu-btn--fun");
+    const hamburgerBtn = document.getElementById("hamburger-btn") || document.getElementById("hamburger-btn--fun");
+    const closeMenuBtn = document.getElementById("close-menu-btn") || document.getElementById("close-menu-btn--fun");
+    const mobileMenu = document.getElementById("mobile-menu") || document.getElementById("mobile-menu--fun");
 
     function openMenu() {
-        mobileMenu.setAttribute("aria-expanded", "true");
-        mobileFunMenu.setAttribute("aria-expanded", "true");
+        if (mobileMenu) mobileMenu.setAttribute("aria-expanded", "true");
     }
 
     function closeMenu() {
         console.log("closeMenu");
-        mobileMenu.setAttribute("aria-expanded", "false");
-        mobileFunMenu.setAttribute("aria-expanded", "false");
+        if (mobileMenu) mobileMenu.setAttribute("aria-expanded", "false");
     }
 
-    hamburgerBtn.addEventListener("click", openMenu);
-    funHamburgerBtn.addEventListener("click", openMenu);
-    closeMenuBtn.addEventListener("click", closeMenu);
-    funCloseMenuBtn.addEventListener("click", closeMenu);
+    if (hamburgerBtn) hamburgerBtn.addEventListener("click", openMenu);
+    if (closeMenuBtn) closeMenuBtn.addEventListener("click", closeMenu);
 
-    // Close menu when navigation links are clicked
-    const navLinks = mobileMenu.querySelectorAll("a");
-    const funNavLinks = mobileFunMenu.querySelectorAll("a");
-    [...navLinks, ...funNavLinks].forEach((link) => {
-        link.addEventListener("click", closeMenu);
-    });
+    if (mobileMenu) {
+        const navLinks = mobileMenu.querySelectorAll("a");
+        navLinks.forEach((link) => {
+            link.addEventListener("click", closeMenu);
+        });
+    }
 
-    // Close menu on escape key
     document.addEventListener("keydown", function (e) {
-        const isOpen = mobileMenu.getAttribute("aria-expanded") === "true";
+        const isOpen = mobileMenu && mobileMenu.getAttribute("aria-expanded") === "true";
         if (e.key === "Escape" && isOpen) {
             closeMenu();
         }

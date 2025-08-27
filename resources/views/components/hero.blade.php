@@ -24,9 +24,9 @@
         <div class="flex flex-col md:justify-between lg:justify-start md:flex-row md:items-center xl:gap-x-60 lg:gap-11 md:gap-2 gap-8 xl:mt-20 lg:mt-12 md:mt-8 xs:mt-8 mt-2">
             <x-sub-headline onDark fun="{{ $fun }}" first="Let's hang out, and talk all things" second="Livewire, Flux, Alpine, and Filament" />
 
-            <button class="{{ $buttonClasses }} px-8 py-4 hover:opacity-70 transition-opacity duration-200 grow-0">
+            <a href="https://luma.com/bbpxn8k2" target="_blank" class="{{ $buttonClasses }} px-8 py-4 hover:opacity-70 transition-opacity duration-200 grow-0">
                 <x-sub-headline onLight fun="{{ $fun }}" text="BUY TICKETS NOW" />
-            </button>
+            </a>
         </div>
     </x-container>
 </section>
