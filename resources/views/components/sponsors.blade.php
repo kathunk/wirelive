@@ -50,9 +50,9 @@
                         @if($url !== 'tba' && $url !== 'blank')
                             <x-sponsor :name="$name" :url="$url" tier="platinum" fun="{{ $fun }}" />
                         @elseif($url === 'tba')
-                            <x-tba-sponsor :name="$name" tier="community" fun="{{ $fun }}" />
+                            <x-tba-sponsor :name="$name" tier="platinum" fun="{{ $fun }}" />
                         @elseif($url === 'blank')
-                            <x-blank-sponsor :name="$name" tier="community" fun="{{ $fun }}" />
+                            <x-blank-sponsor :name="$name" tier="platinum" fun="{{ $fun }}" />
                         @endif
                     @endforeach
                 </div>
