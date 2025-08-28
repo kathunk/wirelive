@@ -40,6 +40,16 @@
                 <p class="text-base {{ $textColor }}">Creator of <a href="https://livewire.laravel.com" target="_blank">Livewire</a></p>
             </div>
 
+            <!-- Daniel Coulbourne -->
+            <div class="flex flex-col gap-3">
+                <div class="relative overflow-hidden">
+                    <img class="w-full h-[368px] object-cover grayscale {{ $imageFilter }}" src="/img/speakers/daniel.png" alt="Daniel Coulbourne" />
+                    <div class="absolute inset-0 bg-gradient-to-br from-gray-500/20 to-gray-700/20 mix-blend-overlay"></div>
+                </div>
+                <h3 class="text-2xl font-medium {{ $textColor }}">DANIEL COULBOURNE</h3>
+                <p class="text-base {{ $textColor }}">Partner / Dev at Thunk</p>
+            </div>
+
             <!-- John Drexler -->
             <div class="flex flex-col gap-3">
                 <div class="relative overflow-hidden">
@@ -76,24 +86,7 @@
                 <p class="text-base {{ $textColor }}">Who Does Things </p>
             </div>
 
-            <!-- TBA Speaker -->
-            <div class="flex flex-col gap-3">
-                <div class="relative overflow-hidden">
-                    <img class="w-full h-[368px] object-cover {{ $imageFilter }}" src="/img/speakers/tba.png" alt="TBA" />
-                </div>
-                <h3 class="text-2xl font-medium {{ $textColor }}">AWESOME PERSON</h3>
-                <p class="text-base {{ $textColor }}">With Interesting Ideas</p>
-            </div>
-
-            <!-- Daniel Coulbourne -->
-            {{-- <div class="flex flex-col gap-3">
-                <div class="relative overflow-hidden">
-                    <img class="w-full h-[368px] object-cover grayscale {{ $imageFilter }}" src="/img/speakers/daniel.png" alt="Daniel Coulbourne" />
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-500/20 to-gray-700/20 mix-blend-overlay"></div>
-                </div>
-                <h3 class="text-2xl font-medium {{ $textColor }}">DANIEL COULBOURNE</h3>
-                <p class="text-base {{ $textColor }}">Partner / Dev at Thunk</p>
-            </div> --}}
+            
         </div>
 
         <div class="lg:text-7xl md:text-5xl sm:text-5xl text-2xl uppercase {{ $textColor }} text-center mt-18 mb-16">
