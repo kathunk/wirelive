@@ -71,7 +71,10 @@
             <!-- Josh Cirre -->
             <div class="flex flex-col gap-3">
                 <div class="relative overflow-hidden">
+                <span class="soft-grunge">
+
                     <img class="w-full h-[368px] object-cover {{ $imageFilter }}" src="/img/speakers/josh.jpg" alt="Josh Cirre" />
+                </span>
                 </div>
                 <h3 class="text-2xl font-medium {{ $textColor }}">JOSH CIRRE</h3>
                 <p class="text-base {{ $textColor }}">Developer Relations Engineer at <a href="laravel.com">Laravel</a></p>

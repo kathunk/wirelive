@@ -321,7 +321,7 @@ body .fun:before {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url('/img/dirty-surface-texture.png');
+    background-image: url('/img/grunge.png');
     background-size: cover;
     background-position: center;
     mix-blend-mode: soft-light;
