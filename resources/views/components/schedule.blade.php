@@ -94,7 +94,7 @@
                 <!-- Card Content -->
                 <div class="p-6 w-full">
                     <h2 class="xl:text-[92px] lg:text-7xl text-5xl lg:leading-26 md:leading-20 leading-16 text-plum py-5">
-                    HACK-A-THON
+                    HACK &amp;<br />HANG
                     </h2>
 
                     <p class="text-xl leading-relaxed {{ $fun ? 'text-fossil' : 'text-night-rider' }}">
