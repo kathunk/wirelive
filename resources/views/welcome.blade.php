@@ -71,7 +71,7 @@
         {{-- @endBreakpoints --}}
     @endif
 ">
-    {{--<x-portal-mask />--}}
+    <x-portal-mask />
     <x-header />
     <x-hero />
     <x-speakers />
@@ -81,8 +81,7 @@
     <x-sponsors />
     <x-footer />
 
-    {{--
-    <div class="fun absolute inset-0 z-[100] bg-fossil">
+    <div class="fun absolute inset-0 z-[100] bg-fossil pointer-events-none">
         <x-header fun />
         <x-hero fun />
         <x-speakers fun />
@@ -92,7 +91,6 @@
         <x-sponsors fun />
         <x-footer fun />
     </div>
-    --}}
 
 </body>
 @vite(['resources/js/app.js'])
