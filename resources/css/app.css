@@ -302,3 +302,30 @@ body .fun:before {
     opacity: 0.3;
     clip-path: polygon(100% 0%, 30% 0%, 0% 50%, 30% 100%, 100% 100%);
 }
+
+/* Soft-light grunge overlay utility
+   Usage: wrap your <img> with this class
+   <span class="soft-grunge"><img src="..." alt="..."></span>
+*/
+.soft-grunge {
+    position: relative;
+    display: inline-block;
+    isolation: isolate;
+}
+
+.soft-grunge > img {
+    display: block;
+}
+
+.soft-grunge::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('/img/dirty-surface-texture.png');
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: soft-light;
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 1;
+}
