@@ -18,7 +18,7 @@
     <meta property="og:url" content="{{ url()->current() }}" />
     <meta property="og:title" content="Wire ⚡ Live - A Chill & AWESOME Livewire Community Event" />
     <meta property="og:description" content="Join us in Buffalo, NY on October 28-29, 2025 for Wire Live. Let's hang out and talk all things Livewire, Flux, Alpine, and Filament." />
-    <meta property="og:image" content="{{ asset('svg/favicon.svg') }}" />
+    <meta property="og:image" content="/img/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:site_name" content="Wire Live" />
@@ -32,7 +32,7 @@
     <meta property="twitter:url" content="{{ url()->current() }}" />
     <meta property="twitter:title" content="Wire ⚡ Live - A Chill & AWESOME Livewire Community Event" />
     <meta property="twitter:description" content="Join us in Buffalo, NY on October 28-29, 2025 for Wire Live. Let's hang out and talk all things Livewire, Flux, Alpine, and Filament." />
-    <meta property="twitter:image" content="{{ asset('svg/favicon.svg') }}" />
+    <meta property="twitter:image" content="/img/og-image.png" />
     
     <!-- Additional SEO Meta Tags -->
     <meta name="theme-color" content="#1a1a1a" />
