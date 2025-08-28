@@ -68,17 +68,9 @@
                     area.
                 </p>
                 <div class="flex">
-                    <div class="button-wrapper">
-                        <div class="top-line"></div>
-                        <div class="bottom-line"></div>
-                        <div class="left-arrow-top"></div>
-                        <div class="left-arrow-bottom"></div>
-                        <div class="right-arrow-top"></div>
-                        <div class="right-arrow-bottom"></div>
-                         <a class="arrow-button px-6 py-2 bg-fossil text-2xl uppercase text-center sm:text-start" href="https://gist.github.com/calebporzio/7a7e75a2209d16f1694bc4a49faf8e45" target="_blank">
-                                View Travel Guide
-                        </a>
-                    </div>
+                    <x-arrow-button href="https://gist.github.com/calebporzio/7a7e75a2209d16f1694bc4a49faf8e45" target="_blank" class="px-6 py-2 bg-fossil text-2xl uppercase text-center sm:text-start">
+                        View Travel Guide
+                    </x-arrow-button>
                 </div>
             </div>
         </div>

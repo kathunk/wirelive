@@ -31,17 +31,9 @@
             </a>
 --}}
 
-<div class="button-wrapper">
-    <div class="top-line"></div>
-    <div class="bottom-line"></div>
-    <div class="left-arrow-top"></div>
-    <div class="left-arrow-bottom"></div>
-    <div class="right-arrow-top"></div>
-    <div class="right-arrow-bottom"></div>
-    <a href="https://luma.com/bbpxn8k2" target="_blank" class="arrow-button {{ $buttonClasses }} px-8 py-4 hover:opacity-70 transition-opacity duration-200 grow-0">
-        <x-sub-headline onLight fun="{{ $fun }}" text="BUY TICKETS NOW" />
-    </a>
-</div>
+<x-arrow-button href="https://luma.com/bbpxn8k2" target="_blank" class="{{ $buttonClasses }} px-8 py-4 hover:opacity-70 transition-opacity duration-200 grow-0">
+    <x-sub-headline onLight fun="{{ $fun }}" text="BUY TICKETS NOW" />
+</x-arrow-button>
 
 
         </div>
