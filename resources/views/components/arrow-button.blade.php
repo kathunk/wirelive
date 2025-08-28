@@ -1,5 +1,4 @@
 @props([
-    'href' => '#',
 ])
 
 <div class="button-wrapper">
@@ -13,5 +12,3 @@
         {{ $slot }}
     </a>
 </div>
-
-
