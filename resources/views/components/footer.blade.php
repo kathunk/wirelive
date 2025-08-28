@@ -31,7 +31,7 @@
                         </summary>
                         <div class="px-4 pb-4">
                             <p class="{{ $textColor }} leading-relaxed">
-                                We hope so, but no promises.
+                                We hope so, but can't make any promises.
                             </p>
                         </div>
                     </details>
@@ -49,9 +49,7 @@
                         </summary>
                         <div class="px-4 pb-4">
                             <p class="{{ $textColor }}">
-                                Buffalo is a vibrant, affordable city with a growing tech scene.
-                                It's easily accessible with an international airport, has great food and culture,
-                                and provides the perfect backdrop for an intimate, focused conference experience.
+                                Caleb here; I've always wanted to do a conference in Buffalo and hang out with all my friends in my hometown. Come hang.
                             </p>
                         </div>
                     </details>
