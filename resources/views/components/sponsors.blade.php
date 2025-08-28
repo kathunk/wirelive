@@ -16,8 +16,8 @@
     ];
 
     $friend = [
+        'filament' => 'https://filamentphp.com',
         'tba',
-        'blank',
         'blank',
         'blank',
     ];
