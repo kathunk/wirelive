@@ -4,6 +4,7 @@
 @php
     $textClasses = $fun ? 'text-plum' : 'text-fossil';
     $buttonClasses = $fun ? 'bg-cobalt text-fossil' : 'bg-fossil text-night-rider';
+    $arrowClasses = $fun ? 'bg-plum' : 'bg-fossil';
 @endphp
 
 
@@ -24,9 +25,25 @@
         <div class="flex flex-col md:justify-between lg:justify-start md:flex-row md:items-center xl:gap-x-60 lg:gap-11 md:gap-2 gap-8 xl:mt-20 lg:mt-12 md:mt-8 xs:mt-8 mt-2">
             <x-sub-headline onDark fun="{{ $fun }}" first="Let's hang out, and talk all things" second="Livewire, Flux, Alpine, and Filament" />
 
+{{--
             <a href="https://luma.com/bbpxn8k2" target="_blank" class="{{ $buttonClasses }} px-8 py-4 hover:opacity-70 transition-opacity duration-200 grow-0">
                 <x-sub-headline onLight fun="{{ $fun }}" text="BUY TICKETS NOW" />
             </a>
+--}}
+
+<div class="button-wrapper">
+    <div class="top-line"></div>
+    <div class="bottom-line"></div>
+    <div class="left-arrow-top"></div>
+    <div class="left-arrow-bottom"></div>
+    <div class="right-arrow-top"></div>
+    <div class="right-arrow-bottom"></div>
+    <a href="https://luma.com/bbpxn8k2" target="_blank" class="arrow-button {{ $buttonClasses }} px-8 py-4 hover:opacity-70 transition-opacity duration-200 grow-0">
+        <x-sub-headline onLight fun="{{ $fun }}" text="BUY TICKETS NOW" />
+    </a>
+</div>
+
+
         </div>
     </x-container>
 </section>

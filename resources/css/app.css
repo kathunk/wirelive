@@ -25,6 +25,7 @@
 @theme {
     --breakpoint-xs: 30rem;
 
+    --color-faint: #f5f5f5;
     --color-fossil: #dad1c8;
     --color-gangsters-gold: #ffd623;
     --color-night-rider: #2d2d2d;
@@ -89,7 +90,8 @@ body:before {
     position: absolute;
     inset: 0;
     background-image: url("../images/bg.png");
-    background-size: cover;
+    background-size: contain;
+    background-position: fixed;
     mix-blend-mode: soft-light;
     background-repeat: repeat;
     opacity: 0.3;
@@ -210,4 +212,93 @@ body .fun:before {
 /* Image inversion utility for fun mode */
 .invert {
     filter: invert(1);
+}
+
+.button-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-button {
+    @apply bg-fossil hover:opacity-70;
+    color: #2a2a2a;
+    /* font-size: 22px; */
+    /* font-weight: bold; */
+    /* letter-spacing: 3px; */
+    text-transform: uppercase;
+    /* padding: 18px 45px; */
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+/* Top line */
+.top-line {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #f5f5f5;
+    opacity: 0.3;
+}
+
+/* Bottom line */
+.bottom-line {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #f5f5f5;
+    opacity: 0.3;
+}
+
+/* Left arrowheads */
+.left-arrow-top {
+    position: absolute;
+    top: -11px;
+    left: -10px;
+    width: 10px;
+    height: 8px;
+    background: #f5f5f5;
+    opacity: 0.3;
+    clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%);
+}
+
+.left-arrow-bottom {
+    position: absolute;
+    bottom: -11px;
+    left: -10px;
+    width: 10px;
+    height: 8px;
+    background: #f5f5f5;
+    opacity: 0.3;
+    clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%);
+}
+
+/* Right arrowheads */
+.right-arrow-top {
+    position: absolute;
+    top: -11px;
+    right: -10px;
+    width: 10px;
+    height: 8px;
+    background: #f5f5f5;
+    opacity: 0.3;
+    clip-path: polygon(100% 0%, 30% 0%, 0% 50%, 30% 100%, 100% 100%);
+}
+
+.right-arrow-bottom {
+    position: absolute;
+    bottom: -11px;
+    right: -10px;
+    width: 10px;
+    height: 8px;
+    background: #f5f5f5;
+    opacity: 0.3;
+    clip-path: polygon(100% 0%, 30% 0%, 0% 50%, 30% 100%, 100% 100%);
 }

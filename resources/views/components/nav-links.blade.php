@@ -23,6 +23,15 @@
     Sponsors
 </a>
 <x-icons.svg.dashed-lines class="lg:hidden w-full h-4 {{ $textClasses }}" />
-<a href="https://luma.com/bbpxn8k2" target="_blank" class="{{ $buttonClasses }} text-sm font-medium px-6 py-2 hover:opacity-70 transition-opacity duration-200">
-    BUY TICKETS NOW
-</a>
+
+<div class="button-wrapper">
+    <div class="top-line"></div>
+    <div class="bottom-line"></div>
+    <div class="left-arrow-top"></div>
+    <div class="left-arrow-bottom"></div>
+    <div class="right-arrow-top"></div>
+    <div class="right-arrow-bottom"></div>
+    <a href="https://luma.com/bbpxn8k2" target="_blank" class="arrow-button {{ $buttonClasses }} text-sm font-medium px-6 py-2 hover:opacity-70 transition-opacity duration-200">
+        BUY TICKETS NOW
+    </a>
+</div>
