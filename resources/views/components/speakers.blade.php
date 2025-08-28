@@ -25,7 +25,7 @@
         </div>
 
         <div class="font-mono text-xl mb-16 {{ $textColor }}">
-            We want everybody to leave with a fresh heap of Livewire knowledge and enthusiasm. We’ll have  10 minute “hot-tip” talks, full conference talks, and a keynote from Caleb Porzio where he will give a tour of Livewire 4 and tag a beta release live on-stage. You don’t want to miss it.
+            We want everybody to leave with a fresh heap of Livewire knowledge and enthusiasm. We’ll have  10 minute “hot&#8209;tip” talks, full conference talks, and a keynote from Caleb Porzio where he will give a tour of Livewire 4 and tag a beta release live on-stage. You don’t want to miss it.
         </div>
 
         <!-- Speakers grid -->
