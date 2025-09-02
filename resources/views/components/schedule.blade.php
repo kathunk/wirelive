@@ -98,8 +98,7 @@
                     </h2>
 
                     <p class="text-xl leading-relaxed {{ $fun ? 'text-fossil' : 'text-night-rider' }}">
-                    We rented a space out to chill, eat buffalo wings and play our collaboratively.
-                    We'll make a game or something and have prizes or whatever.
+                    Bring your Laptop and a project/idea and we’ll all chill and build cool stuff and hang out together with food and coffee. It’ll be sick.
                     </p>
                 </div>
                 </div>
