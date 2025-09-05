@@ -44,7 +44,7 @@
             <div class="flex flex-col gap-3">
                 <div class="relative overflow-hidden">
                     <img class="w-full h-[368px] object-cover {{ $imageFilter }}" src="/img/speakers/daniel.jpg" alt="Daniel Coulbourne" />
-                    <div class="absolute inset-0 bg-gradient-to-br from-gray-500/20 to-gray-700/20 mix-blend-overlay"></div>
+                    {{-- <div class="absolute inset-0 bg-gradient-to-br from-gray-500/20 to-gray-700/20 mix-blend-overlay"></div> --}}
                 </div>
                 <h3 class="text-2xl font-medium {{ $textColor }}">DANIEL COULBOURNE</h3>
                 <p class="text-base {{ $textColor }}">Partner / Dev at Thunk</p>
@@ -57,6 +57,15 @@
                 </div>
                 <h3 class="text-2xl font-medium {{ $textColor }}">JOHN DREXLER</h3>
                 <p class="text-base {{ $textColor }}">Partner / Product Manager at <a href="https://thunk.dev" target="_blank">Thunk</a></p>
+            </div>
+
+            <!-- Matt Stauffer -->
+            <div class="flex flex-col gap-3">
+                <div class="relative overflow-hidden">
+                    <img class="w-full h-[368px] object-cover brightness-88 {{ $imageFilter }}" src="/img/speakers/matt.png" alt="Matt Stauffer" />
+                </div>
+                <h3 class="text-2xl font-medium {{ $textColor }}">Matt Stauffer</h3>
+                <p class="text-base {{ $textColor }}">CEO at <a href="https://tighten.com" target="_blank">Tighten</a></p>
             </div>
 
             <!-- Dan Harrin -->
@@ -78,15 +87,13 @@
             </div>
 
             <!-- TBA Speaker -->
-            <div class="flex flex-col gap-3">
+            {{-- <div class="flex flex-col gap-3">
                 <div class="relative overflow-hidden">
                     <img class="w-full h-[368px] object-cover {{ $imageFilter }}" src="/img/speakers/tba.png" alt="TBA" />
                 </div>
                 <h3 class="text-2xl font-medium {{ $textColor }}">SOMEONE DOPE</h3>
                 <p class="text-base {{ $textColor }}">Who Does Things </p>
-            </div>
-
-
+            </div> --}}
         </div>
 
         <div class="lg:text-7xl md:text-5xl sm:text-5xl text-2xl uppercase {{ $textColor }} text-center mt-18 mb-16">
