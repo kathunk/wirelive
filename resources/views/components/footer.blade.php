@@ -64,7 +64,7 @@
 
                 <p class="text-xl {{ $textColor }} font-mono leading-relaxed my-8">
                     Buffalo has an international Airport to fly into. It's 15 minutes from downtown.
-                    We will have a room block at the walkable Statler hotel. There are plenty of other hotels in the
+                    You can book a room at the hotel venue (Aloft Buffalo Downtown Hotel). There are plenty of other hotels in the
                     area.
                 </p>
                 <div class="flex">
