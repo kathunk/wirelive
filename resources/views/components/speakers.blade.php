@@ -30,70 +30,103 @@
 
         <!-- Speakers grid -->
         <div class="grid md:grid-cols-3 grid-cols-1 gap-8">
-            <!-- Caleb Porzio -->
-            <div class="flex flex-col gap-3">
-                <div class="relative overflow-hidden">
-                    <img class="w-full h-[368px] object-cover {{ $imageFilter }}" src="/img/speakers/caleb.png" alt="Caleb Porzio" />
-                    {{-- <div class="absolute inset-0 bg-gradient-to-br from-red-500/20 to-orange-500/20 mix-blend-overlay"></div> --}}
-                </div>
-                <h3 class="text-2xl font-medium {{ $textColor }}">CALEB PORZIO</h3>
-                <p class="text-base {{ $textColor }}">Creator of <a href="https://livewire.laravel.com" target="_blank">Livewire</a></p>
-            </div>
+            <x-speaker
+                name="Caleb Porzio"
+                imageSrc="/img/speakers/caleb.png"
+                :$imageFilter
+                :$textColor
+            >
+                Creator of <x-link href="https://livewire.laravel.com">Livewire</x-link>
+            </x-speaker>
 
-            <!-- Daniel Coulbourne -->
-            <div class="flex flex-col gap-3">
-                <div class="relative overflow-hidden">
-                    <img class="w-full h-[368px] object-cover {{ $imageFilter }}" src="/img/speakers/daniel.jpg" alt="Daniel Coulbourne" />
-                    {{-- <div class="absolute inset-0 bg-gradient-to-br from-gray-500/20 to-gray-700/20 mix-blend-overlay"></div> --}}
-                </div>
-                <h3 class="text-2xl font-medium {{ $textColor }}">DANIEL COULBOURNE</h3>
-                <p class="text-base {{ $textColor }}">Partner / Dev at Thunk</p>
-            </div>
+            <x-speaker
+                name="Daniel Coulbourne"
+                imageSrc="/img/speakers/daniel.jpg"
+                imageClasses="object-[50%_25%] md:object-center"
+                :$imageFilter
+                :$textColor
+            >
+                Partner / Dev at <x-link href="https://thunk.dev">Thunk</x-link>
+            </x-speaker>
 
-            <!-- John Drexler -->
-            <div class="flex flex-col gap-3">
-                <div class="relative overflow-hidden">
-                    <img class="w-full h-[368px] object-cover {{ $imageFilter }}" src="/img/speakers/john.jpg" alt="John Drexler" />
-                </div>
-                <h3 class="text-2xl font-medium {{ $textColor }}">JOHN DREXLER</h3>
-                <p class="text-base {{ $textColor }}">Partner / Product Manager at <a href="https://thunk.dev" target="_blank">Thunk</a></p>
-            </div>
+            <x-speaker
+                name="John Drexler"
+                imageSrc="/img/speakers/john.jpg"
+                :$imageFilter
+                :$textColor
+            >
+                Partner / Product Manager at <x-link href="https://thunk.dev">Thunk</x-link>
+            </x-speaker>
 
-            <!-- Matt Stauffer -->
-            <div class="flex flex-col gap-3">
-                <div class="relative overflow-hidden">
-                    <img class="w-full h-[368px] object-cover brightness-88 {{ $imageFilter }}" src="/img/speakers/matt.png" alt="Matt Stauffer" />
-                </div>
-                <h3 class="text-2xl font-medium {{ $textColor }}">Matt Stauffer</h3>
-                <p class="text-base {{ $textColor }}">CEO at <a href="https://tighten.com" target="_blank">Tighten</a></p>
-            </div>
+            <x-speaker
+                name="Matt Stauffer"
+                imageSrc="/img/speakers/matt.png"
+                imageClasses="brightness-88 object-[50%_25%] md:object-center"
+                :$imageFilter
+                :$textColor
+            >
+                CEO at <x-link href="https://tighten.com">Tighten</x-link>
+            </x-speaker>
 
-            <!-- Dan Harrin -->
-            <div class="flex flex-col gap-3">
-                <div class="relative overflow-hidden">
-                    <img class="w-full h-[368px] object-cover {{ $imageFilter }}" src="/img/speakers/dan.jpg" alt="Dan Harrin" />
-                </div>
-                <h3 class="text-2xl font-medium {{ $textColor }}">DAN HARRIN</h3>
-                <p class="text-base {{ $textColor }}">Software Engineer at <a href="https://canyongbs.com" target="_blank">Canyon GBS,</a><br class="hidden lg:inline-block"> Co-creator of <a href="https://filamentphp.com" target="_blank">Filament</a></p>
-            </div>
+            <x-speaker
+                name="Dan Harrin"
+                imageSrc="/img/speakers/dan.jpg"
+                imageClasses="object-[50%_25%] md:object-center"
+                :$imageFilter
+                :$textColor
+            >
+                Software Engineer at <x-link href="https://canyongbs.com">Canyon GBS,</x-link><br class="hidden lg:inline-block"> Co-creator of <x-link href="https://filamentphp.com">Filament</x-link>
+            </x-speaker>
 
-            <!-- Josh Cirre -->
-            <div class="flex flex-col gap-3">
-                <div class="relative overflow-hidden">
-                    <img class="w-full h-[368px] object-cover {{ $imageFilter }}" src="/img/speakers/josh.jpg" alt="Josh Cirre" />
-                </div>
-                <h3 class="text-2xl font-medium {{ $textColor }}">JOSH CIRRE</h3>
-                <p class="text-base {{ $textColor }}">Developer Relations Engineer at <a href="laravel.com">Laravel</a></p>
-            </div>
+            <x-speaker
+                name="Josh Cirre"
+                imageSrc="/img/speakers/josh.png"
+                imageClasses="object-top"
+                :$imageFilter
+                :$textColor
+            >
+                Developer Relations Engineer at <x-link href="https://laravel.com">Laravel</x-link>
+            </x-speaker>
 
-            <!-- TBA Speaker -->
-            {{-- <div class="flex flex-col gap-3">
-                <div class="relative overflow-hidden">
-                    <img class="w-full h-[368px] object-cover {{ $imageFilter }}" src="/img/speakers/tba.png" alt="TBA" />
-                </div>
-                <h3 class="text-2xl font-medium {{ $textColor }}">SOMEONE DOPE</h3>
-                <p class="text-base {{ $textColor }}">Who Does Things </p>
-            </div> --}}
+            <x-speaker
+                name="Jason McCreary"
+                imageSrc="/img/speakers/jason.png"
+                imageClasses="object-[50%_10%] md:object-top"
+                :$imageFilter
+                :$textColor
+            >
+                Creator of <x-link href="https://laravelshift.com/">Laravel Shift,</x-link>producer of <x-link href="https://gettinggit.com/">Getting Git,</x-link>and author of <x-link href="https://basecodefieldguide.com/">BaseCode</x-link>
+            </x-speaker>
+
+            <x-speaker
+                name="Shane Rosenthal"
+                imageSrc="/img/speakers/shane.png"
+                :$imageFilter
+                :$textColor
+            >
+                Co-founder of <x-link href="https://nativephp.com/">NativePHP</x-link>
+            </x-speaker>
+
+            <x-speaker
+                name="Katie Wright"
+                imageSrc="/img/speakers/katie.png"
+                imageClasses="object-[50%_35%] md:object-center"
+                :$imageFilter
+                :$textColor
+            >
+                Full-stack Laravel Developer at <x-link href="https://honorlock.com/">Honorlock</x-link>
+            </x-speaker>
+
+            {{-- TBA Speaker example:
+            <x-speaker
+                name="TBA"
+                title="SOMEONE DOPE"
+                description="Who Does Things"
+                imageSrc="/img/speakers/tba.png"
+                :$imageFilter
+                :$textColor
+            />
+            --}}
         </div>
 
         <div class="lg:text-7xl md:text-5xl sm:text-5xl text-2xl uppercase {{ $textColor }} text-center mt-18 mb-16">
