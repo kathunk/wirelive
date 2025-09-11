@@ -117,16 +117,36 @@
                 Full-stack Laravel Developer at <x-link href="https://honorlock.com/">Honorlock</x-link>
             </x-speaker>
 
-            {{-- TBA Speaker example:
+            <x-speaker
+                name="Ryan Chandler"
+                imageSrc="/img/speakers/ryan.png"
+                imageClasses="object-top"
+                :$imageFilter
+                :$textColor
+            >
+                Senior Software Engineer at <x-link href="https://laravel.com">Laravel</x-link>
+            </x-speaker>
+
+            <x-speaker
+                name="Filip Ganyicz"
+                imageSrc="/img/speakers/filip.png"
+                imageClasses="object-[50%_35%] md:object-center"
+                :$imageFilter
+                :$textColor
+            >
+                Creator of <x-link href="https://github.com/ganyicz/bond">Bond</x-link>
+            </x-speaker>
+
             <x-speaker
                 name="TBA"
                 title="SOMEONE DOPE"
-                description="Who Does Things"
                 imageSrc="/img/speakers/tba.png"
                 :$imageFilter
                 :$textColor
-            />
-            --}}
+            >
+                Who Does Things
+            </x-speaker>
+
         </div>
 
         <div class="lg:text-7xl md:text-5xl sm:text-5xl text-2xl uppercase {{ $textColor }} text-center mt-18 mb-16">
