@@ -37,7 +37,7 @@
                 <div class="w-full {{ $bgColor }}">
                     <div class="{{ $contentTextColor }} pt-4">
                         <!-- TBA Content -->
-                        <div class="lg:min-h-144 min-h-50">
+                        {{-- <div class="lg:min-h-144 min-h-50">
                             <div class="py-26 sm:px-11 px-4">
                                 <img src="/img/confidential.png" alt="confidential.png" class="{{ $imageFilter }}" />
                                 <div class="mt-6 font-mono text-lg text-center {{ $fun ? 'text-fossil' : 'text-night-rider' }}">
@@ -47,14 +47,99 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
 
                         <!-- Schedule Content -->
-                        {{-- <x-schedule-item
-                            title="TBA"
-                            time="9:00 AM - 10:00 AM"
+                        <x-schedule-item
+                            title="Caleb + Daniel - Intro"
+                            time="9:30 AM - 9:45 AM"
                             fun="{{ $fun }}"
-                        /> --}}
+                        />
+                        <x-schedule-item
+                            title="Ryan Chandler"
+                            time="9:45 AM - 10:10 AM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            title="Andy Newhouse"
+                            time="10:10 AM - 10:35 AM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            title="Matt Stauffer"
+                            time="10:35 AM - 10:45 AM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            title="Break"
+                            time="10:45 AM - 11:15 AM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            title="SPONSOR"
+                            time="11:15 AM - 11:20 AM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            title="Jason McCreary"
+                            time="11:20 AM - 11:45 AM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            title="Josh Cirre"
+                            time="11:45 AM - 12:10 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            title="Lunch"
+                            time="12:10 PM - 1:10 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            title="Dan Harrin"
+                            time="1:10 PM - 1:35 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            title="Larabelle"
+                            time="1:35 PM - 2:00 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            title="Break"
+                            time="2:00 PM - 2:30 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            title="SPONSOR"
+                            time="2:30 PM - 2:35 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            title="Shane Rosenthal"
+                            time="2:35 PM - 3:00 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            title="Daniel Coulbourne"
+                            time="3:00 PM - 3:10 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            title="Break"
+                            time="3:10 PM - 3:40 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            title="SPONSOR"
+                            time="3:40 PM - 3:45 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            title="Caleb"
+                            time="3:45 PM - 4:45 PM"
+                            fun="{{ $fun }}"
+                        />
                     </div>
                 </div>
 
@@ -66,7 +151,7 @@
             <div class="xl:w-[29.38%] md:w-3/5 xs:w-4/5 w-full">
             <div class="flex flex-col w-full h-full">
                 <!-- Combined Tab and Card with Background -->
-                <div class="relative h-[calc(100%-76px)]" style="
+                <div class="relative h-[calc(45%-76px)]" style="
                     background-image: url('/img/fun-colors.png');
                     background-size: cover;
                     background-position: center;
