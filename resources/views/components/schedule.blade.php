@@ -35,7 +35,7 @@
                 </div>
                 <!-- Card Content -->
                 <div class="w-full {{ $bgColor }}">
-                    <div class="{{ $contentTextColor }} pt-4">
+                    <div class="{{ $contentTextColor }} pt-3">
                         <!-- TBA Content -->
                         {{-- <div class="lg:min-h-144 min-h-50">
                             <div class="py-26 sm:px-11 px-4">
@@ -175,7 +175,7 @@
             <div class="xl:w-[29.38%] md:w-3/5 xs:w-4/5 w-full">
             <div class="flex flex-col w-full h-full">
                 <!-- Combined Tab and Card with Background -->
-                <div class="relative h-[calc(45%-76px)]" style="
+                <div class="relative h-[calc(48%-76px)]" style="
                     background-image: url('/img/fun-colors.png');
                     background-size: cover;
                     background-position: center;
@@ -201,13 +201,15 @@
                     </div>
                 </div>
                 <!-- Card Content -->
-                <div class="p-6 w-full">
-                    <h2 class="xl:text-[92px] lg:text-7xl text-5xl lg:leading-26 md:leading-20 leading-16 text-plum py-5">
-                        HACK &amp;<br />HANG
+                <div class="p-6 w-full flex flex-col justify-between gap-y-4 h-[calc(100%-50px)]">
+                    <h2 class="grow flex items-center">
+                        <span class="xl:text-[92px] lg:text-7xl text-5xl lg:leading-26 md:leading-20 leading-16 text-plum">
+                            HACK &amp;<br />HANG
+                        </span>
                     </h2>
 
-                    <p class="text-xl leading-relaxed {{ $fun ? 'text-fossil' : 'text-night-rider' }}">
-                    Bring your Laptop and a project/idea and we’ll all chill and build cool stuff and hang out together with food and coffee. It’ll be sick.
+                    <p class="text-xl font-mono leading-relaxed {{ $fun ? 'text-fossil' : 'text-night-rider' }}">
+                        Bring your Laptop and a project/idea and we’ll all chill and build cool stuff and hang out together with food and coffee. It’ll be sick.
                     </p>
                 </div>
                 </div>

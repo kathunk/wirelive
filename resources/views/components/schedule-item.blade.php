@@ -14,7 +14,7 @@
     }
 @endphp
 
-<div class="flex flex-col gap-y-2 sm:flex-row sm:items-center justify-between gap-x-4 px-6 py-4">
+<div class="flex flex-col gap-y-2 sm:flex-row sm:items-center justify-between gap-x-4 px-6 py-3.5">
     <div class="uppercase text-sm xs:text-base {{ $textColor }}">
         <span class="pr-2.5 text-balance">
             {{ $title }}
