@@ -51,22 +51,26 @@
 
                         <!-- Schedule Content -->
                         <x-schedule-item
-                            title="Caleb + Daniel - Intro"
+                            speaker="Caleb & Daniel"
+                            title="Intro"
                             time="9:30 AM - 9:45 AM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
-                            title="Ryan Chandler"
+                            speaker="Ryan Chandler"
+                            title="Making the most of Alpine.js in Livewire"
                             time="9:45 AM - 10:10 AM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
-                            title="Andy Newhouse"
+                            speaker="Andy Newhouse"
+                            title="Livewire and Livewire and Livewire"
                             time="10:10 AM - 10:35 AM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
-                            title="Matt Stauffer"
+                            speaker="Matt Stauffer"
+                            title="The Business Case for Livewire"
                             time="10:35 AM - 10:45 AM"
                             fun="{{ $fun }}"
                         />
@@ -81,12 +85,14 @@
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
-                            title="Jason McCreary"
+                            speaker="Jason McCreary"
+                            title="Testing Livewire"
                             time="11:20 AM - 11:45 AM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
-                            title="Josh Cirre"
+                            speaker="Josh Cirre"
+                            title="The Edge of Nonsense"
                             time="11:45 AM - 12:10 PM"
                             fun="{{ $fun }}"
                         />
@@ -96,7 +102,9 @@
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
-                            title="Dan Harrin"
+                            speaker="Dan Harrin"
+                            title="Building Interfaces with Only PHP:"
+                            subtitle="Filament’s Use of Livewire and Alpine"
                             time="1:10 PM - 1:35 PM"
                             fun="{{ $fun }}"
                         />
@@ -116,12 +124,14 @@
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
-                            title="Shane Rosenthal"
+                            speaker="Shane Rosenthal"
+                            title="Build Mobile Apps With Livewire"
                             time="2:35 PM - 3:00 PM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
-                            title="Daniel Coulbourne"
+                            speaker="Daniel Coulbourne"
+                            title="Livewire.pdf, and Other Atrocities"
                             time="3:00 PM - 3:10 PM"
                             fun="{{ $fun }}"
                         />
@@ -136,8 +146,22 @@
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
-                            title="Caleb"
+                            speaker="Caleb"
+                            title="Keynote"
                             time="3:45 PM - 4:45 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            speaker="Katie Write"
+                            title="Courage In the Small moments:"
+                            subtitle="where imposter syndrome really shows up"
+                            time="?:?? PM - ?:?? PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            speaker="Filip Ganyicz"
+                            title="Bond"
+                            time="?:?? PM - ?:?? PM"
                             fun="{{ $fun }}"
                         />
                     </div>
