@@ -45,6 +45,10 @@
         </div>
 
         @if($platinum)
+            @php
+                $tier = "platinum";
+            @endphp
+
             <!-- Platinum Sponsors -->
             <div class="text-center">
                 <h3 class="text-2xl text-left {{ $textColor }} mb-3 uppercase">
@@ -54,7 +58,6 @@
                     @foreach($platinum as $name => $url)
                         @if($url !== 'tba' && $url !== 'blank')
                             @php
-                                $tier = "platinum";
                                 $png = collect($uses_png)->contains($name);
                             @endphp
 
@@ -72,6 +75,10 @@
         @if($community || $friend)
             <div class="flex flex-col xs:flex-row md:flex-col gap-y-12 pt-12 w-full gap-x-4">
                 @if($community)
+                    @php
+                        $tier = "community";
+                    @endphp
+
                     <!-- Community Sponsors -->
                     <div class="text-center w-full">
                         <h3 class="text-2xl text-left {{ $textColor }} mb-3 uppercase xs:max-w-[13ch] md:max-w-none">
@@ -81,7 +88,6 @@
                             @foreach($community as $name => $url)
                                 @if($url !== 'tba' && $url !== 'blank')
                                     @php
-                                        $tier = "community";
                                         $png = collect($uses_png)->contains($name);
                                     @endphp
 
@@ -96,6 +102,10 @@
                     </div>
                 @endif
                 @if($friend)
+                    @php
+                        $tier = "friend";
+                    @endphp
+
                     <!-- Friend Sponsors -->
                     <div class="w-full">
                         <h3 class="text-2xl text-left {{ $textColor }} mb-3 uppercase xs:max-w-[13ch] md:max-w-none">
@@ -105,7 +115,6 @@
                             @foreach($friend as $name => $url)
                                 @if($url !== 'tba' && $url !== 'blank')
                                     @php
-                                        $tier = "friend";
                                         $png = collect($uses_png)->contains($name);
                                     @endphp
 
