@@ -6,7 +6,10 @@
     $platinum = [
         'tighten' => 'https://tighten.com',
         'laravel' => 'https://laravel.com',
-        'tba',
+        'vehikl' => 'https://vehikl.com',
+        'cms-max' => 'https://cmsmax.com',
+        'padmission' => 'https://padmission.com',
+        'tba' => 'tba',
     ];
 
     $community = [
@@ -22,6 +25,8 @@
         'blank',
     ];
 
+    $uses_png = ['cms-max', 'padmission'];
+
     $textColor = $fun ? 'text-plum' : 'text-fossil';
     $linkColor = $fun ? 'text-cobalt hover:text-plum' : 'text-fossil hover:opacity-90';
     $imageFilter = $fun ? 'invert' : '';
@@ -32,14 +37,18 @@
         <!-- Section Header -->
         <div class="text-left mb-16">
             <span class="hidden md:block">
-                <x-headline text="WOULDN'T BE POSSIBLE WITHOUT" fun="{{ $fun }}" />
+                <x-headline text="WOULDN'T BE POSSIBLE WITHOUT" :$fun />
             </span>
             <span class="block md:hidden">
-                <x-headline first="WOULDN'T BE POSSIBLE" second="WITHOUT" fun="{{ $fun }}" />
+                <x-headline first="WOULDN'T BE POSSIBLE" second="WITHOUT" :$fun />
             </span>
         </div>
 
         @if($platinum)
+            @php
+                $tier = "platinum";
+            @endphp
+
             <!-- Platinum Sponsors -->
             <div class="text-center">
                 <h3 class="text-2xl text-left {{ $textColor }} mb-3 uppercase">
@@ -48,11 +57,15 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-3.75">
                     @foreach($platinum as $name => $url)
                         @if($url !== 'tba' && $url !== 'blank')
-                            <x-sponsor :name="$name" :url="$url" tier="platinum" fun="{{ $fun }}" />
+                            @php
+                                $png = collect($uses_png)->contains($name);
+                            @endphp
+
+                            <x-sponsor :$name :$tier :$fun :$url :$png />
                         @elseif($url === 'tba')
-                            <x-tba-sponsor :name="$name" tier="platinum" fun="{{ $fun }}" />
+                            <x-tba-sponsor :$name :$tier :$fun />
                         @elseif($url === 'blank')
-                            <x-blank-sponsor :name="$name" tier="platinum" fun="{{ $fun }}" />
+                            <x-blank-sponsor :$name :$tier :$fun />
                         @endif
                     @endforeach
                 </div>
@@ -62,6 +75,10 @@
         @if($community || $friend)
             <div class="flex flex-col xs:flex-row md:flex-col gap-y-12 pt-12 w-full gap-x-4">
                 @if($community)
+                    @php
+                        $tier = "community";
+                    @endphp
+
                     <!-- Community Sponsors -->
                     <div class="text-center w-full">
                         <h3 class="text-2xl text-left {{ $textColor }} mb-3 uppercase xs:max-w-[13ch] md:max-w-none">
@@ -70,17 +87,25 @@
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-3.75">
                             @foreach($community as $name => $url)
                                 @if($url !== 'tba' && $url !== 'blank')
-                                    <x-sponsor :name="$name" :url="$url" tier="community" fun="{{ $fun }}" />
+                                    @php
+                                        $png = collect($uses_png)->contains($name);
+                                    @endphp
+
+                                    <x-sponsor :$name :$tier :$fun :$url :$png />
                                 @elseif($url === 'tba')
-                                    <x-tba-sponsor :name="$name" tier="community" fun="{{ $fun }}" />
+                                    <x-tba-sponsor :$name :$tier :$fun />
                                 @elseif($url === 'blank')
-                                    <x-blank-sponsor :name="$name" tier="community" fun="{{ $fun }}" />
+                                    <x-blank-sponsor :$name :$tier :$fun />
                                 @endif
                             @endforeach
                         </div>
                     </div>
                 @endif
                 @if($friend)
+                    @php
+                        $tier = "friend";
+                    @endphp
+
                     <!-- Friend Sponsors -->
                     <div class="w-full">
                         <h3 class="text-2xl text-left {{ $textColor }} mb-3 uppercase xs:max-w-[13ch] md:max-w-none">
@@ -89,11 +114,15 @@
                         <div class="grid grid-cols-1 md:grid-cols-4 gap-3.75">
                             @foreach($friend as $name => $url)
                                 @if($url !== 'tba' && $url !== 'blank')
-                                    <x-sponsor :name="$name" :url="$url" tier="friend" fun="{{ $fun }}" />
+                                    @php
+                                        $png = collect($uses_png)->contains($name);
+                                    @endphp
+
+                                    <x-sponsor :$name :$tier :$fun :$url :$png />
                                 @elseif($url === 'tba')
-                                    <x-tba-sponsor :name="$name" tier="friend" fun="{{ $fun }}" />
+                                    <x-tba-sponsor :$name :$tier :$fun />
                                 @elseif($url === 'blank')
-                                    <x-blank-sponsor :name="$name" tier="friend" fun="{{ $fun }}" />
+                                    <x-blank-sponsor :$name :$tier :$fun />
                                 @endif
                             @endforeach
                         </div>
