@@ -35,7 +35,7 @@
                 </div>
                 <!-- Card Content -->
                 <div class="w-full {{ $bgColor }}">
-                    <div class="{{ $contentTextColor }} pt-4">
+                    <div class="{{ $contentTextColor }} pt-3">
                         <!-- TBA Content -->
                         {{-- <div class="lg:min-h-144 min-h-50">
                             <div class="py-26 sm:px-11 px-4">
@@ -51,22 +51,26 @@
 
                         <!-- Schedule Content -->
                         <x-schedule-item
-                            title="Caleb + Daniel - Intro"
+                            speaker="Caleb & Daniel"
+                            title="Intro"
                             time="9:30 AM - 9:45 AM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
-                            title="Ryan Chandler"
+                            speaker="Ryan Chandler"
+                            title="Making the most of Alpine.js in Livewire"
                             time="9:45 AM - 10:10 AM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
-                            title="Andy Newhouse"
+                            speaker="Andy Newhouse"
+                            title="Livewire and Livewire and Livewire"
                             time="10:10 AM - 10:35 AM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
-                            title="Matt Stauffer"
+                            speaker="Matt Stauffer"
+                            title="The Business Case for Livewire"
                             time="10:35 AM - 10:45 AM"
                             fun="{{ $fun }}"
                         />
@@ -81,12 +85,14 @@
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
-                            title="Jason McCreary"
+                            speaker="Jason McCreary"
+                            title="Testing Livewire"
                             time="11:20 AM - 11:45 AM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
-                            title="Josh Cirre"
+                            speaker="Josh Cirre"
+                            title="The Edge of Nonsense"
                             time="11:45 AM - 12:10 PM"
                             fun="{{ $fun }}"
                         />
@@ -96,7 +102,9 @@
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
-                            title="Dan Harrin"
+                            speaker="Dan Harrin"
+                            title="Building Interfaces with Only PHP:"
+                            subtitle="Filament’s Use of Livewire and Alpine"
                             time="1:10 PM - 1:35 PM"
                             fun="{{ $fun }}"
                         />
@@ -116,12 +124,14 @@
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
-                            title="Shane Rosenthal"
+                            speaker="Shane Rosenthal"
+                            title="Build Mobile Apps With Livewire"
                             time="2:35 PM - 3:00 PM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
-                            title="Daniel Coulbourne"
+                            speaker="Daniel Coulbourne"
+                            title="Livewire.pdf, and Other Atrocities"
                             time="3:00 PM - 3:10 PM"
                             fun="{{ $fun }}"
                         />
@@ -136,8 +146,22 @@
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
-                            title="Caleb"
+                            speaker="Caleb"
+                            title="Keynote"
                             time="3:45 PM - 4:45 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            speaker="Katie Write"
+                            title="Courage In the Small moments:"
+                            subtitle="where imposter syndrome really shows up"
+                            time="?:?? PM - ?:?? PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            speaker="Filip Ganyicz"
+                            title="Bond"
+                            time="?:?? PM - ?:?? PM"
                             fun="{{ $fun }}"
                         />
                     </div>
@@ -151,7 +175,7 @@
             <div class="xl:w-[29.38%] md:w-3/5 xs:w-4/5 w-full">
             <div class="flex flex-col w-full h-full">
                 <!-- Combined Tab and Card with Background -->
-                <div class="relative h-[calc(45%-76px)]" style="
+                <div class="relative h-[calc(48%-76px)]" style="
                     background-image: url('/img/fun-colors.png');
                     background-size: cover;
                     background-position: center;
@@ -177,13 +201,15 @@
                     </div>
                 </div>
                 <!-- Card Content -->
-                <div class="p-6 w-full">
-                    <h2 class="xl:text-[92px] lg:text-7xl text-5xl lg:leading-26 md:leading-20 leading-16 text-plum py-5">
-                        HACK &amp;<br />HANG
+                <div class="p-6 w-full flex flex-col justify-between gap-y-4 h-[calc(100%-50px)]">
+                    <h2 class="grow flex items-center">
+                        <span class="xl:text-[92px] lg:text-7xl text-5xl lg:leading-26 md:leading-20 leading-16 text-plum">
+                            HACK &amp;<br />HANG
+                        </span>
                     </h2>
 
-                    <p class="text-xl leading-relaxed {{ $fun ? 'text-fossil' : 'text-night-rider' }}">
-                    Bring your Laptop and a project/idea and we’ll all chill and build cool stuff and hang out together with food and coffee. It’ll be sick.
+                    <p class="text-xl font-mono leading-relaxed {{ $fun ? 'text-fossil' : 'text-night-rider' }}">
+                        Bring your Laptop and a project/idea and we’ll all chill and build cool stuff and hang out together with food and coffee. It’ll be sick.
                     </p>
                 </div>
                 </div>
