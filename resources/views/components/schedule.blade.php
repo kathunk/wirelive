@@ -52,124 +52,124 @@
                         <!-- Schedule Content -->
                         <x-schedule-item
                             speaker="Caleb & Daniel"
-                            title="Intro"
-                            time="9:30 AM - 9:55 AM"
+                            title="Welcome"
+                            time="9:30 AM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
                             speaker="Filip Ganyicz"
-                            title="Bond (F*** React)"
-                            time="9:55 AM - 10:15 AM"
+                            title="TBA"
+                            time="9:45 AM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
                             speaker="Andy Newhouse"
                             title="Livewire in Production:"
                             subtitle="Avoiding Pitfalls, Applying Best Practices"
-                            time="10:15 AM - 10:40 AM"
+                            time="10:15 AM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
                             speaker="Jason McCreary"
                             title="Testing Livewire"
-                            time="10:40 AM - 11:05 AM"
+                            time="10:40 AM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
                             title="Break"
-                            time="11:05 AM - 11:10 AM"
+                            time="11:10 AM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
                             title="SPONSOR"
-                            time="11:10 AM - 11:35 AM"
+                            time="11:30 AM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
                             speaker="Shane Rosenthal"
                             title="Build Mobile Apps With Livewire"
-                            time="11:35 AM - 11:45 AM"
+                            time="11:35 AM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
                             speaker="Katie Wright"
                             title="Courage In the Small moments:"
                             subtitle="where imposter syndrome really shows up"
-                            time="11:45 AM - 12:05 PM"
+                            time="12:05 PM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
                             speaker="Josh Cirre"
                             title="The Edge of Nonsense"
-                            time="12:05 PM - 1:05 PM"
+                            time="12:20 PM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
                             title="Lunch"
-                            time="1:05 PM - 1:15 PM"
+                            time="12:45 PM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
                             speaker="Matt Stauffer"
                             title="The Business Case for Livewire"
-                            time="1:15 PM - 1:40 PM"
+                            time="1:45 PM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
                             speaker="Dan Harrin"
                             title="Building Interfaces with Only PHP:"
                             subtitle="Filament's Use of Livewire and Alpine"
-                            time="1:40 PM - 1:50 PM"
+                            time="2:00 PM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
                             speaker="Mary Perry"
                             title="TBA"
-                            time="1:50 PM - 2:15 PM"
+                            time="2:30 PM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
                             title="Break"
-                            time="2:15 PM - 2:20 PM"
+                            time="2:45 PM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
                             title="SPONSOR"
-                            time="2:20 PM - 2:45 PM"
+                            time="3:05 PM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
                             speaker="Ryan Chandler"
                             title="Making the most of Alpine.js in Livewire"
-                            time="2:45 PM - 3:00 PM"
+                            time="3:10 PM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
                             speaker="Kevin McKee"
                             title="TBA"
-                            time="3:00 PM - 3:10 PM"
+                            time="3:40 PM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
                             speaker="Daniel Coulbourne"
                             title="Livewire.pdf, and Other Atrocities"
-                            time="3:10 PM - 3:35 PM"
+                            time="4:00 PM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
                             title="Break"
-                            time="3:35 PM - 3:40 PM"
+                            time="4:15 PM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
                             title="SPONSOR"
-                            time="3:40 PM - 4:25 PM"
+                            time="4:35 PM"
                             fun="{{ $fun }}"
                         />
                         <x-schedule-item
                             speaker="Caleb Porzio"
                             title="Keynote"
-                            time="4:25 PM - 5:10 PM"
+                            time="4:40 PM"
                             fun="{{ $fun }}"
                         />
                     </div>

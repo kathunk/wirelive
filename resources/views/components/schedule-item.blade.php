@@ -16,7 +16,13 @@
 
 <div class="flex flex-col gap-y-2 sm:flex-row sm:items-center justify-between gap-x-4 px-6 py-3.5">
     <div class="uppercase text-sm xs:text-base {{ $textColor }}">
-        <span class="pr-2.5 text-balance">
+
+        @if($speaker)
+            <div class="block pt-2 min-[1056px]:pt-0 min-[1056px]:hidden"></div>
+            <span class="{{ $speakerTextColor }} text-nowrap">{{ $speaker }}</span>
+        @endif
+
+        <span class="mx-2.5 text-balance">
             {{ $title }}
 
             @if($subtitle)
@@ -24,10 +30,6 @@
             @endif
         </span>
 
-        @if($speaker)
-            <div class="block pt-2 min-[1056px]:pt-0 min-[1056px]:hidden"></div>
-            <span class="{{ $speakerTextColor }} text-nowrap">{{ $speaker }}</span>
-        @endif
     </div>
 
   <div class="text-xs xs:text-sm font-medium font-mono text-start w-auto {{ $textColor }}">
