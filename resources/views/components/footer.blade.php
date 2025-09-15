@@ -68,7 +68,7 @@
                     area.
                 </p>
                 <div class="flex">
-                    <x-arrow-button href="https://gist.github.com/calebporzio/7a7e75a2209d16f1694bc4a49faf8e45" target="_blank" class="px-6 py-2 bg-fossil text-2xl uppercase text-center sm:text-start">
+                    <x-arrow-button href="https://docs.google.com/document/d/1LeWKm-TJ6EVXSLzVY1xTPGEq-OOPK_BTEM-WBgV38lE/edit?usp=sharing" target="_blank" class="px-6 py-2 bg-fossil text-2xl uppercase text-center sm:text-start">
                         View Travel Guide
                     </x-arrow-button>
                 </div>
