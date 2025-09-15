@@ -35,9 +35,9 @@
                 </div>
                 <!-- Card Content -->
                 <div class="w-full {{ $bgColor }}">
-                    <div class="{{ $contentTextColor }} pt-4">
+                    <div class="{{ $contentTextColor }} pt-3">
                         <!-- TBA Content -->
-                        <div class="lg:min-h-144 min-h-50">
+                        {{-- <div class="lg:min-h-144 min-h-50">
                             <div class="py-26 sm:px-11 px-4">
                                 <img src="/img/confidential.png" alt="confidential.png" class="{{ $imageFilter }}" />
                                 <div class="mt-6 font-mono text-lg text-center {{ $fun ? 'text-fossil' : 'text-night-rider' }}">
@@ -47,14 +47,131 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
 
                         <!-- Schedule Content -->
-                        {{-- <x-schedule-item
-                            title="TBA"
-                            time="9:00 AM - 10:00 AM"
+                        <x-schedule-item
+                            speaker="Caleb & Daniel"
+                            title="Welcome"
+                            time="9:30 AM"
                             fun="{{ $fun }}"
-                        /> --}}
+                        />
+                        <x-schedule-item
+                            speaker="Filip Ganyicz"
+                            title="TBA"
+                            time="9:45 AM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            speaker="Andy Newhouse"
+                            title="Livewire in Production:"
+                            subtitle="Avoiding Pitfalls, Applying Best Practices"
+                            time="10:15 AM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            speaker="Jason McCreary"
+                            title="Testing Livewire"
+                            time="10:40 AM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            title="Break"
+                            time="11:10 AM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            title="SPONSOR"
+                            time="11:30 AM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            speaker="Shane Rosenthal"
+                            title="Build Mobile Apps With Livewire"
+                            time="11:35 AM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            speaker="Katie Wright"
+                            title="Courage In the Small moments:"
+                            subtitle="where imposter syndrome really shows up"
+                            time="12:05 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            speaker="Josh Cirre"
+                            title="The Edge of Nonsense"
+                            time="12:20 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            title="Lunch"
+                            time="12:45 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            speaker="Matt Stauffer"
+                            title="The Business Case for Livewire"
+                            time="1:45 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            speaker="Dan Harrin"
+                            title="Building Interfaces with Only PHP:"
+                            subtitle="Filament's Use of Livewire and Alpine"
+                            time="2:00 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            speaker="Mary Perry"
+                            title="TBA"
+                            time="2:30 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            title="Break"
+                            time="2:45 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            title="SPONSOR"
+                            time="3:05 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            speaker="Ryan Chandler"
+                            title="Making the most of Alpine.js in Livewire"
+                            time="3:10 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            speaker="Kevin McKee"
+                            title="TBA"
+                            time="3:40 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            speaker="Daniel Coulbourne"
+                            title="Livewire.pdf, and Other Atrocities"
+                            time="4:00 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            title="Break"
+                            time="4:15 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            title="SPONSOR"
+                            time="4:35 PM"
+                            fun="{{ $fun }}"
+                        />
+                        <x-schedule-item
+                            speaker="Caleb Porzio"
+                            title="Keynote"
+                            time="4:40 PM"
+                            fun="{{ $fun }}"
+                        />
                     </div>
                 </div>
 
@@ -66,7 +183,7 @@
             <div class="xl:w-[29.38%] md:w-3/5 xs:w-4/5 w-full">
             <div class="flex flex-col w-full h-full">
                 <!-- Combined Tab and Card with Background -->
-                <div class="relative h-[calc(100%-76px)]" style="
+                <div class="relative" style="
                     background-image: url('/img/fun-colors.png');
                     background-size: cover;
                     background-position: center;
@@ -92,13 +209,27 @@
                     </div>
                 </div>
                 <!-- Card Content -->
-                <div class="p-6 w-full">
-                    <h2 class="xl:text-[92px] lg:text-7xl text-5xl lg:leading-26 md:leading-20 leading-16 text-plum py-5">
-                        HACK &amp;<br />HANG
+                <div class="p-6 w-full flex flex-col justify-between gap-y-4">
+                    <h2 class="grow flex items-center">
+                        <span class="xl:text-[92px] lg:text-7xl text-5xl lg:leading-26 md:leading-20 leading-16 text-plum">
+                            HACK &amp;<br />HANG
+                        </span>
                     </h2>
 
-                    <p class="text-xl leading-relaxed {{ $fun ? 'text-fossil' : 'text-night-rider' }}">
-                    Bring your Laptop and a project/idea and we’ll all chill and build cool stuff and hang out together with food and coffee. It’ll be sick.
+                    <p class="text-xl font-mono leading-relaxed {{ $fun ? 'text-fossil' : 'text-night-rider' }}">
+                        This is an unstructured day of laptops, coffee, and fun.
+                    </p>
+
+                    <p class="text-xl font-mono leading-relaxed {{ $fun ? 'text-fossil' : 'text-night-rider' }}">
+                        Choose from a selection of beguiling Livewire prompts and hack the day away with other folks from the community.
+                    </p>
+
+                    <p class="text-xl font-mono leading-relaxed {{ $fun ? 'text-fossil' : 'text-night-rider' }}">
+                        Throughout the day teams will take the stage to show off their stuff.
+                    </p>
+
+                    <p class="text-xl font-mono leading-relaxed {{ $fun ? 'text-fossil' : 'text-night-rider' }}">
+                        Expect to laugh and cry.
                     </p>
                 </div>
                 </div>
