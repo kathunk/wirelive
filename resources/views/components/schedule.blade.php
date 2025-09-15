@@ -183,7 +183,7 @@
             <div class="xl:w-[29.38%] md:w-3/5 xs:w-4/5 w-full">
             <div class="flex flex-col w-full h-full">
                 <!-- Combined Tab and Card with Background -->
-                <div class="relative h-[calc(48%-76px)]" style="
+                <div class="relative" style="
                     background-image: url('/img/fun-colors.png');
                     background-size: cover;
                     background-position: center;
@@ -209,7 +209,7 @@
                     </div>
                 </div>
                 <!-- Card Content -->
-                <div class="p-6 w-full flex flex-col justify-between gap-y-4 h-[calc(100%-50px)]">
+                <div class="p-6 w-full flex flex-col justify-between gap-y-4">
                     <h2 class="grow flex items-center">
                         <span class="xl:text-[92px] lg:text-7xl text-5xl lg:leading-26 md:leading-20 leading-16 text-plum">
                             HACK &amp;<br />HANG
@@ -217,7 +217,19 @@
                     </h2>
 
                     <p class="text-xl font-mono leading-relaxed {{ $fun ? 'text-fossil' : 'text-night-rider' }}">
-                        Bring your Laptop and a project/idea and we’ll all chill and build cool stuff and hang out together with food and coffee. It’ll be sick.
+                        This is an unstructured day of laptops, coffee, and fun.
+                    </p>
+
+                    <p class="text-xl font-mono leading-relaxed {{ $fun ? 'text-fossil' : 'text-night-rider' }}">
+                        Choose from a selection of beguiling Livewire prompts and hack the day away with other folks from the community.
+                    </p>
+
+                    <p class="text-xl font-mono leading-relaxed {{ $fun ? 'text-fossil' : 'text-night-rider' }}">
+                        Throughout the day teams will take the stage to show off their stuff.
+                    </p>
+
+                    <p class="text-xl font-mono leading-relaxed {{ $fun ? 'text-fossil' : 'text-night-rider' }}">
+                        Expect to laugh and cry.
                     </p>
                 </div>
                 </div>
