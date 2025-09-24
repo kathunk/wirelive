@@ -58,7 +58,7 @@
                         />
                         <x-schedule-item
                             speaker="Filip Ganyicz"
-                            title="TBA"
+                            title="Bond: Modern JavaScript in Laravel Blade"
                             time="9:45 AM"
                             fun="{{ $fun }}"
                         />
@@ -124,7 +124,7 @@
                         />
                         <x-schedule-item
                             speaker="Mary Perry"
-                            title="TBA"
+                            title="The Observer Pattern"
                             time="2:30 PM"
                             fun="{{ $fun }}"
                         />
@@ -146,7 +146,8 @@
                         />
                         <x-schedule-item
                             speaker="Kevin McKee"
-                            title="TBA"
+                            title="From Fired to Founder:"
+                            subtitle="Principles for Making a Difference"
                             time="3:40 PM"
                             fun="{{ $fun }}"
                         />

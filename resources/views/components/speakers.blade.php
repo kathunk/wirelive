@@ -50,15 +50,6 @@
             </x-speaker>
 
             <x-speaker
-                name="John Drexler"
-                imageSrc="/img/speakers/john.jpg"
-                :$imageFilter
-                :$textColor
-            >
-                Partner / Product Manager at <x-link href="https://thunk.dev">Thunk</x-link>
-            </x-speaker>
-
-            <x-speaker
                 name="Matt Stauffer"
                 imageSrc="/img/speakers/matt.png"
                 imageClasses="brightness-88 object-[50%_25%] md:object-center"
@@ -138,6 +129,36 @@
             </x-speaker>
 
             <x-speaker
+                name="Mary Perry"
+                imageSrc="/img/speakers/mary.png"
+                imageClasses="object-[50%_40%] md:object-center"
+                :$imageFilter
+                :$textColor
+            >
+                Syntax Professional && Semantics Enthusiast
+            </x-speaker>
+
+            <x-speaker
+                name="Andy Newhouse"
+                imageSrc="/img/speakers/andy.png"
+                imageClasses="object-[50%_15%] md:object-center"
+                :$imageFilter
+                :$textColor
+            >
+                Lead Programmer at <x-link href="https://tighten.com">Tighten</x-link>
+            </x-speaker>
+
+            <x-speaker
+                name="Kevin McKee"
+                imageSrc="/img/speakers/kevin.png"
+                imageClasses="object-top md:object-center"
+                :$imageFilter
+                :$textColor
+            >
+                Co-founder and CIO of <x-link href="https://www.padmission.com/">Padmission</x-link>
+            </x-speaker>
+
+            <x-speaker
                 name="TBA"
                 title="SOMEONE DOPE"
                 imageSrc="/img/speakers/tba.png"
@@ -147,6 +168,15 @@
                 Who Does Things
             </x-speaker>
 
+            <x-speaker
+                name="TBA"
+                title="AWESOME PERSON"
+                imageSrc="/img/speakers/tba.png"
+                :$imageFilter
+                :$textColor
+            >
+                With Interesting Ideas
+            </x-speaker>
         </div>
 
         <div class="lg:text-7xl md:text-5xl sm:text-5xl text-2xl uppercase {{ $textColor }} text-center mt-18 mb-16">
