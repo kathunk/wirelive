@@ -55,7 +55,7 @@
 
         <!-- Buffalo Content -->
         <div class="font-mono text-xl mb-12 {{ $textColor }}">
-            The city of Buffalo is the home of the Buffalo Bills, buffalo wings, and Caleb, the creator of Livewire (hehe). It’s a fun city with lots to do and see, and is only a 25 minute drive from Niagra Falls.
+            The city of Buffalo is the home of the Buffalo Bills, buffalo wings, and Caleb, the creator of Livewire (hehe). It’s a fun city with lots to do and see, and is only a 25 minute drive from Niagara Falls.
         </div>
 
         <div class="flex gap-x-6 h-full">

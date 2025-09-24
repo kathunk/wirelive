@@ -13,8 +13,8 @@
     ];
 
     $community = [
+        'ghostable' => 'https://ghostable.dev',
         'tba',
-        'blank',
         'blank',
     ];
 
