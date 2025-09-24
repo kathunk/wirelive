@@ -150,7 +150,8 @@
 
             <x-speaker
                 name="Kevin McKee"
-                imageSrc="/img/speakers/kevin.jpg"
+                imageSrc="/img/speakers/kevin.png"
+                imageClasses="object-top md:object-center"
                 :$imageFilter
                 :$textColor
             >
