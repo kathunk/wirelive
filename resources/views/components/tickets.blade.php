@@ -69,7 +69,7 @@
               <span class="text-2xl font-bold {{ $buttonTextColor }}">BUY TICKETS NOW</span>
               <div class="bg-plum px-3 py-1">
                 <span class="text-2xl font-bold" style="background-image: url('/img/fun-colors.png'); background-size: 2500% 2500%; background-position: center; background-clip: text; -webkit-background-clip: text; color: transparent;">
-                    $149
+                    $179
                 </span>
               </div>
             </div>
