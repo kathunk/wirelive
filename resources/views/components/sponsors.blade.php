@@ -20,12 +20,12 @@
 
     $friend = [
         'filament' => 'https://filamentphp.com',
+        'neon' => 'https://neon.com',
+        'heinonline' => 'https://home.heinonline.org',
         'tba',
-        'blank',
-        'blank',
     ];
 
-    $uses_png = ['cms-max', 'padmission'];
+    $uses_png = ['cms-max', 'padmission', 'heinonline'];
 
     $textColor = $fun ? 'text-plum' : 'text-fossil';
     $linkColor = $fun ? 'text-cobalt hover:text-plum' : 'text-fossil hover:opacity-90';
