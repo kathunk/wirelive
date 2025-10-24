@@ -58,7 +58,7 @@
                         />
                         <x-schedule-item
                             speaker="Caleb Porzio"
-                            title="Keynote"
+                            title="Introducing Livewire 4"
                             time="9:45 AM"
                             fun="{{ $fun }}"
                         />
@@ -170,7 +170,7 @@
                         />
                         <x-schedule-item
                             speaker="Caleb Porzio"
-                            title="Closing"
+                            title="Launch + Q/A"
                             time="5:15 PM"
                             fun="{{ $fun }}"
                         />
